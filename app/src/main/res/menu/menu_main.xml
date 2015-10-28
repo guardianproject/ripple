@@ -8,5 +8,9 @@
         android:icon="@android:drawable/ic_dialog_alert"
         android:title="@string/action_trigger"
         app:showAsAction="always" />
+    <item
+        android:id="@+id/action_test_run"
+        android:title="@string/action_test_run"
+        app:showAsAction="never" />
 
 </menu>

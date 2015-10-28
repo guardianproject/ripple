@@ -1,8 +1,10 @@
 package info.guardianproject.ripple;
 
 import android.app.Activity;
+import android.content.DialogInterface;
 import android.graphics.Rect;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -17,6 +19,8 @@ import info.guardianproject.securereaderinterface.uiutil.AnimationHelpers;
 public class PanicActivity extends Activity implements OnTouchListener {
     public static final String TAG = "PanicActivity";
 
+    public static final String EXTRA_TEST_RUN = "info.guardianproject.ripple.extra.TEST_RUN";
+
     public int yMaxTranslation;
     public int yTranslationArrow;
     public int yCurrentTranslation;
@@ -26,7 +30,7 @@ public class PanicActivity extends Activity implements OnTouchListener {
     public boolean mIsOverArrow = false;
     private View mArrow;
     private ImageView mSymbol;
-	private boolean mOnlyTesting;
+    private boolean mTestRun;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +42,7 @@ public class PanicActivity extends Activity implements OnTouchListener {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_panic);
 
-        mOnlyTesting = getIntent().getBooleanExtra("testing", false);
+        mTestRun = getIntent().getBooleanExtra(EXTRA_TEST_RUN, false);
 
         mArrow = findViewById(R.id.arrowSymbolView);
 
@@ -83,7 +87,7 @@ public class PanicActivity extends Activity implements OnTouchListener {
                         AnimationHelpers.scale(mSymbol, 1.0f, 0, 200, new Runnable() {
                             @Override
                             public void run() {
-                                // TODO implement trigger broadcast
+                                runPanicResponse();
                             }
                         });
                     } else {
@@ -121,5 +125,22 @@ public class PanicActivity extends Activity implements OnTouchListener {
             mSymbol.setColorFilter(0xffff0000);
         else
             mSymbol.setColorFilter(null);
+    }
+
+    private void runPanicResponse() {
+        if (mTestRun) {
+            new AlertDialog.Builder(this)
+                    .setTitle(R.string.app_name)
+                    .setMessage(R.string.panic_test_successful)
+                    .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.dismiss();
+                            PanicActivity.this.finish();
+                        }
+                    }).show();
+        } else {
+            // TODO implement trigger broadcast
+        }
     }
 }

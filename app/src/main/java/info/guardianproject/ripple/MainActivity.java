@@ -30,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_responders:
                 return true;
             case R.id.action_test_run:
+                Intent intent = new Intent(this, PanicActivity.class);
+                intent.putExtra(PanicActivity.EXTRA_TEST_RUN, true);
+                startActivity(intent);
                 return true;
         }
 

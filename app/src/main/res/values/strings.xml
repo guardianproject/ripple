@@ -2,6 +2,8 @@
     <string name="app_name">Ripple</string>
 
     <string name="action_trigger">Trigger!</string>
+    <string name="action_test_run">Test Run</string>
 
     <string name="swipe_down_to_trigger">Swipe down to trigger</string>
+    <string name="panic_test_successful">Good job! In a real scenario, you would have successfully completed a wipe.</string>
 </resources>
