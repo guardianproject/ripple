@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frameRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ED231F20"
+    android:paddingBottom="19dp"
+    android:paddingLeft="26dp"
+    android:paddingRight="26dp"
+    android:paddingTop="19dp">
+
+    <ImageView
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/ic_panic_cancel" />
+
+    <RelativeLayout
+        android:layout_width="308dp"
+        android:layout_height="308dp"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/arrowSymbolView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_panic_down" />
+
+        <TextView
+            android:id="@+id/textHint"
+            android:layout_width="250dp"
+            android:layout_height="44dp"
+            android:layout_above="@id/arrowSymbolView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="19dp"
+            android:layout_marginTop="19dp"
+            android:gravity="center"
+            android:text="@string/swipe_down_to_trigger"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+
+        <ImageView
+            android:id="@+id/radioactiveSymbolView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/textHint"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_panic_lg" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
