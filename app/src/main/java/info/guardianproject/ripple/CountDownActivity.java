@@ -24,6 +24,8 @@ import info.guardianproject.panic.PanicTrigger;
 public class CountDownActivity extends Activity {
     private static final String TAG = "CountDownActivity";
 
+    private static final String KEY_COUNT_DOWN_DONE = "keyCountDownDone";
+
     CountDownAsyncTask mCountDownAsyncTask;
     private TextView mCountDownNumber;
     private TextView mTouchToCancel;
@@ -53,11 +55,16 @@ public class CountDownActivity extends Activity {
         mCountDownNumber = (TextView) findViewById(R.id.countDownNumber);
         mCountDownNumber.setTextSize(((float) scale) / 5);
 
-        mCountDownAsyncTask = new CountDownAsyncTask();
-        mCountDownAsyncTask.execute();
-
         mTouchToCancel = (TextView) findViewById(R.id.touch_anywhere_to_cancel);
         mCancelButton = (ImageView) findViewById(R.id.cancelButton);
+
+        mCountDownAsyncTask = new CountDownAsyncTask();
+
+        if (savedInstanceState != null && savedInstanceState.getBoolean(KEY_COUNT_DOWN_DONE, false)) {
+            showDoneScreen();
+        } else {
+            mCountDownAsyncTask.execute();
+        }
 
         RelativeLayout frameRoot = (RelativeLayout) findViewById(R.id.frameRoot);
         frameRoot.setOnTouchListener(new View.OnTouchListener() {
@@ -85,9 +92,26 @@ public class CountDownActivity extends Activity {
         }
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putBoolean(KEY_COUNT_DOWN_DONE, mCountDown == 0);
+        if (mCountDown > 0) {
+            // cancel the countdown, it'll get restarted when the Activity comes back
+            mCountDownAsyncTask.cancel(true);
+        }
+    }
+
     private void cancel() {
         mCountDownAsyncTask.cancel(true);
         finish();
+    }
+
+    private void showDoneScreen() {
+        mCountDownNumber.setText(R.string.done);
+        mCountDownNumber.setTextSize(TypedValue.COMPLEX_UNIT_SP, 64);
+        mCancelButton.setVisibility(View.GONE);
+        mTouchToCancel.setVisibility(View.GONE);
     }
 
     private class CountDownAsyncTask extends AsyncTask<Void, Integer, Void> {
@@ -98,10 +122,7 @@ public class CountDownActivity extends Activity {
             if (values[0] > 0) {
                 mCountDownNumber.setText(String.valueOf(values[0]));
             } else {
-                mCountDownNumber.setText(R.string.done);
-                mCountDownNumber.setTextSize(TypedValue.COMPLEX_UNIT_SP, 64);
-                mCancelButton.setVisibility(View.GONE);
-                mTouchToCancel.setVisibility(View.GONE);
+                showDoneScreen();
             }
         }
 
