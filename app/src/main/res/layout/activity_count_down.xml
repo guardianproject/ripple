@@ -8,7 +8,7 @@
     tools:context="info.guardianproject.ripple.CountDownActivity">
 
     <ImageView
-        android:id="@+id/btnCancel"
+        android:id="@+id/cancelButton"
         android:layout_width="wrap_content"
         android:layout_height="34dp"
         android:layout_alignParentEnd="true"
@@ -26,6 +26,7 @@
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/touch_anywhere_to_cancel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

@@ -7,11 +7,12 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.util.DisplayMetrics;
-import android.util.Log;
+import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,6 +26,9 @@ public class CountDownActivity extends Activity {
 
     CountDownAsyncTask mCountDownAsyncTask;
     private TextView mCountDownNumber;
+    private TextView mTouchToCancel;
+    private ImageView mCancelButton;
+    private int mCountDown = 0xff;
     private boolean mTestRun;
 
     @Override
@@ -52,12 +56,13 @@ public class CountDownActivity extends Activity {
         mCountDownAsyncTask = new CountDownAsyncTask();
         mCountDownAsyncTask.execute();
 
+        mTouchToCancel = (TextView) findViewById(R.id.touch_anywhere_to_cancel);
+        mCancelButton = (ImageView) findViewById(R.id.cancelButton);
 
         RelativeLayout frameRoot = (RelativeLayout) findViewById(R.id.frameRoot);
         frameRoot.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
-                Log.i(TAG, "onTouch ");
                 cancel();
                 return true;
             }
@@ -69,12 +74,10 @@ public class CountDownActivity extends Activity {
             frameRoot.setOnSystemUiVisibilityChangeListener(new View.OnSystemUiVisibilityChangeListener() {
                 @Override
                 public void onSystemUiVisibilityChange(int visibility) {
-                    Log.i(TAG, "onSystemUiVisibilityChange " + visibility);
                     /* If the nav bar comes back while the countdown is active,
                        that means the user clicked on the screen. Showing the
                        test dialog also triggers this, so filter on countdown */
-                    if ((visibility & View.SYSTEM_UI_FLAG_FULLSCREEN) == 0
-                            && mCountDownAsyncTask.countdown > 0) {
+                    if ((visibility & View.SYSTEM_UI_FLAG_FULLSCREEN) == 0 && mCountDown > 0) {
                         cancel();
                     }
                 }
@@ -83,34 +86,39 @@ public class CountDownActivity extends Activity {
     }
 
     private void cancel() {
-        Log.i(TAG, "cancel");
         mCountDownAsyncTask.cancel(true);
         finish();
     }
 
     private class CountDownAsyncTask extends AsyncTask<Void, Integer, Void> {
 
-        private int countdown = 5;
-
         @Override
         protected void onProgressUpdate(Integer... values) {
-            mCountDownNumber.setText(String.valueOf(values[0]));
+            mCountDown = values[0];
+            if (values[0] > 0) {
+                mCountDownNumber.setText(String.valueOf(values[0]));
+            } else {
+                mCountDownNumber.setText(R.string.done);
+                mCountDownNumber.setTextSize(TypedValue.COMPLEX_UNIT_SP, 64);
+                mCancelButton.setVisibility(View.GONE);
+                mTouchToCancel.setVisibility(View.GONE);
+            }
         }
 
         @Override
         protected Void doInBackground(Void... voids) {
-            do {
-                publishProgress(countdown);
-                countdown--;
-                if (isCancelled()) {
-                    break;
-                }
-                try {
+            try {
+                int countdown = 5;
+                while (countdown >= 0) {
+                    publishProgress(countdown);
+                    countdown--;
                     Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    break;
+                    if (isCancelled()) {
+                        break;
+                    }
                 }
-            } while (countdown > 0);
+            } catch (InterruptedException e) {
+            }
             return null;
         }
 
@@ -139,7 +147,6 @@ public class CountDownActivity extends Activity {
                 for (String s : receivers) {
                     Toast.makeText(activity, "trigger " + s, Toast.LENGTH_SHORT).show();
                 }
-                finish();
             }
         }
 
