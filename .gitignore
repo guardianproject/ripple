@@ -1,0 +1,40 @@
+# auto-generated files from Android builds
+build.xml
+ant.properties
+default.properties
+proguard.cfg
+proguard-project.txt
+proguard-rules.pro
+
+#built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# emacs cruft
+*~
+
+# subdirs for generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+gradle.properties
+
+# Windows thumbnail db
+Thumbs.db
+
+# OSX files
+.DS_Store
+# Android Studio
+*.iml
+.idea/
+.gradle/
+build/
+captures/
