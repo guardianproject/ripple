@@ -1,11 +1,10 @@
 package info.guardianproject.ripple;
 
 import android.app.Activity;
-import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Rect;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -34,9 +33,9 @@ public class PanicActivity extends Activity implements OnTouchListener {
     private View mArrow;
     private ImageView mSymbol;
     private TextView mTextHint;
-    private boolean mTestRun;
     private int mTextColorBlack;
     private int mTextColorWhite;
+    private int mTextColorRed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,8 +46,6 @@ public class PanicActivity extends Activity implements OnTouchListener {
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_panic);
-
-        mTestRun = getIntent().getBooleanExtra(EXTRA_TEST_RUN, false);
 
         mArrow = findViewById(R.id.arrowSymbolView);
 
@@ -67,16 +64,16 @@ public class PanicActivity extends Activity implements OnTouchListener {
 
         mTextColorBlack = getResources().getColor(android.R.color.black);
         mTextColorWhite = getResources().getColor(android.R.color.white);
+        mTextColorRed = getResources().getColor(R.color.red);
     }
 
     @Override
     public boolean onTouch(View view, MotionEvent event) {
         if (view == mSymbol) {
-            final int X = (int) event.getRawX();
             final int Y = (int) event.getRawY();
             switch (event.getAction() & MotionEvent.ACTION_MASK) {
                 case MotionEvent.ACTION_DOWN:
-                    mSymbol.setColorFilter(0xffff0000);
+                    mSymbol.setColorFilter(mTextColorRed);
                     RelativeLayout.LayoutParams lParams = (RelativeLayout.LayoutParams) view.getLayoutParams();
                     yOriginal = lParams.topMargin;
                     yDelta = Y - lParams.topMargin;
@@ -100,7 +97,11 @@ public class PanicActivity extends Activity implements OnTouchListener {
                         AnimationHelpers.scale(mSymbol, 1.0f, 0, 200, new Runnable() {
                             @Override
                             public void run() {
-                                runPanicResponse();
+                                Intent intent = new Intent(getBaseContext(), CountDownActivity.class);
+                                intent.putExtra(EXTRA_TEST_RUN,
+                                        getIntent().getBooleanExtra(EXTRA_TEST_RUN, false));
+                                startActivity(intent);
+                                finish();
                             }
                         });
                     } else {
@@ -141,22 +142,5 @@ public class PanicActivity extends Activity implements OnTouchListener {
             return true;
         }
         return false;
-    }
-
-    private void runPanicResponse() {
-        if (mTestRun) {
-            new AlertDialog.Builder(this)
-                    .setTitle(R.string.app_name)
-                    .setMessage(R.string.panic_test_successful)
-                    .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int which) {
-                            dialog.dismiss();
-                            PanicActivity.this.finish();
-                        }
-                    }).show();
-        } else {
-            // TODO implement trigger broadcast
-        }
     }
 }

@@ -26,6 +26,7 @@
                 android:value="info.guardianproject.ripple.MainActivity" />
         </activity>
 
+        <activity android:name=".CountDownActivity" />
     </application>
 
 </manifest>
