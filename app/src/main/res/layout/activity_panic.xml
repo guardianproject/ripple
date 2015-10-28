@@ -22,7 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_centerInParent="true">
+        android:layout_centerInParent="true"
+        android:paddingTop="34dp">
 
         <ImageView
             android:id="@+id/arrowSymbolView"
