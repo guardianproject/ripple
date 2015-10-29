@@ -22,6 +22,7 @@ android {
 
 dependencies {
     compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.android.support:recyclerview-v7:23.1.0'
     compile 'info.guardianproject.panic:panic:0.1'
 }
 
@@ -29,6 +30,7 @@ dependencies {
 dependencyVerification {
     verify = [
             'com.android.support:appcompat-v7:b5783b390d1440769c9b8a7b42290523a4ff058ef2d3fb90c983973934ca115b',
+            'com.android.support:recyclerview-v7:464ec6e5004400a4fe0310f35343da9e5a2912386a3606db3585f7cf987c444a',
             'com.android.support:support-annotations:d50996a4cbca17178989fef38635f2cc570c5d3a77870aaa57f4f7e4fc6de9dc',
             'com.android.support:support-v4:a0309e9c188afd25ad5dd38e484ad13610bc5f2ebfeafa40d2a07eea414896d5',
             'info.guardianproject.panic:panic:1d130d23d71407290c52a826424425c4cf1d93c1469ceb42820806eafc11f650',
