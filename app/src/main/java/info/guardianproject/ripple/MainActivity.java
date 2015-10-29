@@ -6,11 +6,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import info.guardianproject.panic.PanicTrigger;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if (PanicTrigger.checkForConnectIntent(this)
+                || PanicTrigger.checkForDisconnectIntent(this)) {
+            finish();
+            return;
+        }
+
         setContentView(R.layout.activity_main);
     }
 
