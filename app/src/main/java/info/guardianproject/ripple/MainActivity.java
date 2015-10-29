@@ -64,9 +64,10 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-        RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        mRecyclerView.setAdapter(new RecyclerView.Adapter<AppRowHolder>() {
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView.setHasFixedSize(true); // does not change, except in onResume()
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(new RecyclerView.Adapter<AppRowHolder>() {
             @Override
             public AppRowHolder onCreateViewHolder(ViewGroup parent, int viewType) {
                 return (new AppRowHolder(getLayoutInflater().inflate(R.layout.row, parent, false)));
