@@ -17,8 +17,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.Set;
-
 import info.guardianproject.panic.PanicTrigger;
 
 public class CountDownActivity extends Activity {
@@ -165,15 +163,9 @@ public class CountDownActivity extends Activity {
                             }
                         }).show();
             } else {
-                // TODO implement trigger broadcast
+                PanicTrigger.sendTrigger(activity);
                 Toast.makeText(activity, R.string.done, Toast.LENGTH_LONG).show();
-
-                Set<String> receivers = PanicTrigger.getReceiverPackageNames(activity);
-                for (String s : receivers) {
-                    Toast.makeText(activity, "trigger " + s, Toast.LENGTH_SHORT).show();
-                }
             }
         }
-
     }
 }
