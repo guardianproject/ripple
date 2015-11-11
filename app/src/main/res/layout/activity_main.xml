@@ -14,7 +14,7 @@
         android:layout_gravity="center"
         android:contentDescription="@string/action_trigger"
         android:paddingBottom="36dp"
-        android:src="@mipmap/ic_big_red_button" />
+        android:src="@mipmap/ic_ripple_trigger" />
 
     <TextView
         android:layout_width="match_parent"
