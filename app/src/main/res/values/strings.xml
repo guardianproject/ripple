@@ -10,6 +10,6 @@
     <string name="release_to_confirm">Release to confirm</string>
     <string name="panic_test_successful">Good job! In a real scenario, you would have successfully completed a wipe.</string>
 
-    <string name="touch_anywhere_to_cancel">Touch anywhere to cancel</string>
+    <string name="tap_anywhere_to_cancel">Tap anywhere to cancel</string>
     <string name="done">Done</string>
 </resources>

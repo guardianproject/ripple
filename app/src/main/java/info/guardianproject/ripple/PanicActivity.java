@@ -123,6 +123,7 @@ public class PanicActivity extends Activity implements OnTouchListener {
                             @Override
                             public void run() {
                                 Intent intent = new Intent(getBaseContext(), CountDownActivity.class);
+                                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                                 intent.putExtra(EXTRA_TEST_RUN,
                                         getIntent().getBooleanExtra(EXTRA_TEST_RUN, false));
                                 startActivity(intent);

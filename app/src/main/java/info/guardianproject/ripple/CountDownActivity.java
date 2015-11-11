@@ -53,7 +53,7 @@ public class CountDownActivity extends Activity {
         mCountDownNumber = (TextView) findViewById(R.id.countDownNumber);
         mCountDownNumber.setTextSize(((float) scale) / 5);
 
-        mTouchToCancel = (TextView) findViewById(R.id.touch_anywhere_to_cancel);
+        mTouchToCancel = (TextView) findViewById(R.id.tap_anywhere_to_cancel);
         mCancelButton = (ImageView) findViewById(R.id.cancelButton);
 
         mCountDownAsyncTask = new CountDownAsyncTask();
