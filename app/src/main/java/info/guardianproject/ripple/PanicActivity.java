@@ -26,18 +26,17 @@ public class PanicActivity extends Activity implements OnTouchListener {
     public int yTranslationArrow;
     public int yCurrentTranslation;
     public int yDelta;
-    public int yOriginal;
     public Rect mArrowRect;
     public boolean mReleaseWillTrigger = false;
     private RelativeLayout mFrameRoot;
-    private View mArrow;
     private ImageView mPanicSwipeButton;
     private TextView mTextHint;
+    private ImageView mSwipeArrows;
+    private RippleDrawingView mRipples;
     private int mColorWhite;
     private int mColorRipple;
     private int mColorTriggered;
     private int mColorTriggeredText;
-    private int mColorRippleOutside;
     private int mRedStart;
     private int mGreenStart;
     private int mBlueStart;
@@ -58,10 +57,10 @@ public class PanicActivity extends Activity implements OnTouchListener {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_panic);
 
-        mArrow = findViewById(R.id.arrowSymbolView);
-
         mFrameRoot = (RelativeLayout) findViewById(R.id.frameRoot);
         mTextHint = (TextView) findViewById(R.id.textHint);
+        mSwipeArrows = (ImageView) findViewById(R.id.swipe_arrows);
+        mRipples = (RippleDrawingView) findViewById(R.id.ripples);
         mPanicSwipeButton = (ImageView) findViewById(R.id.panic_swipe_button);
         mPanicSwipeButton.setOnTouchListener(this);
 
@@ -78,7 +77,6 @@ public class PanicActivity extends Activity implements OnTouchListener {
         mColorRipple = r.getColor(R.color.ripple);
         mColorTriggered = r.getColor(R.color.triggered);
         mColorTriggeredText = r.getColor(R.color.triggered_text);
-        mColorRippleOutside = r.getColor(R.color.ripple_outside);
         mRedStart = (mColorRipple & 0x00ff0000) >> 16;
         mGreenStart = (mColorRipple & 0x0000ff00) >> 8;
         mBlueStart = mColorRipple & 0x000000ff;
@@ -99,12 +97,11 @@ public class PanicActivity extends Activity implements OnTouchListener {
                     mPanicSwipeButton.setPressed(true);
 
                     RelativeLayout.LayoutParams lParams = (RelativeLayout.LayoutParams) view.getLayoutParams();
-                    yOriginal = lParams.topMargin;
                     yDelta = Y - lParams.topMargin;
                     mReleaseWillTrigger = false;
 
                     mArrowRect = new Rect();
-                    if (!mArrow.getGlobalVisibleRect(mArrowRect)) {
+                    if (!mSwipeArrows.getGlobalVisibleRect(mArrowRect)) {
                         mArrowRect = null;
                     } else {
                         Rect symbolRect = new Rect();
@@ -117,6 +114,8 @@ public class PanicActivity extends Activity implements OnTouchListener {
 
                 case MotionEvent.ACTION_UP:
                     mPanicSwipeButton.setPressed(false);
+                    mRipples.setSize(0);
+                    mRipples.invalidate();
 
                     if (mReleaseWillTrigger) {
                         AnimationHelpers.scale(mPanicSwipeButton, 1.0f, 0, 200, new Runnable() {
@@ -151,6 +150,14 @@ public class PanicActivity extends Activity implements OnTouchListener {
                     mFrameRoot.setBackgroundColor((int) (0xff000000 + ((mRedStart + ((int) (mRedDelta * v))) << 16)
                             + ((mGreenStart + ((int) (mGreenDelta * v))) << 8)
                             + (mBlueStart + (mBlueDelta * v))));
+
+                    int rippleSize = yMaxTranslation / 2;
+                    if (yCurrentTranslation > rippleSize) {
+                        float k = rippleSize / (yMaxTranslation - rippleSize);
+                        mRipples.setSize((yCurrentTranslation - rippleSize) * k);
+                        mRipples.invalidate();
+                    }
+
                     if (yCurrentTranslation == yMaxTranslation) {
                         mReleaseWillTrigger = true;
                         mTextHint.setText(R.string.release_to_confirm);

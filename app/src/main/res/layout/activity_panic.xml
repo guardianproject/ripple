@@ -3,9 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/ripple"
-    android:paddingBottom="19dp"
-    android:paddingLeft="26dp"
-    android:paddingRight="26dp"
     android:paddingTop="19dp">
 
     <ImageView
@@ -15,33 +12,43 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
+        android:paddingEnd="19dp"
+        android:paddingRight="19dp"
         android:src="@drawable/ic_panic_cancel" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_centerInParent="true"
         android:paddingTop="34dp">
 
+        <info.guardianproject.ripple.RippleDrawingView
+            android:id="@+id/ripples"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true" />
+
         <ImageView
-            android:id="@+id/arrowSymbolView"
+            android:id="@+id/swipe_arrows"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="30dp"
-            android:src="@drawable/ic_panic_down" />
+            android:src="@drawable/ic_swipe_arrows" />
 
         <TextView
             android:id="@+id/textHint"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_above="@id/arrowSymbolView"
-            android:layout_centerInParent="true"
-            android:layout_marginBottom="30dp"
-            android:layout_marginTop="30dp"
+            android:layout_above="@id/swipe_arrows"
+            android:layout_centerHorizontal="true"
             android:gravity="center"
             android:text="@string/swipe_down_to_trigger"
             android:textAppearance="?android:attr/textAppearanceLarge"
