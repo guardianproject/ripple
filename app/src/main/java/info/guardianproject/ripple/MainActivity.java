@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView.addItemDecoration(new SimpleDividerItemDecoration(getApplicationContext()));
         recyclerView.setHasFixedSize(true); // does not change, except in onResume()
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new RecyclerView.Adapter<AppRowHolder>() {
