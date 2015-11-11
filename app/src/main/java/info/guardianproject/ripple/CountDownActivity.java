@@ -110,10 +110,10 @@ public class CountDownActivity extends Activity {
     }
 
     private void showDoneScreen() {
-        mCountDownNumber.setText(R.string.done);
-        mCountDownNumber.setTextSize(TypedValue.COMPLEX_UNIT_SP, 64);
+        mTouchToCancel.setText(R.string.done);
+        mTouchToCancel.setTextSize(TypedValue.COMPLEX_UNIT_SP, 64);
         mCancelButton.setVisibility(View.GONE);
-        mTouchToCancel.setVisibility(View.GONE);
+        mCountDownNumber.setVisibility(View.GONE);
     }
 
     private class CountDownAsyncTask extends AsyncTask<Void, Integer, Void> {

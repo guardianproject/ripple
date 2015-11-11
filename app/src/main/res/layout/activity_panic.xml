@@ -53,7 +53,7 @@
             android:text="@string/swipe_down_to_trigger"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="@android:color/white"
-            android:textSize="24sp" />
+            android:textSize="28sp" />
 
         <ImageButton
             android:id="@+id/panic_swipe_button"

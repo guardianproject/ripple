@@ -37,6 +37,6 @@
         android:text="@string/tap_anywhere_to_cancel"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/triggered_text"
-        android:textSize="24sp" />
+        android:textSize="28sp" />
 
 </RelativeLayout>
