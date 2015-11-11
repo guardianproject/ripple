@@ -31,7 +31,7 @@ public class PanicActivity extends Activity implements OnTouchListener {
     public boolean mReleaseWillTrigger = false;
     private RelativeLayout mFrameRoot;
     private View mArrow;
-    private ImageView mSymbol;
+    private ImageView mPanicSwipeButton;
     private TextView mTextHint;
     private int mColorWhite;
     private int mColorRipple;
@@ -62,8 +62,8 @@ public class PanicActivity extends Activity implements OnTouchListener {
 
         mFrameRoot = (RelativeLayout) findViewById(R.id.frameRoot);
         mTextHint = (TextView) findViewById(R.id.textHint);
-        mSymbol = (ImageView) findViewById(R.id.radioactiveSymbolView);
-        mSymbol.setOnTouchListener(this);
+        mPanicSwipeButton = (ImageView) findViewById(R.id.panic_swipe_button);
+        mPanicSwipeButton.setOnTouchListener(this);
 
         View btnCancel = findViewById(R.id.btnCancel);
         btnCancel.setOnClickListener(new OnClickListener() {
@@ -92,7 +92,7 @@ public class PanicActivity extends Activity implements OnTouchListener {
 
     @Override
     public boolean onTouch(View view, MotionEvent event) {
-        if (view == mSymbol) {
+        if (view == mPanicSwipeButton) {
             final int Y = (int) event.getRawY();
             switch (event.getAction() & MotionEvent.ACTION_MASK) {
                 case MotionEvent.ACTION_DOWN:
@@ -106,7 +106,7 @@ public class PanicActivity extends Activity implements OnTouchListener {
                         mArrowRect = null;
                     } else {
                         Rect symbolRect = new Rect();
-                        if (mSymbol.getGlobalVisibleRect(symbolRect)) {
+                        if (mPanicSwipeButton.getGlobalVisibleRect(symbolRect)) {
                             yMaxTranslation = mArrowRect.bottom - symbolRect.bottom;
                             yTranslationArrow = mArrowRect.top - symbolRect.bottom;
                         }
@@ -115,7 +115,7 @@ public class PanicActivity extends Activity implements OnTouchListener {
 
                 case MotionEvent.ACTION_UP:
                     if (mReleaseWillTrigger) {
-                        AnimationHelpers.scale(mSymbol, 1.0f, 0, 200, new Runnable() {
+                        AnimationHelpers.scale(mPanicSwipeButton, 1.0f, 0, 200, new Runnable() {
                             @Override
                             public void run() {
                                 Intent intent = new Intent(getBaseContext(), CountDownActivity.class);
@@ -126,7 +126,7 @@ public class PanicActivity extends Activity implements OnTouchListener {
                             }
                         });
                     } else {
-                        AnimationHelpers.translateY(mSymbol, yCurrentTranslation, 0, 200);
+                        AnimationHelpers.translateY(mPanicSwipeButton, yCurrentTranslation, 0, 200);
                         mFrameRoot.setBackgroundColor(mColorRipple);
                     }
                     mReleaseWillTrigger = false;
@@ -140,7 +140,7 @@ public class PanicActivity extends Activity implements OnTouchListener {
 
                 case MotionEvent.ACTION_MOVE:
                     yCurrentTranslation = Math.max(0, Math.min(Y - yDelta, yMaxTranslation));
-                    AnimationHelpers.translateY(mSymbol, yCurrentTranslation, yCurrentTranslation, 0);
+                    AnimationHelpers.translateY(mPanicSwipeButton, yCurrentTranslation, yCurrentTranslation, 0);
 
                     float v = (float) yCurrentTranslation / yMaxTranslation;
                     mFrameRoot.setBackgroundColor((int) (0xff000000 + ((mRedStart + ((int) (mRedDelta * v))) << 16)
