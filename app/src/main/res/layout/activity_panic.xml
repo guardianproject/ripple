@@ -15,7 +15,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:src="@mipmap/ic_panic_cancel" />
+        android:src="@drawable/ic_panic_cancel" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="30dp"
-            android:src="@mipmap/ic_panic_down" />
+            android:src="@drawable/ic_panic_down" />
 
         <TextView
             android:id="@+id/textHint"
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:src="@mipmap/ic_ripple_trigger" />
+            android:src="@drawable/ic_ripple_trigger" />
 
     </RelativeLayout>
 

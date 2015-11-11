@@ -14,7 +14,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:src="@mipmap/ic_panic_cancel" />
+        android:src="@drawable/ic_panic_cancel" />
 
     <TextView
         android:id="@+id/countDownNumber"
