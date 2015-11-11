@@ -2,8 +2,8 @@ package info.guardianproject.ripple;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Rect;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -33,9 +33,20 @@ public class PanicActivity extends Activity implements OnTouchListener {
     private View mArrow;
     private ImageView mSymbol;
     private TextView mTextHint;
-    private int mTextColorBlack;
-    private int mTextColorWhite;
-    private int mTextColorRed;
+    private int mColorWhite;
+    private int mColorRipple;
+    private int mColorTriggered;
+    private int mColorTriggeredText;
+    private int mColorRippleOutside;
+    private int mRedStart;
+    private int mGreenStart;
+    private int mBlueStart;
+    private int mRedEnd;
+    private int mGreenEnd;
+    private int mBlueEnd;
+    private int mRedDelta;
+    private int mGreenDelta;
+    private int mBlueDelta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,9 +73,21 @@ public class PanicActivity extends Activity implements OnTouchListener {
             }
         });
 
-        mTextColorBlack = getResources().getColor(android.R.color.black);
-        mTextColorWhite = getResources().getColor(android.R.color.white);
-        mTextColorRed = getResources().getColor(R.color.red);
+        Resources r = getResources();
+        mColorWhite = r.getColor(android.R.color.white);
+        mColorRipple = r.getColor(R.color.ripple);
+        mColorTriggered = r.getColor(R.color.triggered);
+        mColorTriggeredText = r.getColor(R.color.triggered_text);
+        mColorRippleOutside = r.getColor(R.color.ripple_outside);
+        mRedStart = (mColorRipple & 0x00ff0000) >> 16;
+        mGreenStart = (mColorRipple & 0x0000ff00) >> 8;
+        mBlueStart = mColorRipple & 0x000000ff;
+        mRedEnd = (mColorTriggered & 0x00ff0000) >> 16;
+        mGreenEnd = (mColorTriggered & 0x0000ff00) >> 8;
+        mBlueEnd = mColorTriggered & 0x000000ff;
+        mRedDelta = mRedEnd - mRedStart;
+        mGreenDelta = mGreenEnd - mGreenStart;
+        mBlueDelta = mBlueEnd - mBlueStart;
     }
 
     @Override
@@ -73,7 +96,6 @@ public class PanicActivity extends Activity implements OnTouchListener {
             final int Y = (int) event.getRawY();
             switch (event.getAction() & MotionEvent.ACTION_MASK) {
                 case MotionEvent.ACTION_DOWN:
-                    mSymbol.setColorFilter(mTextColorRed);
                     RelativeLayout.LayoutParams lParams = (RelativeLayout.LayoutParams) view.getLayoutParams();
                     yOriginal = lParams.topMargin;
                     yDelta = Y - lParams.topMargin;
@@ -92,7 +114,6 @@ public class PanicActivity extends Activity implements OnTouchListener {
                     break;
 
                 case MotionEvent.ACTION_UP:
-                    mSymbol.setColorFilter(null);
                     if (mReleaseWillTrigger) {
                         AnimationHelpers.scale(mSymbol, 1.0f, 0, 200, new Runnable() {
                             @Override
@@ -106,7 +127,7 @@ public class PanicActivity extends Activity implements OnTouchListener {
                         });
                     } else {
                         AnimationHelpers.translateY(mSymbol, yCurrentTranslation, 0, 200);
-                        mFrameRoot.setBackgroundColor(mTextColorBlack);
+                        mFrameRoot.setBackgroundColor(mColorRipple);
                     }
                     mReleaseWillTrigger = false;
                     break;
@@ -121,20 +142,18 @@ public class PanicActivity extends Activity implements OnTouchListener {
                     yCurrentTranslation = Math.max(0, Math.min(Y - yDelta, yMaxTranslation));
                     AnimationHelpers.translateY(mSymbol, yCurrentTranslation, yCurrentTranslation, 0);
 
-                    int v = (int) ((float) yCurrentTranslation / yMaxTranslation * 255.0);
-                    mFrameRoot.setBackgroundColor(0xff000000 + (v << 16) + (v << 8) + v);
+                    float v = (float) yCurrentTranslation / yMaxTranslation;
+                    mFrameRoot.setBackgroundColor((int) (0xff000000 + ((mRedStart + ((int) (mRedDelta * v))) << 16)
+                            + ((mGreenStart + ((int) (mGreenDelta * v))) << 8)
+                            + (mBlueStart + (mBlueDelta * v))));
                     if (yCurrentTranslation == yMaxTranslation) {
                         mReleaseWillTrigger = true;
-                        mTextHint.setText(R.string.release_to_trigger);
-                        mTextHint.setTextColor(mTextColorBlack);
-                        if (Build.VERSION.SDK_INT >= 14)
-                            mTextHint.setAllCaps(true);
+                        mTextHint.setText(R.string.release_to_confirm);
+                        mTextHint.setTextColor(mColorTriggeredText);
                     } else {
                         mReleaseWillTrigger = false;
                         mTextHint.setText(R.string.swipe_down_to_trigger);
-                        mTextHint.setTextColor(mTextColorWhite);
-                        if (Build.VERSION.SDK_INT >= 14)
-                            mTextHint.setAllCaps(false);
+                        mTextHint.setTextColor(mColorWhite);
                     }
                     break;
             }
