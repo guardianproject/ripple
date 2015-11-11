@@ -96,6 +96,8 @@ public class PanicActivity extends Activity implements OnTouchListener {
             final int Y = (int) event.getRawY();
             switch (event.getAction() & MotionEvent.ACTION_MASK) {
                 case MotionEvent.ACTION_DOWN:
+                    mPanicSwipeButton.setPressed(true);
+
                     RelativeLayout.LayoutParams lParams = (RelativeLayout.LayoutParams) view.getLayoutParams();
                     yOriginal = lParams.topMargin;
                     yDelta = Y - lParams.topMargin;
@@ -114,6 +116,8 @@ public class PanicActivity extends Activity implements OnTouchListener {
                     break;
 
                 case MotionEvent.ACTION_UP:
+                    mPanicSwipeButton.setPressed(false);
+
                     if (mReleaseWillTrigger) {
                         AnimationHelpers.scale(mPanicSwipeButton, 1.0f, 0, 200, new Runnable() {
                             @Override

@@ -48,13 +48,14 @@
             android:textColor="@android:color/white"
             android:textSize="24sp" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/panic_swipe_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/ic_ripple_trigger" />
+            android:background="@android:color/transparent"
+            android:src="@drawable/ripple_trigger_selector" />
 
     </RelativeLayout>
 

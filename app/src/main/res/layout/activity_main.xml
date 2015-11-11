@@ -7,14 +7,15 @@
     android:padding="@dimen/activity_horizontal_margin"
     tools:context=".MainActivity">
 
-    <ImageView
+    <ImageButton
         android:id="@+id/panic_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:background="@android:color/transparent"
         android:contentDescription="@string/action_trigger"
         android:paddingBottom="36dp"
-        android:src="@drawable/ic_ripple_trigger" />
+        android:src="@drawable/ripple_trigger_selector" />
 
     <TextView
         android:layout_width="match_parent"
