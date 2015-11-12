@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:background="@color/ripple"
     android:orientation="vertical"
-    android:padding="@dimen/activity_horizontal_margin"
     tools:context=".MainActivity">
 
     <ImageButton
@@ -21,16 +20,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:gravity="center"
+        android:background="@android:color/white"
+        android:gravity="left|end|center_horizontal"
+        android:padding="@dimen/activity_horizontal_margin"
         android:text="@string/responders"
-        android:textAllCaps="true"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="36sp"
-        android:textStyle="bold" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/triggered_text" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@android:color/white" />
 
 </LinearLayout>

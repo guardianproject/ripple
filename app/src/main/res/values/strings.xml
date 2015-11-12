@@ -12,4 +12,6 @@
 
     <string name="tap_anywhere_to_cancel">Tap anywhere to cancel</string>
     <string name="done">Done</string>
+    <string name="edit">Edit</string>
+    <string name="app_locks">App locks when triggered</string>
 </resources>
