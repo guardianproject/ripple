@@ -153,7 +153,7 @@ public class CountDownActivity extends Activity {
 
             if (mTestRun) {
                 new AlertDialog.Builder(activity)
-                        .setTitle(R.string.app_name)
+                        .setTitle(R.string.test_dialog_title)
                         .setMessage(R.string.panic_test_successful)
                         .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                             @Override
