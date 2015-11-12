@@ -1,14 +1,12 @@
 package info.guardianproject.ripple;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.graphics.Typeface;
-import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
@@ -35,6 +33,8 @@ import info.guardianproject.panic.PanicTrigger;
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = "MainActivity";
+
+    static String FIRST_RUN_PREF = "firstRun";
 
     private static final int CONNECT_RESULT = 0x01;
 
@@ -63,16 +63,27 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        View panicButton = findViewById(R.id.panic_button);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
+
+        View panicButton = findViewById(R.id.panic_button);
         panicButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, PanicActivity.class));
             }
         });
+
+        if (prefs.getBoolean(FIRST_RUN_PREF, true)) {
+            // delay the intro instructions so people see the main screen first
+            panicButton.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    startActivity(new Intent(MainActivity.this, TestActivity.class));
+                }
+            }, 2000);
+        }
     }
 
     @Override
@@ -134,8 +145,8 @@ public class MainActivity extends AppCompatActivity {
 
         switch (item.getItemId()) {
             case R.id.action_test_run:
-                Intent intent = new Intent(this, PanicActivity.class);
-                intent.putExtra(PanicActivity.EXTRA_TEST_RUN, true);
+                Intent intent = new Intent(this, TestActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intent);
                 return true;
         }

@@ -11,6 +11,8 @@
     <string name="panic_test_successful">Good job! In a real scenario, you would have successfully completed a wipe.</string>
 
     <string name="tap_anywhere_to_cancel">Tap anywhere to cancel</string>
+    <string name="tap_to_trigger">Tap to trigger a ripple</string>
+    <string name="only_a_test">This is only a test</string>
     <string name="done">Done</string>
     <string name="edit">Edit</string>
     <string name="app_locks">App locks when triggered</string>

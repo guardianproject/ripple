@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="66px" height="113px" viewBox="0 0 66 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15575) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_hand</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Brand" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Rectangle-115-+-Tap-to-trigger-a-rip-+-Imported-Layers" sketch:type="MSLayerGroup" transform="translate(-147.000000, -281.000000)" fill="#FFFFFF">
+            <g id="ic_hand" transform="translate(149.000000, 282.000000)" sketch:type="MSShapeGroup">
+                <path d="M58.4357323,44.4374751 L32.5529291,33.3303258 L32.5529291,8.64799095 C32.5529291,3.89194118 28.7367559,0.0364977376 24.0291496,0.0364977376 L23.9974173,0.0364977376 C19.289811,0.0364977376 15.4731496,3.89194118 15.4731496,8.64799095 L15.4731496,46.9923167 L2.54151181,57.1377014 C0.0400314961,59.1006878 -0.682,62.6074299 0.837732283,65.4147964 L13.5999685,88.9918416 C14.9097795,91.4110498 17.4210236,92.9153484 20.15,92.9153484 L54.3100472,92.9153484 C57.3587874,92.9153484 59.83,90.4187059 59.83,87.3385928 L61.7842205,49.5506109 C61.7842205,47.322276 60.4661102,45.3089819 58.4357323,44.4374751" id="Fill-1" filter="url(#filter-1)"></path>
+                <path d="M55.1858583,108.976326 L17.589937,108.976326 C15.5624882,108.976326 13.9187559,107.315679 13.9187559,105.267367 L13.9187559,99.3690362 C13.9187559,97.3202308 15.5624882,95.6595837 17.589937,95.6595837 L55.1858583,95.6595837 C57.2137953,95.6595837 58.8575276,97.3202308 58.8575276,99.3690362 L58.8575276,105.267367 C58.8575276,107.315679 57.2137953,108.976326 55.1858583,108.976326" id="Fill-2" filter="url(#filter-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

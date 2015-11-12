@@ -7,8 +7,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity
-            android:name=".MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,8 +27,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="info.guardianproject.ripple.MainActivity" />
         </activity>
-
         <activity android:name=".CountDownActivity" />
+        <activity
+            android:name=".TestActivity"
+            android:theme="@style/TestOverlay" />
     </application>
 
 </manifest>
