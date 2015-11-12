@@ -5,7 +5,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
-import android.content.res.Resources;
 import android.graphics.ColorMatrix;
 import android.graphics.ColorMatrixColorFilter;
 import android.graphics.Typeface;
@@ -18,6 +17,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SwitchCompat;
+import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -62,10 +62,11 @@ public class MainActivity extends AppCompatActivity {
         prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
         setContentView(R.layout.activity_main);
-        final Resources r = getResources();
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(r.getColor(R.color.ripple)));
 
         View panicButton = findViewById(R.id.panic_button);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("");
+        setSupportActionBar(toolbar);
         panicButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -181,7 +182,6 @@ public class MainActivity extends AppCompatActivity {
             onClickListener = new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Context context = MainActivity.this;
                     requestPackageName = rowPackageName;
 
                     if (respondersThatCanConnect.contains(rowPackageName)) {

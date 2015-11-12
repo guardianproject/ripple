@@ -2,7 +2,7 @@
     android:id="@+id/frameRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/ripple"
+    android:background="?attr/colorPrimary"
     android:paddingTop="19dp">
 
     <ImageView
@@ -52,7 +52,6 @@
             android:gravity="center"
             android:text="@string/swipe_down_to_trigger"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textColor="@android:color/white"
             android:textSize="28sp" />
 
         <ImageButton
