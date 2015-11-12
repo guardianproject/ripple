@@ -9,7 +9,7 @@
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="222dp">
+        android:layout_height="290dp">
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/collapsing_toolbar"
@@ -34,17 +34,43 @@
                 android:src="@drawable/ripple_trigger_selector"
                 app:layout_collapseMode="parallax" />
 
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:background="@android:color/white"
-                android:padding="@dimen/activity_horizontal_margin"
-                android:text="@string/responders"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:textColor="@color/triggered_text"
-                app:layout_collapseMode="parallax" />
+                android:orientation="vertical"
+                app:layout_collapseMode="parallax">
 
+                <TextView
+                    android:id="@+id/intro_instructions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:text="@string/intro_instructions"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/got_it"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|right"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="?attr/colorPrimary"
+                    android:text="@string/got_it"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:text="@string/responders"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/triggered_text" />
+            </LinearLayout>
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 

@@ -21,6 +21,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
     static String FIRST_RUN_PREF = "firstRun";
 
+    private static final String GOT_IT_PREF = "gotItPref";
     private static final int CONNECT_RESULT = 0x01;
 
     String responders[];
@@ -74,6 +76,23 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, PanicActivity.class));
             }
         });
+
+        final Button gotItButton = (Button) findViewById(R.id.got_it);
+        final View introInstructions = findViewById(R.id.intro_instructions);
+
+        if (prefs.getBoolean(GOT_IT_PREF, false)) {
+            gotItButton.setVisibility(View.GONE);
+            introInstructions.setVisibility(View.GONE);
+        } else {
+            gotItButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    gotItButton.setVisibility(View.GONE);
+                    introInstructions.setVisibility(View.GONE);
+                    prefs.edit().putBoolean(GOT_IT_PREF, true).apply();
+                }
+            });
+        }
 
         if (prefs.getBoolean(FIRST_RUN_PREF, true)) {
             // delay the intro instructions so people see the main screen first
