@@ -36,8 +36,6 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_trigger:
                 startActivity(new Intent(this, PanicActivity.class));
                 return true;
-            case R.id.action_responders:
-                return true;
             case R.id.action_test_run:
                 Intent intent = new Intent(this, PanicActivity.class);
                 intent.putExtra(PanicActivity.EXTRA_TEST_RUN, true);
