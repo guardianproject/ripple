@@ -55,7 +55,7 @@
                     android:id="@+id/got_it"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="end|right"
+                    android:layout_gravity="end"
                     android:layout_marginLeft="@dimen/activity_horizontal_margin"
                     android:layout_marginRight="@dimen/activity_horizontal_margin"
                     android:background="?attr/colorPrimary"

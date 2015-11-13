@@ -22,12 +22,11 @@ public class PanicActivity extends Activity implements OnTouchListener {
 
     public static final String EXTRA_TEST_RUN = "info.guardianproject.ripple.extra.TEST_RUN";
 
-    public int yMaxTranslation;
-    public int yTranslationArrow;
-    public int yCurrentTranslation;
-    public int yDelta;
-    public Rect mArrowRect;
-    public boolean mReleaseWillTrigger = false;
+    private int yMaxTranslation;
+    private int yCurrentTranslation;
+    private int yDelta;
+    private Rect mArrowRect;
+    private boolean mReleaseWillTrigger = false;
     private RelativeLayout mFrameRoot;
     private ImageView mPanicSwipeButton;
     private TextView mTextHint;
@@ -35,14 +34,10 @@ public class PanicActivity extends Activity implements OnTouchListener {
     private RippleDrawingView mRipples;
     private int mColorWhite;
     private int mColorRipple;
-    private int mColorTriggered;
     private int mColorTriggeredText;
     private int mRedStart;
     private int mGreenStart;
     private int mBlueStart;
-    private int mRedEnd;
-    private int mGreenEnd;
-    private int mBlueEnd;
     private int mRedDelta;
     private int mGreenDelta;
     private int mBlueDelta;
@@ -75,17 +70,17 @@ public class PanicActivity extends Activity implements OnTouchListener {
         Resources r = getResources();
         mColorWhite = r.getColor(android.R.color.white);
         mColorRipple = r.getColor(R.color.ripple);
-        mColorTriggered = r.getColor(R.color.triggered);
+        int colorTriggered = r.getColor(R.color.triggered);
         mColorTriggeredText = r.getColor(R.color.triggered_text);
         mRedStart = (mColorRipple & 0x00ff0000) >> 16;
         mGreenStart = (mColorRipple & 0x0000ff00) >> 8;
         mBlueStart = mColorRipple & 0x000000ff;
-        mRedEnd = (mColorTriggered & 0x00ff0000) >> 16;
-        mGreenEnd = (mColorTriggered & 0x0000ff00) >> 8;
-        mBlueEnd = mColorTriggered & 0x000000ff;
-        mRedDelta = mRedEnd - mRedStart;
-        mGreenDelta = mGreenEnd - mGreenStart;
-        mBlueDelta = mBlueEnd - mBlueStart;
+        int redEnd = (colorTriggered & 0x00ff0000) >> 16;
+        int greenEnd = (colorTriggered & 0x0000ff00) >> 8;
+        int blueEnd = colorTriggered & 0x000000ff;
+        mRedDelta = redEnd - mRedStart;
+        mGreenDelta = greenEnd - mGreenStart;
+        mBlueDelta = blueEnd - mBlueStart;
     }
 
     @Override
@@ -107,7 +102,6 @@ public class PanicActivity extends Activity implements OnTouchListener {
                         Rect symbolRect = new Rect();
                         if (mPanicSwipeButton.getGlobalVisibleRect(symbolRect)) {
                             yMaxTranslation = mArrowRect.bottom - symbolRect.bottom;
-                            yTranslationArrow = mArrowRect.top - symbolRect.bottom;
                         }
                     }
                     break;

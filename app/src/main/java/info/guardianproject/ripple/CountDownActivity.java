@@ -24,7 +24,7 @@ public class CountDownActivity extends Activity {
 
     private static final String KEY_COUNT_DOWN_DONE = "keyCountDownDone";
 
-    CountDownAsyncTask mCountDownAsyncTask;
+    private CountDownAsyncTask mCountDownAsyncTask;
     private TextView mCountDownNumber;
     private TextView mTouchToCancel;
     private ImageView mCancelButton;
@@ -141,6 +141,7 @@ public class CountDownActivity extends Activity {
                     }
                 }
             } catch (InterruptedException e) {
+                // ignored
             }
             return null;
         }

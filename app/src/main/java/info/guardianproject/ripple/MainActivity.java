@@ -35,21 +35,21 @@ import info.guardianproject.panic.PanicTrigger;
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = "MainActivity";
 
-    static String FIRST_RUN_PREF = "firstRun";
+    static final String FIRST_RUN_PREF = "firstRun";
 
     private static final String GOT_IT_PREF = "gotItPref";
     private static final int CONNECT_RESULT = 0x01;
 
-    String responders[];
-    Set<String> connectedResponders;
-    Set<String> respondersThatCanConnect;
-    ArrayList<CharSequence> appLabelList;
-    ArrayList<Drawable> iconList;
+    private String responders[];
+    private Set<String> connectedResponders;
+    private Set<String> respondersThatCanConnect;
+    private ArrayList<CharSequence> appLabelList;
+    private ArrayList<Drawable> iconList;
 
-    SharedPreferences prefs;
+    private SharedPreferences prefs;
 
-    String requestPackageName;
-    String requestAction;
+    private String requestPackageName;
+    private String requestAction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -109,7 +109,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        responders = PanicTrigger.getAllResponders(this).toArray(new String[0]);
+        Set<String> a = PanicTrigger.getAllResponders(this);
+        responders = a.toArray(new String[a.size()]);
         connectedResponders = PanicTrigger.getConnectedResponders(this);
         respondersThatCanConnect = PanicTrigger.getRespondersThatCanConnect(this);
 
@@ -195,12 +196,12 @@ public class MainActivity extends AppCompatActivity {
 
     class AppRowHolder extends RecyclerView.ViewHolder {
 
-        private View.OnClickListener onClickListener;
-        private SwitchCompat onSwitch;
-        private TextView editableLabel;
+        private final View.OnClickListener onClickListener;
+        private final SwitchCompat onSwitch;
+        private final TextView editableLabel;
+        private final ImageView iconView;
+        private final TextView appLabelView;
         private String rowPackageName;
-        private ImageView iconView;
-        private TextView appLabelView;
 
         AppRowHolder(final View row) {
             super(row);
