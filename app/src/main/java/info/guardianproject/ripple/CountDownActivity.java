@@ -1,5 +1,6 @@
 package info.guardianproject.ripple;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
@@ -31,6 +32,9 @@ public class CountDownActivity extends Activity {
     private int mCountDown = 0xff;
     private boolean mTestRun;
 
+    // lint is failing to see that setOnSystemUiVisibilityChangeListener is wrapped in
+    // if (Build.VERSION.SDK_INT >= 11).
+    @TargetApi(11)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
