@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int CONNECT_RESULT = 0x01;
 
     private String responders[];
-    private Set<String> connectedResponders;
+    private Set<String> enabledResponders;
     private Set<String> respondersThatCanConnect;
     private ArrayList<CharSequence> appLabelList;
     private ArrayList<Drawable> iconList;
@@ -214,15 +214,6 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     requestPackageName = rowPackageName;
-
-                    if (respondersThatCanConnect.contains(rowPackageName)) {
-                        requestAction = Panic.ACTION_CONNECT;
-                        // addReceiver() happens in onActivityResult()
-                        // TODO this requires row.xml to have a separate TextView and Switch
-                        //} else {
-                        //    requestAction = Panic.ACTION_DISCONNECT;
-                        //    PanicTrigger.removeConnectedResponder(context, requestPackageName);
-                    }
                     Intent intent = new Intent(requestAction);
                     intent.setPackage(requestPackageName);
                     // TODO add TrustedIntents here
@@ -233,8 +224,12 @@ public class MainActivity extends AppCompatActivity {
             onSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton compoundButton, boolean enabled) {
-                    prefs.edit().putBoolean(rowPackageName, enabled).apply();
                     setEnabled(enabled);
+                    if (enabled) {
+                        PanicTrigger.enableResponder(getBaseContext(), rowPackageName);
+                    } else {
+                        PanicTrigger.disableResponder(getBaseContext(), rowPackageName);
+                    }
                 }
             });
         }
@@ -278,7 +273,7 @@ public class MainActivity extends AppCompatActivity {
                 if (Build.VERSION.SDK_INT >= 14)
                     editableLabel.setAllCaps(false);
             }
-            boolean enabled = prefs.getBoolean(packageName, true);
+            boolean enabled = enabledResponders.contains(packageName);
             onSwitch.setChecked(enabled);
             setEnabled(enabled);
         }
