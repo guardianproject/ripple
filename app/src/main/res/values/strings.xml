@@ -18,5 +18,5 @@
     <string name="done">Done</string>
     <string name="edit">Edit</string>
     <string name="got_it">Got it</string>
-    <string name="app_locks">App locks when triggered</string>
+    <string name="app_hides">App hides when triggered</string>
 </resources>

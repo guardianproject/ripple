@@ -15,5 +15,5 @@
   <string name="done">Kész</string>
   <string name="edit">Szerkesztés</string>
   <string name="got_it">Értettem</string>
-  <string name="app_locks">Az alkalmazások zárolnak előidézéskor</string>
+  <string name="app_hides">Az alkalmazások zárolnak előidézéskor</string>
 </resources>

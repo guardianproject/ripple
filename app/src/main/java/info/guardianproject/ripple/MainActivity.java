@@ -274,7 +274,7 @@ public class MainActivity extends AppCompatActivity {
                 iconView.setOnClickListener(null);
                 appLabelView.setOnClickListener(null);
                 editableLabel.setOnClickListener(null);
-                editableLabel.setText(R.string.app_locks);
+                editableLabel.setText(R.string.app_hides);
                 editableLabel.setTypeface(null, Typeface.NORMAL);
                 if (Build.VERSION.SDK_INT >= 14)
                     editableLabel.setAllCaps(false);

@@ -34,7 +34,7 @@
             android:id="@+id/editableLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/app_locks"
+            android:text="@string/app_hides"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="@android:color/darker_gray" />
     </LinearLayout>
