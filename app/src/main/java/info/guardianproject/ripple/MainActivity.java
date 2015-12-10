@@ -28,6 +28,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Set;
+import java.util.LinkedHashSet;
 
 import info.guardianproject.panic.Panic;
 import info.guardianproject.panic.PanicTrigger;
@@ -109,10 +110,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
 
-        Set<String> a = PanicTrigger.getAllResponders(this);
-        responders = a.toArray(new String[a.size()]);
-        connectedResponders = PanicTrigger.getConnectedResponders(this);
+        enabledResponders = PanicTrigger.getEnabledResponders(this);
         respondersThatCanConnect = PanicTrigger.getRespondersThatCanConnect(this);
+
+        // sort enabled first, then disabled
+        LinkedHashSet<String> a = new LinkedHashSet<String>(enabledResponders);
+        LinkedHashSet<String> b = new LinkedHashSet(PanicTrigger.getAllResponders(this));
+        b.removeAll(enabledResponders);
+        a.addAll(b);
+        responders = a.toArray(new String[a.size()]);
 
         PackageManager pm = getPackageManager();
         appLabelList = new ArrayList<CharSequence>(responders.length);
