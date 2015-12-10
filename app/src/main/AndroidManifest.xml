@@ -6,6 +6,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:launchMode="singleTask"
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -22,14 +23,18 @@
         </activity>
         <activity
             android:name=".PanicActivity"
+            android:launchMode="singleTask"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="info.guardianproject.ripple.MainActivity" />
         </activity>
-        <activity android:name=".CountDownActivity" />
+        <activity
+            android:name=".CountDownActivity"
+            android:launchMode="singleTask" />
         <activity
             android:name=".TestActivity"
+            android:launchMode="singleTask"
             android:theme="@style/TestOverlay" />
     </application>
 
