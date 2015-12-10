@@ -170,6 +170,7 @@ public class CountDownActivity extends Activity {
             } else {
                 PanicTrigger.sendTrigger(activity);
                 Toast.makeText(activity, R.string.done, Toast.LENGTH_LONG).show();
+                ExitActivity.exitAndRemoveFromRecentApps(activity);
             }
         }
     }

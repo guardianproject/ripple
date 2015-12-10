@@ -36,6 +36,9 @@
             android:name=".TestActivity"
             android:launchMode="singleTask"
             android:theme="@style/TestOverlay" />
+        <activity
+            android:name=".ExitActivity"
+            android:theme="@android:style/Theme.NoDisplay" />
     </application>
 
 </manifest>
