@@ -84,6 +84,13 @@ public class PanicActivity extends Activity implements OnTouchListener {
     }
 
     @Override
+    protected void onPause() {
+        super.onPause();
+        // if the user navigates away, reset the trigger process
+        finish();
+    }
+
+    @Override
     public boolean onTouch(View view, MotionEvent event) {
         if (view == mPanicSwipeButton) {
             final int Y = (int) event.getRawY();
