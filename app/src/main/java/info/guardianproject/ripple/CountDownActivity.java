@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
@@ -170,7 +171,16 @@ public class CountDownActivity extends Activity {
             } else {
                 PanicTrigger.sendTrigger(activity);
                 Toast.makeText(activity, R.string.done, Toast.LENGTH_LONG).show();
-                ExitActivity.exitAndRemoveFromRecentApps(activity);
+
+                /* This app needs to stay running for a while to make sure that it sends
+                 * all of the Intents to Activities, Services, and BroadcastReceivers. If
+                 * it exits too soon, they will not get sent. */
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        ExitActivity.exitAndRemoveFromRecentApps(activity);
+                    }
+                }, 10000); // 10 second delay
             }
         }
     }
