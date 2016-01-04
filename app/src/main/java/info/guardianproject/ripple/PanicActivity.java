@@ -23,7 +23,6 @@ public class PanicActivity extends Activity implements OnTouchListener {
     private int yMaxTranslation;
     private int yCurrentTranslation;
     private int yDelta;
-    private Rect mArrowRect;
     private boolean mReleaseWillTrigger = false;
     private RelativeLayout mFrameRoot;
     private ImageView mPanicSwipeButton;
@@ -100,7 +99,7 @@ public class PanicActivity extends Activity implements OnTouchListener {
                     yDelta = Y - lParams.topMargin;
                     mReleaseWillTrigger = false;
 
-                    mArrowRect = new Rect();
+                    Rect mArrowRect = new Rect();
                     if (!mSwipeArrows.getGlobalVisibleRect(mArrowRect)) {
                         mArrowRect = null;
                     } else {
