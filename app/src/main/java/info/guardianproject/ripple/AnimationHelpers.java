@@ -1,4 +1,4 @@
-package info.guardianproject.securereaderinterface.uiutil;
+package info.guardianproject.ripple;
 
 import android.animation.Animator;
 import android.animation.Animator.AnimatorListener;

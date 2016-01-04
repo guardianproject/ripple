@@ -15,8 +15,6 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import info.guardianproject.securereaderinterface.uiutil.AnimationHelpers;
-
 public class PanicActivity extends Activity implements OnTouchListener {
     public static final String TAG = "PanicActivity";
 
