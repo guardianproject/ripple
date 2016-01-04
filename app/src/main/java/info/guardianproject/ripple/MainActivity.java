@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
 
         // sort enabled first, then disabled
         LinkedHashSet<String> a = new LinkedHashSet<String>(enabledResponders);
-        LinkedHashSet<String> b = new LinkedHashSet(PanicTrigger.getAllResponders(this));
+        LinkedHashSet<String> b = new LinkedHashSet<String>(PanicTrigger.getAllResponders(this));
         b.removeAll(enabledResponders);
         a.addAll(b);
         responders = a.toArray(new String[a.size()]);
