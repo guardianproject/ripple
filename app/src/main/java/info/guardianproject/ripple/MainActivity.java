@@ -50,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
     private SharedPreferences prefs;
 
     private String requestPackageName;
-    private String requestAction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -183,20 +182,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode != Activity.RESULT_OK)
-            return;
-
-        switch (requestCode) {
-            case CONNECT_RESULT:
-                /*
-                 * Only ACTION_CONNECT needs the confirmation from
-                 * onActivityResult(), listView.setOnItemClickListener handles
-                 * all the other adding and removing of panic responders.
-                 */
-                if (TextUtils.equals(requestAction, Panic.ACTION_CONNECT)) {
-                    PanicTrigger.addConnectedResponder(this, requestPackageName);
-                }
-                break;
+        if (resultCode == Activity.RESULT_OK && requestCode == CONNECT_RESULT) {
+            PanicTrigger.addConnectedResponder(this, requestPackageName);
         }
     }
 
@@ -220,7 +207,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     requestPackageName = rowPackageName;
-                    Intent intent = new Intent(requestAction);
+                    Intent intent = new Intent(Panic.ACTION_CONNECT);
                     intent.setPackage(requestPackageName);
                     // TODO add TrustedIntents here
                     startActivityForResult(intent, CONNECT_RESULT);
