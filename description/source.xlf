@@ -14,7 +14,13 @@
         <note from="developer">This is limited by Google to 80 characters</note>
       </trans-unit>
       <trans-unit id="intro">
-        <source>Ripple is a "panic button" that can send it's trigger message to any app that is a "panic responder".  Such apps can do things like lock, disguise themselves, delete private data, send an emergency message, and more.  It is meant for situations where there is time to react, but where users need to be sure it is not mistakenly set off.  Here are two example scenarios:</source>
+        <source>Ripple is a "panic button" that can send it's trigger message to any app that is a "panic responder".  Such apps can do things like lock, disguise themselves, delete private data, send an emergency message, and more.  It is meant for situations where there is time to react, but where users need to be sure it is not mistakenly set off.</source>
+      </trans-unit>
+      <trans-unit id="betaapp">
+        <source>This is a BETA version of this app!  We are working now to add support to as many other apps as possible.  ChatSecure, Orweb, Umbrella, and Zom already have support, these apps are coming soon: Courier, PanicButton, OpenKeychain, Orfox, SMSSecure, and StoryMaker.</source>
+      </trans-unit>
+      <trans-unit id="intro1">
+        <source>Here are two example scenarios:</source>
       </trans-unit>
       <trans-unit id="intro2">
         <source>* An organization gets regularly raided by the security forces, who search all of the computers and mobile devices on the premises. The organization usually has at least a minute or two of warning before a raid starts. They need a very reliable way to trigger wiping all of the data from the sensitive apps.</source>
