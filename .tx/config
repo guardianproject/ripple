@@ -6,7 +6,7 @@ lang_map = af_ZA: af-rZA, am_ET: am-rET, ar_AE: ar-rAE, ar_BH: ar-rBH, ar_DZ: ar
 [rippleapp.stringsxml]
 file_filter = app/src/main/res/values-<lang>/strings.xml
 host = https://www.transifex.com
-source_file = res/values/strings.xml
+source_file = app/src/main/res/values/strings.xml
 source_lang = en
 
 [rippleapp.description]
