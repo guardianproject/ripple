@@ -2,9 +2,12 @@ package info.guardianproject.ripple;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Rect;
 import android.os.Bundle;
+import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -14,6 +17,9 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import info.guardianproject.panic.PanicTrigger;
 
 public class PanicActivity extends Activity implements OnTouchListener {
     public static final String TAG = "PanicActivity";
@@ -116,17 +122,35 @@ public class PanicActivity extends Activity implements OnTouchListener {
                     mRipples.invalidate();
 
                     if (mReleaseWillTrigger) {
-                        AnimationHelpers.scale(mPanicSwipeButton, 1.0f, 0, 200, new Runnable() {
-                            @Override
-                            public void run() {
-                                Intent intent = new Intent(getBaseContext(), CountDownActivity.class);
-                                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                                intent.putExtra(EXTRA_TEST_RUN,
-                                        getIntent().getBooleanExtra(EXTRA_TEST_RUN, false));
-                                startActivity(intent);
-                                finish();
-                            }
-                        });
+                        SharedPreferences prefs =
+                                PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+
+                        if (prefs.getBoolean(getString(R.string.pref_countdown_enabled), false)) {
+                            AnimationHelpers.scale(mPanicSwipeButton, 1.0f, 0, 200, new Runnable() {
+                                @Override
+                                public void run() {
+                                    Intent intent = new Intent(getBaseContext(), CountDownActivity.class);
+                                    intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                                    intent.putExtra(EXTRA_TEST_RUN,
+                                            getIntent().getBooleanExtra(EXTRA_TEST_RUN, false));
+                                    startActivity(intent);
+                                    finish();
+                                }
+                            });
+                        } else {
+                            PanicTrigger.sendTrigger(PanicActivity.this);
+                            Toast.makeText(PanicActivity.this, R.string.done, Toast.LENGTH_LONG).show();
+
+                            /* This app needs to stay running for a while to make sure that it sends
+                             * all of the Intents to Activities, Services, and BroadcastReceivers. If
+                             * it exits too soon, they will not get sent. */
+                            new Handler().postDelayed(new Runnable() {
+                                @Override
+                                public void run() {
+                                    ExitActivity.exitAndRemoveFromRecentApps(PanicActivity.this);
+                                }
+                            }, 10000); // 10 second delay
+                        }
                     } else {
                         AnimationHelpers.translateY(mPanicSwipeButton, yCurrentTranslation, 0, 200);
                         mFrameRoot.setBackgroundColor(mColorRipple);

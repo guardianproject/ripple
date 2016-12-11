@@ -39,6 +39,9 @@
         <activity
             android:name=".ExitActivity"
             android:theme="@android:style/Theme.NoDisplay" />
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>
