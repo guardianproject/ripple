@@ -16,4 +16,9 @@
   <string name="edit">Szerkesztés</string>
   <string name="got_it">Értettem</string>
   <string name="app_hides">Az alkalmazások zárolnak előidézéskor</string>
+
+  <string name="action_settings">Beállítások</string>
+  <string name="pref_countdown_enabled">countdown_enabled</string>
+  <string name="pref_countdown_enabled_summary">Jelölje be, ha a visszaszámlálás kell leadni, mielőtt a ravaszt</string>
+  <string name="countdown">Visszaszámlálás</string>
 </resources>
