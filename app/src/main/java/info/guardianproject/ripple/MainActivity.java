@@ -31,6 +31,7 @@ import java.util.Set;
 
 import info.guardianproject.panic.Panic;
 import info.guardianproject.panic.PanicTrigger;
+import info.guardianproject.ripple.settings.SettingsActivity;
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = "MainActivity";
@@ -166,11 +167,16 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Intent intent;
 
         switch (item.getItemId()) {
             case R.id.action_test_run:
-                Intent intent = new Intent(this, TestActivity.class);
+                intent = new Intent(this, TestActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
+                return true;
+            case R.id.action_settings:
+                intent = new Intent(MainActivity.this, SettingsActivity.class);
                 startActivity(intent);
                 return true;
         }

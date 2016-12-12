@@ -39,6 +39,31 @@
         <activity
             android:name=".ExitActivity"
             android:theme="@android:style/Theme.NoDisplay" />
+        <activity
+            android:name=".settings.SettingsActivity"
+            android:label="@string/app_name" />
+
+        <receiver
+            android:name=".lockedscreen.PasswordFailsReceiver"
+            android:enabled="true"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/policies" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+                <action android:name="android.app.action.ACTION_PASSWORD_FAILED" />
+                <action android:name="android.app.action.ACTION_PASSWORD_SUCCEEDED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".lockedscreen.ScreenOnReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
