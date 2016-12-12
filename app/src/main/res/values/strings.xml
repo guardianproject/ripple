@@ -24,4 +24,14 @@
     <string name="pref_countdown_enabled">countdown_enabled</string>
     <string name="pref_countdown_enabled_summary">Select if a countdown should be fired before trigger</string>
     <string name="countdown">Countdown</string>
+
+    <string name="pref_login_action">login_action</string>
+    <string name="login_action">Login failure action</string>
+    <string name="pref_login_actions_summary">Run after login failure</string>
+
+    <string name="pref_login_failures_number">login_failures_number</string>
+    <string name="login_failures_number">Failures number</string>
+    <string name="pref_login_failures_numbre_summary">Number of times the login must fail.</string>
+
+    <string name="monitor_login_failues">Monitor login failures</string>
 </resources>

@@ -5,4 +5,19 @@
         android:key="@string/pref_countdown_enabled"
         android:title="@string/countdown"
         android:summary="@string/pref_countdown_enabled_summary"/>
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="@string/pref_login_action"
+        android:title="@string/login_action"
+        android:summary="@string/pref_login_actions_summary"/>
+
+    <EditTextPreference
+        android:dependency="@string/pref_login_action"
+        android:inputType="number"
+        android:defaultValue="2"
+        android:title="@string/login_failures_number"
+        android:summary="@string/pref_login_failures_numbre_summary"
+        android:numeric="integer"
+        android:key="@string/pref_login_failures_number" />
 </PreferenceScreen>
