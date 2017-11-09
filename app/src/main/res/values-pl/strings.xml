@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="app_name">Ripple</string>
+  <string name="action_trigger">Uruchom!</string>
+  <string name="action_test_run">Testowe uruchomienie</string>
+  <string name="test_dialog_title">Testowe uruchomienie Ripple</string>
+  <string name="responders">Odbiorcy Ripple</string>
+  <string name="swipe_down_to_trigger">Przeciągnij w dół aby wywołać</string>
+  <string name="release_to_confirm">Puść aby potwierdzić</string>
+  <string name="panic_test_successful">Dobra robota! W rzeczywistości, twoje uruchomienie odbiorą wszystkie aplikacje współpracujące z Ripple. Wszystkie te aplikacje odpowiedzą zablokowaniem lub innymi zachowaniami, które skonfigurujesz.</string>
+  <string name="intro_instructions">Kiedy wywołasz Ripple, wybrane aplikacje zareagują. Dotknij EDYTUJ aby zobaczyć i zmianić ustawienia tych aplikacji.</string>
+  <string name="tap_anywhere_to_cancel">Kliknij gdziekolwiek by anulować</string>
+  <string name="tap_to_trigger">Kliknij by wywołać Ripple</string>
+  <string name="only_a_test">To tylko test</string>
+  <string name="done">Gotowe</string>
+  <string name="edit">Edytuj</string>
+  <string name="got_it">Zrozumiałem</string>
+  <string name="app_locks">Aplikacja zostanie zablokowana, gdy uruchomione</string>
+</resources>

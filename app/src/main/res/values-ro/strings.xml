@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="app_name">Ripple</string>
+  <string name="action_trigger">Declanșează!</string>
+  <string name="action_test_run">Test de probă</string>
+  <string name="test_dialog_title">Test de probă Ripple</string>
+  <string name="responders">Respondenți Ripple</string>
+  <string name="swipe_down_to_trigger">Trage în jos pentru a declanșa</string>
+  <string name="release_to_confirm">Eliberează pentru confirmare</string>
+  <string name="panic_test_successful">Foarte bine! Într-un scenariu real, declanșatorul tău s-ar fi propagat la toate aplicațiile respondente. Iar aceste aplicații ar răspunde apoi prin blocare sau orice alt comportament pe care l-ai configurat.</string>
+  <string name="intro_instructions">Când declanșezi un \"ripple\", aplicațiile alese reacționează. Apasă EDITEAZĂ pentu a vedea și a schimba comportamentul aplicațiilor</string>
+  <string name="tap_anywhere_to_cancel">Apasă oriunde pentru a anula</string>
+  <string name="tap_to_trigger">Apasă pentru a declanșa un \"ripple\"</string>
+  <string name="only_a_test">Acesta este doar un test</string>
+  <string name="done">Gata</string>
+  <string name="edit">Editează</string>
+  <string name="got_it">Am înțeles</string>
+  <string name="app_locks">Aplicația se blocheazp când este declanșată</string>
+</resources>
