@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <!-- Our translations are crowd-sourced -->
+    <issue id="MissingTranslation" severity="ignore"/>
+
+    <issue id="ImpliedQuantity" severity="error"/>
+    <issue id="UnusedResources" severity="error"/>
+    <issue id="AppCompatMethod" severity="error"/>
+    <issue id="NestedScrolling" severity="error"/>
+    <issue id="StringFormatCount" severity="error"/>
+    <issue id="UnsafeProtectedBroadcastReceiver" severity="error"/>
+
+    <issue id="PluralsCandidate" severity="error"/>
+    <issue id="HardcodedText" severity="error"/>
+
+    <!-- both the correct and deprecated locales need to be present for
+         them to be recognized on all devices -->
+    <issue id="LocaleFolder" severity="error">
+        <ignore path="src/main/res/values-he"/>
+        <ignore path="src/main/res/values-id"/>
+    </issue>
+
+    <issue id="SetWorldReadable" severity="error"/>
+    <issue id="ProtectedPermissions" severity="error"/>
+    <issue id="SetTextI18n" severity="error"/>
+</lint>
