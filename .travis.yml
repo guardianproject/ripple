@@ -26,7 +26,6 @@ android:
 script:
   # 'assemble' everything and run all checks that do not require a device/emulator
   - gradle build
-  - ./make-release-build
   # start the emulator after the build to conserve memory
   - android list targets
   #- echo no | android create avd --force -n test -t android-21 --abi armeabi-v7a
