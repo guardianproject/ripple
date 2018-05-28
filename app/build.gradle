@@ -30,6 +30,10 @@ android {
     compileSdkVersion 23
     buildToolsVersion "24.0.0"
 
+    aaptOptions {
+        cruncherEnabled = false
+    }
+
     defaultConfig {
         applicationId "info.guardianproject.ripple"
         minSdkVersion 10
