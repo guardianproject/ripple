@@ -16,7 +16,7 @@ android:
     - tools
     - platform-tools
     - extra-android-m2repository
-    - build-tools-23.0.2
+    - build-tools-24.0.0
     - android-23
   licenses:
     # only approve the free software licenses
@@ -25,7 +25,7 @@ android:
 
 script:
   # 'assemble' everything and run all checks that do not require a device/emulator
-  - gradle build
+  - ./gradlew build
   # start the emulator after the build to conserve memory
   - android list targets
   #- echo no | android create avd --force -n test -t android-21 --abi armeabi-v7a
