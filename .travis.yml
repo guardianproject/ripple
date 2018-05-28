@@ -11,14 +11,6 @@ env:
     # there is time for the build to report the error.
     - ADB_INSTALL_TIMEOUT=5
 
-jdk:
-  # the release build infrastructure uses OpenJDK from Debian
-  - openjdk7
-  # many developers use the Oracle JDK
-  # (disabled because Travis cannot reliably start the emulator with these)
-  #- oraclejdk8
-  #- oraclejdk7
-
 android:
   components:
     - tools
