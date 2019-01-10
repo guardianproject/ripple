@@ -3,24 +3,33 @@
     <!-- Our translations are crowd-sourced -->
     <issue id="MissingTranslation" severity="ignore"/>
 
-    <issue id="ImpliedQuantity" severity="error"/>
-    <issue id="UnusedResources" severity="error"/>
+    <!-- promote to errors -->
     <issue id="AppCompatMethod" severity="error"/>
-    <issue id="NestedScrolling" severity="error"/>
-    <issue id="StringFormatCount" severity="error"/>
-    <issue id="UnsafeProtectedBroadcastReceiver" severity="error"/>
-
-    <issue id="PluralsCandidate" severity="error"/>
+    <issue id="DefaultLocale" severity="error"/>
+    <issue id="GetInstance" severity="error"/>
     <issue id="HardcodedText" severity="error"/>
+    <issue id="HardwareIds" severity="error"/>
+    <issue id="ImpliedQuantity" severity="error"/>
+    <issue id="InlinedApi" severity="error"/>
+    <issue id="NestedScrolling" severity="error"/>
+    <issue id="NewApi" severity="error"/>
+    <issue id="PackageManagerGetSignatures" severity="error"/>
+    <issue id="PluralsCandidate" severity="error"/>
+    <issue id="ProtectedPermissions" severity="error"/>
+    <issue id="SetTextI18n" severity="error"/>
+    <issue id="SetWorldReadable" severity="error"/>
+    <issue id="SimpleDateFormat" severity="error"/>
+    <issue id="StringFormatCount" severity="error"/>
+    <issue id="TrustAllX509TrustManager" severity="error"/>
+    <issue id="Typos" severity="error"/>
+    <issue id="UnsafeProtectedBroadcastReceiver" severity="error"/>
+    <issue id="UnusedResources" severity="error"/>
 
-    <!-- both the correct and deprecated locales need to be present for
+    <!-- both the correct and deprecated he/id locales need to be present for
          them to be recognized on all devices -->
     <issue id="LocaleFolder" severity="error">
         <ignore path="src/main/res/values-he"/>
         <ignore path="src/main/res/values-id"/>
     </issue>
 
-    <issue id="SetWorldReadable" severity="error"/>
-    <issue id="ProtectedPermissions" severity="error"/>
-    <issue id="SetTextI18n" severity="error"/>
 </lint>
