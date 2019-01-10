@@ -12,5 +12,4 @@
   <string name="done">完成</string>
   <string name="edit">编辑</string>
   <string name="got_it">明白了</string>
-  <string name="app_locks">触发后 App 会被锁定</string>
 </resources>
