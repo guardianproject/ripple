@@ -15,4 +15,5 @@
   <string name="done">Fait</string>
   <string name="edit">Modifier</string>
   <string name="got_it">D\'accord</string>
+  <string name="app_locks">L\'appli se verrouille lors d\'un déclenchement</string>
 </resources>

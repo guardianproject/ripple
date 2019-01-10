@@ -15,4 +15,5 @@
   <string name="done">Gotowe</string>
   <string name="edit">Edytuj</string>
   <string name="got_it">Zrozumiałem</string>
+  <string name="app_locks">Aplikacja zostanie zablokowana, gdy uruchomione</string>
 </resources>

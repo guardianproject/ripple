@@ -1,13 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <resources>
-
+    <string name="app_name">Ripple</string>
     <string name="action_trigger">Auslösen!</string>
     <string name="action_test_run">Probedurchlauf</string>
-
-
+    <string name="test_dialog_title">Ripple Probedurchlauf</string>
+    <string name="responders">Ripple Empfänger</string>
     <string name="swipe_down_to_trigger">Zum Auslösen nach unten wischen</string>
-    <string name="release_to_confirm">Loslassen zum Bestätigen</string>
+    <string name="release_to_confirm">Loslassen um zu bestätigen</string>
     <string name="intro_instructions">Wenn du eine Welle auslöst, reagieren deine ausgewählten Apps. Drücke BEARBEITEN, um das Verhalten der entsprechenden App zu sehen und zu verändern.</string>
-
     <string name="tap_anywhere_to_cancel">Zum Abbrechen irgendwo drücken.</string>
     <string name="tap_to_trigger">Drücken, um eine Welle auszulösen</string>
     <string name="only_a_test">Das ist nur ein Test</string>

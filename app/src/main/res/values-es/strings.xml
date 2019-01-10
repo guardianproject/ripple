@@ -15,4 +15,5 @@
   <string name="done">Hecho</string>
   <string name="edit">Editar</string>
   <string name="got_it">Lo tengo</string>
+  <string name="app_locks">Bloqueos de aplicaciones cuando se acciona</string>
 </resources>

@@ -15,4 +15,5 @@
   <string name="done">Gotovo</string>
   <string name="edit">Uredi</string>
   <string name="got_it">Shvaćam</string>
+  <string name="app_locks">Aplikacija se zaključava nakon okidanja</string>
 </resources>

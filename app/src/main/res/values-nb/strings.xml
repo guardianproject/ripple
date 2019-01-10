@@ -15,4 +15,5 @@
   <string name="done">Ferdig</string>
   <string name="edit">Rediger</string>
   <string name="got_it">Skjønner</string>
+  <string name="app_locks">Programmet låser seg når det blir del av kaskaden</string>
 </resources>
