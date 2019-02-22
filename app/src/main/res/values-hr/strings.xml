@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Ripple</string>
-  <string name="action_trigger">Okidaj!</string>
-  <string name="action_test_run">Testno pokretanje</string>
-  <string name="test_dialog_title">Ripple testno pokretanje</string>
-  <string name="responders">Ripple reakcije</string>
-  <string name="swipe_down_to_trigger">Povucite dolje za okidanje</string>
-  <string name="release_to_confirm">Pustite za potvrdu</string>
-  <string name="panic_test_successful">Odlično! U stvarnom scenariju, Vaš okidač bi uzbunio sve aplikacije koje reagiraju. Te aplikacije bi zatim odgovorile zaključavanjem ili drugim ponašanjem koje ste postavili.</string>
-  <string name="intro_instructions">Kad okinete Ripple, Vaše odabrane aplikacije reagiraju. Dodirnite UREDI kako bi vidjeli i promjenili ponašanje aplikacije.</string>
-  <string name="tap_anywhere_to_cancel">Dodirnite bilo gdje kako bi otkazali</string>
-  <string name="tap_to_trigger">Dodirnite kako bi okinuli Ripple</string>
-  <string name="only_a_test">Ovo je samo test</string>
-  <string name="done">Gotovo</string>
-  <string name="edit">Uredi</string>
-  <string name="got_it">Shvaćam</string>
+    <string name="app_name">Ripple</string>
+    <string name="action_trigger">Okidaj!</string>
+    <string name="action_test_run">Testno pokretanje</string>
+    <string name="test_dialog_title">Ripple testno pokretanje</string>
+    <string name="responders">Ripple reakcije</string>
+    <string name="swipe_down_to_trigger">Povucite dolje za okidanje</string>
+    <string name="release_to_confirm">Pustite za potvrdu</string>
+    <string name="panic_test_successful">Odlično! U stvarnom scenariju, Vaš okidač bi uzbunio sve aplikacije koje reagiraju. Te aplikacije bi zatim odgovorile zaključavanjem ili drugim ponašanjem koje ste postavili.</string>
+    <string name="intro_instructions">Kad okinete Ripple, Vaše odabrane aplikacije reagiraju. Dodirnite UREDI kako bi vidjeli i promjenili ponašanje aplikacije.</string>
+    <string name="tap_anywhere_to_cancel">Dodirnite bilo gdje kako bi otkazali</string>
+    <string name="tap_to_trigger">Dodirnite kako bi okinuli Ripple</string>
+    <string name="only_a_test">Ovo je samo test</string>
+    <string name="done">Gotovo</string>
+    <string name="edit">Uredi</string>
+    <string name="got_it">Shvaćam</string>
 </resources>

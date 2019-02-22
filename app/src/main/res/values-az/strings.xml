@@ -1,18 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Ripple</string>
-  <string name="action_trigger">Tətiyi çək!</string>
-  <string name="action_test_run">Test yoxlama</string>
-  <string name="test_dialog_title">Ripple test yoxlama</string>
-  <string name="responders">Ripple-la işləyənlər</string>
-  <string name="swipe_down_to_trigger">Tətiyi çəkmək üçün aşağı dart</string>
-  <string name="release_to_confirm">Təsdiqləmək üçün burax</string>
-  <string name="panic_test_successful">Əla! Əsl vəziyyətdə bir tətiklə bütün ripple tərəfindən qoşulmuş tətbiqetmələr işə düşəcək. Bu tətbiqetmələr kilidlənəcək və ya sizin seçdiyiniz digər formada reaksiya verəcəklər.</string>
-  <string name="intro_instructions">Tətiyi çəkdiyinizdə sediyiniz tətbiqetmələr cavab verəcəklər. DƏYİŞ düyməsini basın və o tətbiqetmələrin necə reaksiya verəcəklərini müəyyən edin.</string>
-  <string name="tap_anywhere_to_cancel">Dayandırmaq üçün kliklə</string>
-  <string name="tap_to_trigger">Tətiyi çəkmək üçün kliklə</string>
-  <string name="only_a_test">Bu bir testdir</string>
-  <string name="done">Oldu</string>
-  <string name="edit">Dəyiş</string>
-  <string name="got_it">Çatdı</string>
+    <string name="app_name">Ripple</string>
+    <string name="action_trigger">Tətiyi çək!</string>
+    <string name="action_test_run">Test yoxlama</string>
+    <string name="test_dialog_title">Ripple test yoxlama</string>
+    <string name="responders">Ripple-la işləyənlər</string>
+    <string name="swipe_down_to_trigger">Tətiyi çəkmək üçün aşağı dart</string>
+    <string name="release_to_confirm">Təsdiqləmək üçün burax</string>
+    <string name="panic_test_successful">Əla! Əsl vəziyyətdə bir tətiklə bütün ripple tərəfindən qoşulmuş tətbiqetmələr işə düşəcək. Bu tətbiqetmələr kilidlənəcək və ya sizin seçdiyiniz digər formada reaksiya verəcəklər.</string>
+    <string name="intro_instructions">Tətiyi çəkdiyinizdə sediyiniz tətbiqetmələr cavab verəcəklər. DƏYİŞ düyməsini basın və o tətbiqetmələrin necə reaksiya verəcəklərini müəyyən edin.</string>
+    <string name="tap_anywhere_to_cancel">Dayandırmaq üçün kliklə</string>
+    <string name="tap_to_trigger">Tətiyi çəkmək üçün kliklə</string>
+    <string name="only_a_test">Bu bir testdir</string>
+    <string name="done">Oldu</string>
+    <string name="edit">Dəyiş</string>
+    <string name="got_it">Çatdı</string>
 </resources>
