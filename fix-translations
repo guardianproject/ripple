@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Fix TypographyEllipsis programmatically
+sed -i 's/\.\.\./…/g' app/src/main/res/values*/*.xml
+
+# Replace "--" with an "em dash" character
+sed -i 's,\(\>[^\<]*\)--\([^\>]\),\1—\2,g' app/src/main/res/values*/*.xml
+
+# indent <string> lines like Android Studio does
+sed -i "s,^\s*<string,    <string," app/src/main/res/values*/*.xml
+
+if ! git diff --exit-code > /dev/null; then
+    echo Commit differences!
+    exit 1
+fi
