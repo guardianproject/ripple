@@ -6,15 +6,14 @@ Here are two example scenarios:
 
 * An organization gets regularly raided by the security forces, who search all of the computers and mobile devices on the premises. The organization usually has at least a minute or two of warning before a raid starts. They need a very reliable way to trigger wiping all of the data from the sensitive apps.
 
-* An aid worker has lots of sensitive data about people on their device. They regularly sync that data up with a secure, central database. Occasionally, the aid worker has to leave the country on very short notice. The border guards regularly download the entire contents of mobile devices of people crossing through. While waiting in line at the border, the aid worker sees the border guards seizing people's devices, and then remembers all the data on the device, so she unlocks her phone and hits the wipe trigger, which wipes all sensitive apps from the device. When the aid worker returns to the central office, the device is again synced up with the central database.
+* An aid worker has lots of sensitive data about people on their device.  They regularly sync that data to a secure, central database.  Occasionally, the aid worker has to leave the country on very short notice.  The border guards regularly download the entire contents of mobile devices of people crossing through.  While waiting in line at the border, the aid worker sees the border guards seizing people's devices, and then remembers all the data on the device, so she unlocks the phone and hits the wipe trigger, which wipes all sensitive apps from the device. When the aid worker returns to the central office, the device is again synced up with the central database.
 
-This was started as part of the T2 Panic work, since sharing location is so often a part of panic apps.  Follow our progress here:
+This project was started as part of the T2 Panic work.  Read more about it here:
 https://guardianproject.info/tag/panic
-https://dev.guardianproject.info/projects/panic
-
 
 Don’t see your language? Join us and help translate the app:
-https://www.transifex.com/projects/p/rippleapp
+https://hosted.weblate.org/projects/guardianproject/ripple/
+https://hosted.weblate.org/projects/guardianproject/ripple-metadata/
 
 
 ***Learn More***
