@@ -1,0 +1,3 @@
+[submodule "themes/fastlane-hugo-theme"]
+	path = themes/fastlane-hugo-theme
+	url = https://github.com/guardianproject/fastlane-hugo-theme.git

@@ -38,3 +38,7 @@ Thumbs.db
 .gradle/
 build/
 captures/
+
+# Hugo
+/public/
+/resources/

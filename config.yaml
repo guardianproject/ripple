@@ -1,0 +1,27 @@
+title: Ripple
+theme: fastlane-hugo-theme
+baseURL: http://localhost:1313
+
+contentDir: metadata
+
+staticDir:
+  - app/src/main/res
+
+blackfriday:
+  extensions:
+    - hardLineBreak
+
+params:
+  fastlaneDir: metadata
+  googleplay: info.guardianproject.ripple
+  fdroid: info.guardianproject.ripple
+  header_heading_color: "#000"
+  section_headings_color: "#0091EA"
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+languages:
+  en:
+    languageCode: en-US
+  pt:
+    languageCode: pt
