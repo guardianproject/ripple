@@ -13,8 +13,9 @@ blackfriday:
 
 params:
   fastlaneDir: metadata
-  googleplay: info.guardianproject.ripple
   fdroid: info.guardianproject.ripple
+  github: guardianproject/ripple
+  gitlab: guardianproject/ripple
   header_heading_color: "#000"
   section_headings_color: "#0091EA"
 
