@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- background colors -->
+    <color name="ripple">#FF00C4FF</color>
+    <color name="triggered">#FFC6EBFD</color>
+    <color name="gray">#FFDDDDDD</color>
+
+    <!-- other colors -->
+    <color name="triggered_text">#FF0091EA</color>
+    <color name="ripple_outside">#FF2AB0EE</color>
+</resources>

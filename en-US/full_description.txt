@@ -1,0 +1,26 @@
+Ripple is a "panic button" that can send it's trigger message to any app that is a "panic responder".  Such apps can do things like lock, disguise themselves, delete private data, send an emergency message, and more.  It is meant for situations where there is time to react, but where users need to be sure it is not mistakenly set off.
+
+This is a BETA version of this app!  We are working now to add support to as many other apps as possible.  ChatSecure, Orweb, Umbrella, and Zom already have support, these apps are coming soon: Courier, PanicButton, OpenKeychain, Orfox, SMSSecure, StoryMaker.
+
+Here are two example scenarios:
+
+* An organization gets regularly raided by the security forces, who search all of the computers and mobile devices on the premises. The organization usually has at least a minute or two of warning before a raid starts. They need a very reliable way to trigger wiping all of the data from the sensitive apps.
+
+* An aid worker has lots of sensitive data about people on their device.  They regularly sync that data to a secure, central database.  Occasionally, the aid worker has to leave the country on very short notice.  The border guards regularly download the entire contents of mobile devices of people crossing through.  While waiting in line at the border, the aid worker sees the border guards seizing people's devices, and then remembers all the data on the device, so she unlocks the phone and hits the wipe trigger, which wipes all sensitive apps from the device. When the aid worker returns to the central office, the device is again synced up with the central database.
+
+This project was started as part of the T2 Panic work.  Read more about it here:
+https://guardianproject.info/tag/panic
+
+Don’t see your language? Join us and help translate the app:
+https://hosted.weblate.org/projects/guardianproject/ripple/
+https://hosted.weblate.org/projects/guardianproject/ripple-metadata/
+
+
+***Learn More***
+
+★ ABOUT US: Guardian Project is a group of developers that make secure mobile apps and open-source code for a better tomorrow
+★ OUR WEBSITE: https://GuardianProject.info
+★ ON TWITTER: https://twitter.com/guardianproject
+★ FREE SOFTWARE: Ripple is free software. You can take a look at our source code, or contribute to help make Ripple even better:
+https://github.com/guardianproject/ripple
+★ MESSAGE US: Are we missing your favorite feature? Found an annoying bug? Please tell us! We’d love to hear from you. Send us an email: support@guardianproject.info or find us in our chat room https://guardianproject.info/contact
