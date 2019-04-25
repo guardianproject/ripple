@@ -48,7 +48,7 @@ a {
   color: #000;
   text-align: center;
   background-color: #159957;
-  background-image: url(/en-US/images/featureGraphic.png), linear-gradient(120deg, #155799, #159957); }
+  background-image: url(../en-US/images/featureGraphic.png), linear-gradient(120deg, #155799, #159957); }
   @media screen and (min-width: 64em) {
     .page-header {
       padding: 5rem 6rem; } }
