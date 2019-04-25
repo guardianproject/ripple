@@ -3,47 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/pt/categories/</loc>
+    <loc>https://guardianproject.github.io/ripple/pt/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/"
+                href="https://guardianproject.github.io/ripple/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/pt/categories/"
+                href="https://guardianproject.github.io/ripple/pt/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://localhost:1313/pt/</loc>
+    <loc>https://guardianproject.github.io/ripple/pt/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/"
+                href="https://guardianproject.github.io/ripple/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/pt/"
+                href="https://guardianproject.github.io/ripple/pt/"
                 />
   </url>
   
   <url>
-    <loc>http://localhost:1313/pt/tags/</loc>
+    <loc>https://guardianproject.github.io/ripple/pt/tags/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/tags/"
+                href="https://guardianproject.github.io/ripple/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pt"
-                href="http://localhost:1313/pt/tags/"
+                href="https://guardianproject.github.io/ripple/pt/tags/"
                 />
   </url>
   
