@@ -4,6 +4,7 @@ image: debian:buster-slim
 before_script:
   - apt-get update
   - apt-get -qy install --no-install-recommends hugo
+  - sed -i "s,^baseURL\x3a.*,baseURL\x3a https://${CI_PROJECT_NAMESPACE}.gitlab.io/${CI_PROJECT_NAME}/," config.yaml
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
