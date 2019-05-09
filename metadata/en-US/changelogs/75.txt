@@ -1,0 +1,1 @@
+Lots of bugfixes and a new Hungarian translation
