@@ -42,3 +42,7 @@ captures/
 # Hugo
 /public/
 /resources/
+
+# Fastlane
+/fastlane/report.xml
+/fastlane/README.md
