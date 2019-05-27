@@ -19,15 +19,15 @@ def getVersionCode = { ->
 def getVersionName = { ->
     def stdout = new ByteArrayOutputStream()
     exec {
-      commandLine 'git', 'describe', '--tags', '--always'
-      standardOutput = stdout
+        commandLine 'git', 'describe', '--tags', '--always'
+        standardOutput = stdout
     }
     return stdout.toString().trim()
 }
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "24.0.0"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.1"
 
     aaptOptions {
         cruncherEnabled = false
@@ -35,8 +35,8 @@ android {
 
     defaultConfig {
         applicationId "info.guardianproject.ripple"
-        minSdkVersion 10
-        targetSdkVersion 23
+        minSdkVersion 14
+        targetSdkVersion 27
         versionCode getVersionCode()
         versionName getVersionName()
         archivesBaseName = "Ripple-$versionName"
@@ -61,8 +61,8 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:23.1.1'
-    compile 'com.android.support:recyclerview-v7:23.1.1'
-    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:appcompat-v7:27.1.1'
+    compile 'com.android.support:recyclerview-v7:27.1.1'
+    compile 'com.android.support:design:27.1.1'
     compile 'info.guardianproject.panic:panic:0.5'
 }
