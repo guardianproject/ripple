@@ -1,5 +1,6 @@
 buildscript {
     repositories {
+        maven { url 'file:///usr/share/maven-repo' }
         jcenter()
     }
     dependencies {
@@ -9,6 +10,7 @@ buildscript {
 
 allprojects {
     repositories {
+        maven { url 'file:///usr/share/maven-repo' }
         jcenter()
     }
 }
