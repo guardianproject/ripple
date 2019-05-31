@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Ripple</string>
     <string name="action_trigger">Tətiyi çək!</string>
@@ -15,4 +15,5 @@
     <string name="done">Oldu</string>
     <string name="edit">Dəyiş</string>
     <string name="got_it">Çatdı</string>
+    <string name="app_hides">Tetiklendiğinde App gizlədir</string>
 </resources>

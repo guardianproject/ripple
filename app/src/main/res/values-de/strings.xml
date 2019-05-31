@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Ripple</string>
     <string name="action_trigger">Auslösen!</string>
@@ -8,10 +8,12 @@
     <string name="swipe_down_to_trigger">Zum Auslösen nach unten wischen</string>
     <string name="release_to_confirm">Loslassen um zu bestätigen</string>
     <string name="intro_instructions">Wenn du eine Welle auslöst, reagieren deine ausgewählten Apps. Drücke BEARBEITEN, um das Verhalten der entsprechenden App zu sehen und zu verändern.</string>
-    <string name="tap_anywhere_to_cancel">Zum Abbrechen irgendwo drücken.</string>
-    <string name="tap_to_trigger">Drücken, um eine Welle auszulösen</string>
+    <string name="tap_anywhere_to_cancel">Zum Abbrechen irgendwo tippen</string>
+    <string name="tap_to_trigger">Tippen, um eine Welle auszulösen</string>
     <string name="only_a_test">Das ist nur ein Test</string>
     <string name="done">Fertig</string>
     <string name="edit">Bearbeiten</string>
     <string name="got_it">Verstanden</string>
+    <string name="app_hides">App verbirgt sich beim Auslösen</string>
+    <string name="panic_test_successful">Gute gemacht In einem realen Szenario hätte sich Ihr Auslöser auf alle Responder-Apps ausgewirkt. Und diese Apps würden dann mit Sperren oder anderen Verhaltensweisen reagieren, die Sie konfiguriert haben.</string>
 </resources>

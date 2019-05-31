@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Ripple</string>
     <string name="action_trigger">Utløs!</string>
@@ -15,4 +15,5 @@
     <string name="done">Ferdig</string>
     <string name="edit">Rediger</string>
     <string name="got_it">Skjønner</string>
+    <string name="app_hides">Program skjules når utløst</string>
 </resources>

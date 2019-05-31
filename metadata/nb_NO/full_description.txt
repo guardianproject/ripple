@@ -1,0 +1,27 @@
+Ripple er en "panikknapp" som kan sende dens utløsingsmeldinger til ethvert program som er en "panikkbesvarer". Slike programmer utfører ting som låsing, forkledning, og sletting av privat data, utstedelse av nødmelding, og mer. Det er ment for situasjoner der det ikke er tid til å reagere, men der brukere må være sikre på at alarmen ikke har blitt utløst i villrede.
+Dette er en BETA-versjon av programmet! Det arbeides med å støtte så mange andre programmer som mulig: ChatSecure, Orweb, Umbrella, og Zom har allerede støtte. Courier, PanicButton, OpenKeychain, Orfox, SMSSecure og StoryMaker kommer snart.
+
+Her er to tenkte scenarier:
+
+* En organisasjon blir gjennomsøkt regelmessig av sikkerhetsstyrker, som søker gjennom alle datamaskinene og mobilenhetene som finnes der. Organisasjonen har som oftest ett minutt eller to før dette begynner. De trenger en veldig pålitelig måte å utløse sletting av all data fra sensitive programmer.
+
+* En uhjelpsarbeider har masse sensitiv data om folk på sin enhet, og synkroniserer denne regelmessig med en sikret, sentral database. En gang ibland kan det hende uhjelpsarbeideren må forlate landet på kort varsel. Grensevaktene laster regelmessig ned hele innholdet på de mobile enhetene tilhørende folk som passerer. Mens uhjelpsarbeideren venter i kø på grenseovergangen, kan vedkommende se at alle enhetene blir samlet inn, og husker så all dataen på enheten, og låser opp telefonen og igangsetter slettingsutløseren, som tømmer alle sensitive programmer på enheten. Når uhjelpsarbeideren returnerer til sentralkontoret, synkroniseres enheten med den sentrale databasen igjen.
+
+Dette ble startet som del av T2 panikk-arbeidet, siden plassering så ofte er den del av panikkprogrammer. Følg framdriften her:
+https://guardianproject.info/tag/panic
+https://dev.guardianproject.info/projects/panic
+
+
+Mangler ditt språk? Hjelp til i oversettelsen av programmet:
+https://hosted.weblate.org/projects/guardianproject/ripple/
+https://hosted.weblate.org/projects/guardianproject/ripple-metadata/
+
+
+***Lær mer***
+
+★ OM OSS: Guardian-prosjektet er en gruppe utviklere som lager sikre mobilprogrammer og fri programvare for en bedre fremtid
+★ VÅR NETTSIDE: https://GuardianProject.info
+★ PÅ TWITTER: https://twitter.com/guardianproject
+★ FRI PROGRAMVARE: Ripple er fri programvare. Du kan ta en titt på kildekoden, eller bidra for å gjøre Ripple enda bedre:
+https://github.com/guardianproject/ripple
+★ SEND OSS EN MELDING: Mangler vi din favorittfunksjon. Har du funnet en feil? Fortell oss om det, send oss en e-post: support@guardianproject.info or find us in our chat room https://guardianproject.info/contact

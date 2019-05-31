@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Ripple</string>
     <string name="action_trigger">Activeren!</string>
@@ -19,4 +19,5 @@
     <string name="done">Klaar</string>
     <string name="edit">Bewerken</string>
     <string name="got_it">Oké</string>
+    <string name="app_hides">App verbergt wanneer geactiveerd</string>
 </resources>

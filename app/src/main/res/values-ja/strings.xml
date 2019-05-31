@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Ripple</string>
     <string name="action_trigger">起動!</string>
@@ -17,4 +17,5 @@
     <string name="done">完了</string>
     <string name="edit">編集</string>
     <string name="got_it">了解</string>
+    <string name="app_hides">起動された時にアプリを非表示にする</string>
 </resources>

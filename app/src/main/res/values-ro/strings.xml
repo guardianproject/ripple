@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Ripple</string>
     <string name="action_trigger">Declanșează!</string>
@@ -15,4 +15,5 @@
     <string name="done">Gata</string>
     <string name="edit">Editează</string>
     <string name="got_it">Am înțeles</string>
+    <string name="app_hides">Aplicația se ascunde când este declanșată</string>
 </resources>

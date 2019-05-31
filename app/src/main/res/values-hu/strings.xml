@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Ripple</string>
     <string name="action_trigger">Előidéz!</string>
@@ -15,4 +15,5 @@
     <string name="done">Kész</string>
     <string name="edit">Szerkesztés</string>
     <string name="got_it">Értettem</string>
+    <string name="app_hides">Alkalmazás elrejti, amikor beindította</string>
 </resources>
