@@ -1,68 +1,69 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/frameRoot"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="?attr/colorPrimary"
-    android:paddingTop="19dp">
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frameRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorPrimary"
+        android:paddingTop="19dp">
 
     <ImageView
-        android:id="@+id/btnCancel"
-        android:layout_width="wrap_content"
-        android:layout_height="34dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:paddingEnd="19dp"
-        android:paddingRight="19dp"
-        android:src="@drawable/ic_panic_cancel" />
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:paddingEnd="19dp"
+            android:paddingRight="19dp"
+            android:src="@drawable/ic_panic_cancel"/>
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_centerInParent="true"
-        android:paddingTop="34dp">
-
-        <info.guardianproject.ripple.RippleDrawingView
-            android:id="@+id/ripples"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_alignParentRight="true" />
+            android:layout_centerInParent="true"
+            android:paddingTop="34dp">
+
+        <info.guardianproject.ripple.RippleDrawingView
+                android:id="@+id/ripples"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"/>
 
         <ImageView
-            android:id="@+id/swipe_arrows"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="30dp"
-            android:src="@drawable/ic_swipe_arrows" />
+                android:id="@+id/swipe_arrows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/ic_swipe_arrows"/>
 
         <TextView
-            android:id="@+id/textHint"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_above="@id/swipe_arrows"
-            android:layout_centerHorizontal="true"
-            android:gravity="center"
-            android:text="@string/swipe_down_to_trigger"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="28sp" />
+                android:id="@+id/textHint"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@id/swipe_arrows"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/swipe_down_to_trigger"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="28sp"/>
 
         <ImageButton
-            android:id="@+id/panic_swipe_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:background="@android:color/transparent"
-            android:src="@drawable/ripple_trigger_selector" />
+                android:id="@+id/panic_swipe_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ripple_trigger_selector"/>
 
     </RelativeLayout>
 
