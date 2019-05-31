@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.util.DisplayMetrics;
@@ -15,7 +16,6 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -56,7 +56,7 @@ public class CountDownActivity extends Activity {
             scale = displayMetrics.widthPixels;
         }
         mCountDownNumber = (TextView) findViewById(R.id.countDownNumber);
-        mCountDownNumber.setTextSize(((float) scale) / 5);
+        mCountDownNumber.setTextSize(((float) scale) * 0.45f / getResources().getDisplayMetrics().scaledDensity);
 
         mTouchToCancel = (TextView) findViewById(R.id.tap_anywhere_to_cancel);
         mCancelButton = (ImageView) findViewById(R.id.cancelButton);
@@ -69,7 +69,7 @@ public class CountDownActivity extends Activity {
             mCountDownAsyncTask.execute();
         }
 
-        RelativeLayout frameRoot = (RelativeLayout) findViewById(R.id.frameRoot);
+        ConstraintLayout frameRoot = findViewById(R.id.frameRoot);
         frameRoot.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {

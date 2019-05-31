@@ -68,5 +68,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:27.1.1'
     compile 'com.android.support:recyclerview-v7:27.1.1'
     compile 'com.android.support:design:27.1.1'
+    compile 'com.android.support.constraint:constraint-layout:1.1.3'
     compile 'info.guardianproject.panic:panic:0.5'
 }
