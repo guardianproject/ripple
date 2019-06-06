@@ -1,21 +1,30 @@
-# All available Hugo versions are listed here: https://gitlab.com/pages/hugo/container_registry
-image: debian:buster-slim
 
-before_script:
-  - apt-get update
-  - apt-get -qy install --no-install-recommends hugo
-  - sed -i "s,^baseURL\x3a.*,baseURL\x3a https://${CI_PROJECT_NAMESPACE}.gitlab.io/${CI_PROJECT_NAME}/," config.yaml
+.hugo-template: &hugo-template
+  image: debian:buster-slim
+  before_script:
+    - apt-get update
+    - apt-get -qy install --no-install-recommends hugo
+    - sed -i "s,^baseURL\x3a.*,baseURL\x3a https://${CI_PROJECT_NAMESPACE}.gitlab.io/${CI_PROJECT_NAME}/," config.yaml
+  variables:
+    GIT_SUBMODULE_STRATEGY: recursive
 
-variables:
-  GIT_SUBMODULE_STRATEGY: recursive
+release:
+  image: registry.gitlab.com/fdroid/ci-images-client:latest
+  script:
+    - ./gradlew assembleRelease
+  artifacts:
+    paths:
+    - app/build/outputs/apk/*.apk
 
 test:
+  <<: *hugo-template
   script:
   - hugo
   except:
   - master
 
 pages:
+  <<: *hugo-template
   script:
   - hugo
   artifacts:
