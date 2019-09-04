@@ -1,0 +1,3 @@
+* Fikset overlappende tekst på nedtellingsskjerm
+
+* Nye språk: Portugisisk, Svensk
