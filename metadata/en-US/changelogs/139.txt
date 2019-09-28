@@ -1,3 +1,3 @@
-* fixed overlapping text on countdown screen
+* Fixed overlapping text on countdown screen
 
-* new languages: Portuguese, Swedish
+* New languages: Portuguese, Swedish
