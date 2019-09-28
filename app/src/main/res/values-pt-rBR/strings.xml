@@ -8,12 +8,12 @@
     <string name="done">Feito</string>
     <string name="edit">Editar</string>
     <string name="got_it">Entendi</string>
-    <string name="app_hides">App se oculta quando despotelada</string>
-    <string name="responders">Recetores do Ripple</string>
-    <string name="swipe_down_to_trigger">Deslizar para baixo para acionar</string>
-    <string name="release_to_confirm">Libertar para confirmar</string>
-    <string name="panic_test_successful">Bom trabalho! Numa situação real, o acionamento avisaria todas as apps recetoras. Todas essas apps iriam então responder bloqueando ou outros comportamentos que teria configurado.</string>
-    <string name="intro_instructions">Quando aciona, as suas apps configuradas reagem.Toque em EDITAR para ver e alterar os comportamentos da app.</string>
-    <string name="tap_anywhere_to_cancel">Toque em qualquer lado para cancelar</string>
+    <string name="app_hides">App se oculta quando acionado</string>
+    <string name="responders">Receptores do Ripple</string>
+    <string name="swipe_down_to_trigger">Deslize para baixo para acionar</string>
+    <string name="release_to_confirm">Solte para confirmar</string>
+    <string name="panic_test_successful">Bom trabalho! Numa situação real, o acionamento avisaria todas as aplicações receptoras. Todas essas aplicações iriam então responder bloqueando ou outros comportamentos que você terá configurado.</string>
+    <string name="intro_instructions">Quando você aciona um ripple, seus aplicativos configurados reagem. Toque em EDITAR para ver e alterar os comportamentos do app.</string>
+    <string name="tap_anywhere_to_cancel">Toque em qualquer lugar para cancelar</string>
     <string name="tap_to_trigger">Toque para acionar</string>
 </resources>

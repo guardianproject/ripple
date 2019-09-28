@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="only_a_test">هذا فقط اختبار</string>
+    <string name="done">تم</string>
+    <string name="edit">تعديل</string>
+    <string name="app_name">Ripple</string>
+</resources>
