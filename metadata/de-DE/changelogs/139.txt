@@ -1,0 +1,3 @@
+* Überlappender Text auf dem Countdown-Bildschirm korrigiert
+
+* Neue Sprachen: Portugiesisch, Schwedisch
