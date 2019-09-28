@@ -1,0 +1,26 @@
+Ripple er "neyðarhnappur" sem getur sent einskonar ræsiskilaboð til allra þeirra forrita sem útbúin eru með "neyðarsvörun".  Slík forrit geta þá læst sér, dulbúið sig, eytt einkagögnum, sent neyðarskilaboð og margt fleira.  Það er ætlað fyrir aðstæður það sem einhver tími gefst til að bregðast við uppákomum, en þar sem notendur þurfa að geta verið vissir um að þetta sé ekki sett í gang fyrir mistök.
+
+Þetta er BETA prófunarútgáfa forritsins!  Við erum að vinna við að bæta stuðningi við eins mörg forrit og auðið er.  ChatSecure, Orweb, Umbrella og Zom eru þegar studd, þessi forrit eru væntanleg innan skamms: Courier, PanicButton, OpenKeychain, Orfox, SMSSecure, StoryMaker.
+
+Hér eru tvennskonar dæmigerðar aðstæður:
+
+* Samtök verður reglulega fyrir húsleit öryggissveita stjórnvalda, sem þýðir að leitað er í öllum tölvum og farsímum sem finnast. Samtökin fá gjarnan aðvörun einni til tveimur mínútum áður en ráðist er inn. Þau þurfa þess vegna einhverja áreiðanlega leið til að hreinsa allar viðkvæmar upplýsingar út úr viðkomandi forritum.
+
+* Starfsmaður hjálparstofnunar er með mikið af viðkvæmum gögnum um fólk sem hann hefur átt samskipti við á tækinu sínu.  Þessi gögn eru reglulega samstillt við öruggan miðlægan gagnagrunn.  Stundum kemur upp sú staða að hjálparstarfsmenn þurfa að yfirgefa land með mjög stuttum fyrirvara.  Landamæraverðir eiga það til að taka afrit af öllum gögnum sem fyrirfinnast á farsímum og öðrum smátækjum.  Þegar hjálparstarfsmaður stendur í röð við vegabréfaskoðun og sér að verðirnir eru að taka öll tæki af fólki og man svo eftir öllum gögnunum á sínu eigin tæki, þá aflæsir hún tækinu og pikkar á útþurrkunarhnappinn, sem þá þurrkar öll viðkvæm gögn af tækinu. Þegar hjálparstarfsmaðurinn snýr aftur á aðalskrifstofuna, er tækið aftur samstillt við miðlæga gagnagrunninn.
+
+Þetta verkefni byrjaði sem hluti vinnu við T2 Panic.  Lestu meira um það hér:
+https://guardianproject.info/tag/panic
+
+Sérðu ekki tungumálið þitt? Gakktu til liðs við okkur og hjálpaðu við að þýða forritið:
+https://hosted.weblate.org/projects/guardianproject/ripple/
+https://hosted.weblate.org/projects/guardianproject/ripple-metadata/
+
+
+***Kannaðu nánar***
+
+★ UM OKKUR: Guardian Project er hópur forritara sem gera örugg farsímaforrit og opinn grunnkóða fyrir betri framtíð
+★ VEFSVÆÐIÐ OKKAR: https://GuardianProject.info
+★ Á TWITTER: https://twitter.com/guardianproject
+★ FRJÁLS HUGBÚNAÐUR: Ripple er frjáls hugbúnaður. Þú getur skoðað opna grunnkóðann okkar eða lagt þitt af mörkum til að gera Ripple ennþá betra:
+https://github.com/guardianproject/ripple
+★ SENDU OKKUR SKILABOÐ: Höfum við gleymt einhverjum eftirlætiseiginleika að þínu mati? Fannstu pirrandi galla? Láttu okkur endilega vita! Við viljum gjarnan heyra frá þér. Sendu okkur tölvupóst: support@guardianproject.info, eða kíktu á spjallsvæðið okkar https://guardianproject.info/contact
