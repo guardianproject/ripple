@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_hides">Tetiklendiğinde uygulama gizlenir</string>
+    <string name="got_it">Anladım</string>
+    <string name="edit">Düzenle</string>
+    <string name="done">Bitti</string>
+    <string name="only_a_test">Bu sadece bir test</string>
+    <string name="tap_to_trigger">Bir dalga (ripple) tetiklemek için dokun</string>
+    <string name="tap_anywhere_to_cancel">İptal etmek için herhangi bir yere dokun</string>
+    <string name="intro_instructions">Bir dalga (ripple) tetiklediğinizde, seçtiğiniz uygulamalar tepki verir. Söz konusu uygulamanın davranışlarını görmek ve değiştirmek için DÜZENLE\'ye dokunun.</string>
+    <string name="panic_test_successful">Aferin! Gerçek bir senaryoda, tetikleyiciniz tüm cevaplayıcı uygulamalara yayılacaktı. Ve bu uygulamalar daha sonra kilitleyerek veya yapılandırdığınız diğer davranışlarla cevap verecekti.</string>
+    <string name="release_to_confirm">Onaylamak için bırak</string>
+    <string name="swipe_down_to_trigger">Tetiklemek için aşağı kaydır</string>
+    <string name="responders">Ripple Cevaplayıcıları</string>
+    <string name="test_dialog_title">Ripple Test Sürüşü</string>
+    <string name="action_test_run">Test Sürüşü</string>
+    <string name="action_trigger">Tetikle!</string>
+    <string name="app_name">Ripple</string>
+</resources>

@@ -1,0 +1,3 @@
+* Geri sayım ekranındaki çakışan metin düzeltildi
+
+* Yeni diller: Portekizce, İsveççe

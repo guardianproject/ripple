@@ -1,24 +1,25 @@
-Ripple é um "botão de pânico" que envia sua mensagem de gatilho para todos os aplicativos que forem "responsores de pânico". Tais aplicativos podem fazer coisas como trancar, disfarçarem-se, deletar dados privados, enviar uma mensagem de emergência, e muito mais. Isto foi feito no intuito de serem usados em dituações onde há tempo de reagir, mas para onde os usuários precisam ter certeza de não acionarem por engano.
+Ripple é um "botão de pânico" que através de um gatilho envia a sua mensagem para todos os aplicativos que forem configurados para responder esta emergência. Tais aplicativos podem fazer coisas como trancar o telefone, disfarçarem-se, excluir os dados privados, enviar uma mensagem de emergência e muito mais. Foi feito no intuito de serem usados em situações onde haja tempo para reagir sem que acionem estas ações por engano.
 
-Esta é uma versão BETA do aplicativo! Nóz estamos trabalhando agora para darmos suporte para o máximo de aplicativos possíveis. ChatSecure, Orweb, Umbrella e Zom já têm suporte, e estes aplicativos virão em breve: Courier, PanicButton, OpenKeychain, Orfox, SMSSecure, StoryMaker.
+Esta é uma versão BETA do aplicativo! Atualmente nós estamos trabalhando para darmos suporte ao máximo de aplicativos possíveis. Já é compatível com ChatSecure, Orweb, Umbrella e Zom. Os próximos serão: Courier, PanicButton, OpenKeychain, Orfox, SMSSecure, StoryMaker.
 
-Aqui estão dois cenários de exemplo:
+Aqui dois cenários hipotéticos:
 
-• Uma organização é regularmente invadida por forças de segurança, que procuram em todos os computadores e dispositivos móveis por premissas. A organização tem pelo menos um minuto ou dois de aviso antes da invasão começar. Eles precisam de uma forma bastante recorrível para acionar a limpeza de todos os dados de aplicativos sensíveis.
+• Uma organização é invadida regularmente em suas instalações por forças de segurança que procuram em todos os computadores e dispositivos móveis. A organização sabe com antecedência que uma invasão irá acontecer num prazo de um a dois minutos. Eles precisam de uma maneira bastante confiável para apagar todos os dados sensíveis dos aplicativos.
 
-• Uma trabalhadora humanitária possui várias informações sensíveis sobre pessoasem seu aparelho. Ela regularmente sincroniza tais dados com uma base de dados central e segura. Ocasionalmente, a trabalhadora humanitária precisa sair do país por um curto espaço de tempo. As guardas da fronteira baixam regularmente dados inteiros de dispositivos móveis de pessoas a-atravessando. Enquanto espera na fila, esta pessoa nota os guardas da fronteira apreendendo os dispositivos das pessoas, e então se lembra de todos os dados que também estão no próprio aparelho, então ela o-desbloqueia e aciona o gatilho de limpeza, que limpa todos os aplicativos sensíveis do celular. Quando a trabalhadora humanitária retorna ao escritório central, o dispositivo é de novo sincronizado com a base de dados.
+• Um trabalhador humanitário possuí diversos dados confidenciais das pessoas no seu dispositivo.  Regularmente sincroniza estes dados com segurança em um banco de dados central.  Ocasionalmente, o trabalhador humanitário precisa deixar o país em um curto espaço de tempo.  Regularmente os guardas de fronteira descarregam todo o conteúdo dos dispositivos móveis das pessoas que ali atravessam.  Enquanto aguarda na fila, o trabalhador humanitário vê os guardas apreendendo os dispositivos das pessoas e então se lembra de todos os dados no dispositivo, ela destrava o telefone e aciona o gatilho de limpeza que exclui todas os aplicativos confidenciais do dispositivo. Quando este trabalhador retorna ao escritório central, o seu dispositivo é novamente sincronizado com o banco de dados da central.
 
-Este projeto foi iniciado como parte do trabalho T2 Panic. Leia mais sobre isso aqui: https://guardianproject.info/tag/panic
+Este projeto foi começou como parte do trabalho T2 Panic.  Conheça mais sobre o projeto qui:
+https://guardianproject.info/tag/panic
 
-Não vê seu idioma? Junte-se a nós e ajude-nos e traduzir o aplicativo:
+Não vê o seu idioma? Junte-se a nós e nos ajude a traduzir o aplicativo:
 https://hosted.weblate.org/projects/guardianproject/ripple/
 https://hosted.weblate.org/projects/guardianproject/ripple-metadata/
 
 
-***Aprenda mais***
+***Saiba mais***
 
 ★ SOBRE NÓS: Guardian Project é um grupo de desenvolvedores que fazem aplicativos móveis seguros e de código aberto para um amanhã melhor
-★ NOSSO WEBSITE: https://GuardianProject.info
+★ O NOSSO WEBSITE: https://GuardianProject.info
 ★ NO TWITTER: https://twitter.com/guardianproject
-★ SOFTWARE LIVRE: Ripple é software livre. Você pode dar uma olhada no nosso código-fonte, ou contribuir para ajudar tornar Ripple ainda melhor: https://github.com/guardianproject/ripple
-★ CONTATE-NOS: Estamos esquecendo seu recurso favorito? Encontrou algum bug incômodo? Por favor mos conte! Nós adoraríamos ouvir de você. Mande-nos um e-mail: support@guardianproject.info ou encontre-nos na nossa sala de bate-papo https://guardianproject.info/contact
+★ SOFTWARE LIVRE: O Ripple é um software livre. Você pode dar uma olhada no nosso código-fonte ou contribuir para ajudar tornar o Ripple ainda melhor: https://github.com/guardianproject/ripple
+★ CONTATE-NOS: Não encontrou algum recurso? Encontrou algum problema chato? Fale conosco! Nós adoraríamos ouvir de você. Mande-nos um e-mail: support@guardianproject.info ou encontre-nos na nossa sala de bate-papo https://guardianproject.info/contact

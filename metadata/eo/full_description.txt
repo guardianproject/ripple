@@ -1,0 +1,24 @@
+Ripple estas “panika butono”, kiu aktivigas ĉiun aplikaĵon havantan “panikan respondilon”. Tiuj aplikaĵoj povas ekzemple ŝlosiĝi, kaŝiĝi, forigi privatajn datumojn, sendi peton pri helpo kaj pli. Ĝi estas destinita por situacioj en kiuj mankas tempo por reago, tamen aliflanke la uzanto estu certe, ke ĝi ne aktiviĝu hazarde.
+
+Tio ĉi estas beta-versio de la aplikaĵo. Ni laboras pri subteni pli kaj pli da aplikaĵoj, ChatSecure, Orweb, Umbrella kaj Zom estas nuntempe subtenataj, ni planas aldoni subtenon al: Courier, PanicButton, OpenKeychain, Orfox, Silence kaj StoryMaker.
+
+Jen du ekzemplaj situacioj:
+
+* La polico ofte kondukas amasarestadon en oficejo de organizaĵo, ili traserĉas ĉiujn komputilojn kaj poŝtelefonojn. La organizaĵo kutime ricevas averton antaŭ minuto aŭ du antaŭ la amasarestado startas. Ili bezonas ilon por rapide forviŝi ĉiujn datumojn de konfidencaj aplikaĵoj.
+
+*Homhelpa laboristo tenas diversajn konfidencajn datumojn pri homoj en sia aparato. Li ofte samtempigas tiujn datumojn al sekura centra datumbazo. Iafoje li devas forlasi la landon en tre mallonga tempo. La landlima gardistaro regule kontrolas enhavon de porteblaj aparatoj de transirantoj. Dum atendi ĉe la landlimo, la helpisto rimarkas, ke gardistoj kontrolas enhavon de poŝtelefonoj, do li rapide malŝlosas sian aparaton kaj forviŝas ĉiujn konfidencajn aplikaĵojn. Post reveni la helpisto samtempigas ĉiujn datumojn el la centra servilo.
+
+Tiu ĉi projekto startis kiel parto de la projekto T2 Panic, pliaj informoj ĉe:
+https://guardianproject.info/tag/panic
+
+Por traduki la aplikaĵon, vizitu:
+https://hosted.weblate.org/projects/guardianproject/ripple/
+https://hosted.weblate.org/projects/guardianproject/ripple-metadata/
+
+
+***PLIAJ INFORMOJ***
+★ Pri: Guardian Project estas grupo da programistoj laborantaj pri sekuraj malfermkodaj poŝtelefonaj aplikaĵoj por li bona estonteco.
+★ Retejo: https://GuardianProject.info
+★ Twitter: https://twitter.com/guardianproject
+★ Libera programaro: Ripple estas libera programaro. Vi povas kontroli la fontkodon aŭ kontribui por igi la aplikaĵon pli bona: https://github.com/guardianproject/ripple
+★ Kontakti: Ĉu iu eblaĵo mankas? Ĉu vi trovis eraron? Bonvolu sciigi nin! Ni tre volus aŭskulti vin. Skribu al ni retleteron: support@guardianproject.info aŭ trovu nin en la babilejo: https://guardianproject.info/contact

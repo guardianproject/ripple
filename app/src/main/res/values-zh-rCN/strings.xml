@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Ripple</string>
     <string name="action_trigger">触发！</string>
@@ -12,4 +12,8 @@
     <string name="done">完成</string>
     <string name="edit">编辑</string>
     <string name="got_it">明白了</string>
+    <string name="responders">Ripple响应者</string>
+    <string name="panic_test_successful">干得好！ 在真实情境下，您的触发器将波及到所有响应者应用。这些应用随之将通过锁定或您配置的任何其他行为来响应。</string>
+    <string name="intro_instructions">当你触发一个Ripple时，所选的应用程序会做出反应。 点按编辑以查看和更改该应用程序的行为。</string>
+    <string name="app_hides">触发时应用程序会隐藏自己</string>
 </resources>

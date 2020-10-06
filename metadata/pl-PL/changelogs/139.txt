@@ -1,0 +1,3 @@
+* Naprawiono nakładanie się tekstu na ekranie odliczania
+
+* Nowe języki: portugalski, szwedzki

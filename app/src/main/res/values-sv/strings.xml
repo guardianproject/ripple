@@ -15,5 +15,5 @@
     <string name="done">Klar</string>
     <string name="edit">Redigera</string>
     <string name="got_it">Uppfattat</string>
-    <string name="app_hides">Appen döljer när den utlöses</string>
+    <string name="app_hides">Appen döljs när den utlöses</string>
 </resources>

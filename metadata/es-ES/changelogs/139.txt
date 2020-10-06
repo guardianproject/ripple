@@ -1,0 +1,3 @@
+* Se ha corregido el texto superpuesto en la pantalla de cuenta atrás
+
+* Nuevos idiomas: Portugués, Sueco

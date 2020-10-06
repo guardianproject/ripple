@@ -1,0 +1,3 @@
+* Corrigido texto sobreposto no ecrã de contagem regressiva
+
+* Novos idiomas: português, sueco

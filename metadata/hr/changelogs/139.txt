@@ -1,0 +1,3 @@
+* Ispravak za tekst koji se preklapa na ekranu za odbrojavanje
+
+* Novi jezici: Portugalski, Švedski

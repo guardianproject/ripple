@@ -1,0 +1,3 @@
+* Corretto il testo sovrapposto nella schermata del conto alla rovescia
+
+* Nuove lingue: portoghese, svedese

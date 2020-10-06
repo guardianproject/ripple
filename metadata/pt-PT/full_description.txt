@@ -1,24 +1,24 @@
-O Ripple é um "botão de pânico" que pode enviar a sua mensagem de pânico a qualquer app que seja um "recetor de pânico". Tais apps podem fazer coisas como bloquear o telemóvel, disfarçarem-se como outro tipo de app, eliminar dados privados, enviar uma mensagem de emergência, entre outras. É para situações onde ainda haja tempo de reagir, mas também onde os utilizadores têm de ter a certeza que não seja desativado por engano.
+O Ripple é um "botão de pânico" que pode enviar a sua mensagem de pânico para qualquer aplicação que seja um "recetor de pânico". Tais aplicações podem fazer coisas, tais  como bloquear o telemóvel, disfarçarem-se como outro tipo de aplicação, eliminar dados privados, enviar uma mensagem de emergência, entre outras. É para situações onde ainda haja tempo de reagir, mas também onde os utilizadores têm de ter a certeza que não seja desativado por engano.
 
-Isto é uma versão BETA desta app! Estamos a trabalhar para suportar o máximo de outras apps possíveis. Já são suportadas as apps ChatSecure, Orweb, Umbrella e Zom. Brevemente serão suportadas: Courier, PanicButton, OpenKeychain, Orfox, SMSSecure, StoryMaker.
+Isto é uma versão BETA desta aplicação! Estamos a trabalhar para suportar o máximo de outras aplicações possíveis. Já são suportadas as aplicações ChatSecure, Orweb, Umbrella e Zom. Brevemente serão suportadas: Courier, PanicButton, OpenKeychain, Orfox, SMSSecure, StoryMaker.
 
 Exemplo de duas situações:
 
-* Uma organização é um alvo constante de rusgas realizadas pelas forças de segurança, que procuram todos os computadores e dispositivos móveis no local. A organização normalmente tem pelo menos um minuto ou dois de antecedência antes da rusga começar. Esta necessita de uma forma fiável de eliminar todos os dados das apps com informação sensível.
+* Uma organização é um alvo constante de rusgas realizadas pelas forças de segurança, que procuram todos os computadores e dispositivos móveis no local. A organização normalmente tem pelo menos um minuto ou dois de antecedência antes da rusga começar. Esta necessita de uma forma fiável de eliminar todos os dados das aplicações com informação sensível.
 
 * Um funcionário de uma organização humanitária tem dados sobre pessoas no seu dispositivo. Este sincroniza esses dados regularmente com uma base de dados central segura. Ocasionalmente, este funcionário tem de sair do país onde trabalha, com pouco tempo de preparação. As forças de segurança na fronteira descarregam regularmente os dados nos dispositivos móveis das pessoas que atravessam a fronteira. Enquanto este funcionário espera para passar a fronteira, este vê as forças de segurança a apreender os dispositivos das pessoas. Então o funcionário lembra-se dos dados sensíveis de pessoas que tem no dispositivo, por isso desbloqueia o dispositivo e aciona o botão de pânico, o que elimina todos os dados sensíveis. Quando este funcionário regressa ao escritório posteriormente, este pode sincronizar de novo os dados com a base de dados central.
 
 Este projeto foi iniciado como parte do trabalho do T2 Panic. Leia mais informações sobre este em:
 https://guardianproject.info/tag/panic
 
-Não vê o seu idioma? Junte-se a nós e ajude a traduzir a app:
+Não vê o seu idioma? Junte-se a nós e ajude a traduzir a aplicação:
 https://hosted.weblate.org/projects/guardianproject/ripple/
 https://hosted.weblate.org/projects/guardianproject/ripple-metadata/
 
 ***Saiba mais***
-★ SOBRE NÓS: Guardian Project é um grupo de responsáveis pelo desenvolvimento que cria apps móveis seguras e de código aberto para um futuro melhor.
-★ O NOSSO SÍTIO DA WEB: https://GuardianProject.info
+★ SOBRE NÓS: Projeto Guardian é um grupo de programadores que criam aplicações móveis seguras e de código fonte aberto para um futuro melhor.
+★ O NOSSO SITE DA WEB: https://GuardianProject.info
 ★ NO TWITTER: https://twitter.com/guardianproject
-★ PROGRAMA LIVRE: Ripple é um programa gratuito. Pode dar uma vista de olhos no nosso código-fonte aberto, ou contribuir para ajudar a tornar o Ripple ainda melhor:
+★ PROGRAMA LIVRE: Ripple é um programa gratuito. Pode dar uma vista de olhos no nosso código fonte, ou contribuir para ajudar a tornar o Ripple ainda melhor:
 https://github.com/guardianproject/ripple
 ★ ENVIE-NOS UMA MENSAGEM: nós estamos a perder a sua funcionalidade favorita? Encontrou um erro chato? Por favor, diga-nos! Nós gostaríamos de o ouvir. Envie-nos uma mensagem: support@guardianproject.info ou encontre-nos na nossa sala de conversação em https://guardianproject.info/contact

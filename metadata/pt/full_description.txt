@@ -1,0 +1,24 @@
+Ripple é um "botão de pânico" que envia a sua mensagem de gatilho para todas as apps que forem "responsores de pânico". Tais apps podem fazer coisas como trancar, disfarçarem-se, apagar dados privados, enviar uma mensagem de emergência, e muito mais. Isto foi feito no intuito de serem usados em situações onde há tempo de reagir, mas para onde os utilizadores precisam ter certeza de não acionarem por engano.
+
+Esta é uma versão BETA da app! Nóz estamos a trabalhar agora para darmos suporte para o máximo de apps possíveis. ChatSecure, Orweb, Umbrella e Zom já têm suporte e estas apps virão em breve: Courier, PanicButton, OpenKeychain, Orfox, SMSSecure, StoryMaker.
+
+Aqui estão dois cenários de exemplo:
+
+• Uma organização é regularmente invadida por forças de segurança, que procuram em todos os computadores e aparelhos móveis por premissas. A organização tem pelo menos um minuto ou dois de aviso antes da invasão começar. Eles precisam de uma forma bastante recorrível para acionar a limpeza de todos os dados de apps sensíveis.
+
+• Uma trabalhadora humanitária possui várias informações sensíveis sobre pessoas no aparelho deles. Ela regularmente sincroniza tais dados com uma base de dados central e segura. Ocasionalmente, a trabalhadora humanitária precisa sair do país por um curto espaço de tempo. As guardas da fronteira descarregam regularmente dados inteiros de aparelhos móveis de pessoas a-atravessando. Enquanto espera na fila, esta pessoa nota os guardas da fronteira apreendendo os aparelhos das pessoas, e então se lembra de todos os dados que também estão no próprio aparelho, então ela o-desbloqueia e aciona o gatilho de limpeza, que limpa todos as apps sensíveis do celular. Quando a trabalhadora humanitária retorna ao escritório central, o aparelho é de novo sincronizado com a base de dados.
+
+Este projeto foi iniciado como parte do trabalho T2 Panic. Leia mais sobre isso aqui: https://guardianproject.info/tag/panic
+
+Não vê o seu idioma? Junte-se a nós e ajude-nos e traduzir a app:
+https://hosted.weblate.org/projects/guardianproject/ripple/
+https://hosted.weblate.org/projects/guardianproject/ripple-metadata/
+
+
+***Aprenda mais***
+
+★ SOBRE NÓS: Guardian Project é um grupo de programadores que fazem apps móveis seguros e de código aberto para um amanhã melhor
+★ NOSSO WEBSITE: https://GuardianProject.info
+★ NO TWITTER: https://twitter.com/guardianproject
+★ SOFTWARE LIVRE: Ripple é software livre. Pode dar uma olhada no nosso código-fonte, ou contribuir para ajudar tornar Ripple ainda melhor: https://github.com/guardianproject/ripple
+★ CONTATE-NOS: estamos a esquecer o seu recurso favorito? Encontrou algum bug incômodo? Por favor conte-nos! Nós adoraríamos ouvir de si. Mande-nos um e-mail: support@guardianproject.info ou encontre-nos na nossa sala de bate-papo https://guardianproject.info/contact

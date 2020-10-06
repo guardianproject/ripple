@@ -1,0 +1,26 @@
+Ripple, "panik cevaplayıcı" olan herhangi bir uygulamaya tetik mesajını gönderebilen bir "panik düğmesi"dir.  Bu tür uygulamalar kilitleme, kendilerini gizleme, özel verileri silme, acil durum mesajı gönderme ve daha birçok şey yapabilir.  Bu, tepki verilecek zamanın olduğu, ancak kullanıcıların yanlışlıkla ayarlanmadığından emin olmaları gereken durumlar içindir.
+
+Bu, uygulamanın bir BETA sürümüdür!  Şu anda mümkün olduğunca çok sayıda uygulamaya destek eklemek için çalışıyoruz.  ChatSecure, Orweb, Umbrella ve Zom zaten destekliyor, yakında şu uygulamalar geliyor: Courier, PanicButton, OpenKeychain, Orfox, SMSSecure, StoryMaker.
+
+İşte iki örnek senaryo:
+
+* Bir kuruluş, tesislerdeki tüm bilgisayarları ve mobil cihazları araştıran güvenlik güçleri tarafından düzenli olarak baskın yer. Bir baskın başlamadan önce kuruluşun genellikle uyarı için en az bir ya da iki dakikası vardır. Hassas uygulamalardan tüm verileri silmeyi tetiklemek için çok güvenilir bir yola ihtiyaçları var.
+
+* Bir yardım çalışanı, cihazlarında insanlar hakkında çok sayıda hassas veriye sahiptir.  Bu verileri düzenli olarak güvenli ve merkezi bir veri tabanıyla eşzamanlar.  Yardım görevlisi arada bir ülkeyi çok kısa sürede terk etmek zorunda kalır.  Sınır muhafızları, geçiş yapan kişilerin mobil cihazlarının tüm içeriğini düzenli olarak indirir. Sınırda sırada beklerken, yardım çalışanı sınır korumalarını insanların cihazlarını topladığını görür ve daha sonra cihazdaki tüm verileri hatırlar, sonra telefonun kilidini açar ve tüm hassas uygulamaları cihazdan silen silme tetikleyicisine etkinleştirir. Yardım çalışanı merkez ofise döndüğünde, cihaz tekrar merkezi veri tabanı ile eşzamanlanır.
+
+Bu proje T2 Panic çalışmasının bir parçası olarak başladı.  Bununla ilgili daha fazla bilgiyi buradan edinebilirsiniz:
+https://guardianproject.info/tag/panic
+
+Dilinizi görmüyor musunuz? Bize katılın ve uygulamanın tercüme edilmesine yardımcı olun:
+https://hosted.weblate.org/projects/guardianproject/ripple/
+https://hosted.weblate.org/projects/guardianproject/ripple-metadata/
+
+
+***Daha Fazla Bilgi Edinin***
+
+★ HAKKIMIZDA: Guardian Project, daha iyi bir yarın için güvenli mobil uygulamalar ve açık kaynaklı kodlar yazan bir geliştirici grubudur
+★ WEB SİTEMİZ: https://GuardianProject.info
+★ TWITTER: https://twitter.com/guardianproject
+★ ÖZGÜR YAZILIM: Ripple özgür bir yazılımdır. Kaynak kodumuza göz atabilir veya Ripple'ın daha da iyi olmasına yardımcı olabilirsiniz:
+https://github.com/guardianproject/ripple
+★ BİZE MESAJ GÖNDERİN: En sevdiğiniz özellik eksik mi? Can sıkıcı bir hata mı buldunuz? Lütfen bize bildirin! Duymak isteriz. Bize bir e-posta gönderin: support@guardianproject.info veya sohbet odamızda bizi bulun https://guardianproject.info/contact
