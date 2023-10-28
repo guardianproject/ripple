@@ -1,0 +1,3 @@
+* Correction du texte qui se chevauchait avec l'écran du compte à rebours
+
+* Nouvelles langues : portugais, suédois
