@@ -17,7 +17,7 @@
     <string name="tap_to_trigger">Tik om te activeren</string>
     <string name="only_a_test">Dit is slechts een oefening</string>
     <string name="done">Klaar</string>
-    <string name="edit">Bewerken</string>
+    <string name="edit">Wijzigen</string>
     <string name="got_it">Oké</string>
     <string name="app_hides">App verbergt wanneer geactiveerd</string>
 </resources>
