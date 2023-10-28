@@ -1,0 +1,3 @@
+* Ištaisytas persidengiantis tekstas atgalinio laikmačio ekrane
+
+* Naujos kalbos: portugalų, švedų
