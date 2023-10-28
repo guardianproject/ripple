@@ -1,0 +1,26 @@
+Ripple este un "buton de panică" care poate trimite un mesaj de declanșare către orice aplicație care este un "răspuns la panică".  Astfel de aplicații pot face lucruri cum ar fi să se blocheze, să se deghizeze, să șteargă date private, să trimită un mesaj de urgență și multe altele.  Este destinat situațiilor în care există timp pentru a reacționa, dar în care utilizatorii trebuie să fie siguri că nu este declanșat din greșeală.
+
+Aceasta este o versiune BETA a acestei aplicații!  Lucrăm acum pentru a adăuga suport pentru cât mai multe alte aplicații.  ChatSecure, Orweb, Umbrella și Zom au deja suport, aceste aplicații vor fi disponibile în curând: Courier, PanicButton, PanicButton, OpenKeychain, Orfox, SMSSecure, StoryMaker.
+
+Iată două scenarii de exemplu:
+
+* O organizație face periodic raiduri de către forțele de securitate, care percheziționează toate computerele și dispozitivele mobile din incintă. Organizația are, de obicei, cel puțin un minut sau două de avertizare înainte de începerea raidului. Au nevoie de o modalitate foarte fiabilă de a declanșa ștergerea tuturor datelor din aplicațiile sensibile.
+
+* Un lucrător umanitar are o mulțime de date sensibile despre oameni pe dispozitivul său.  Aceștia sincronizează în mod regulat aceste date cu o bază de date securizată, centrală.  Ocazional, lucrătorul umanitar trebuie să părăsească țara într-un termen foarte scurt.  Gărzile de frontieră descarcă în mod regulat întregul conținut al dispozitivelor mobile ale persoanelor care trec frontiera.  În timp ce așteaptă la coadă la graniță, lucrătorul umanitar vede cum polițiștii de frontieră confiscă dispozitivele oamenilor, apoi își amintește toate datele de pe dispozitiv, așa că deblochează telefonul și apasă butonul de ștergere, care șterge toate aplicațiile sensibile de pe dispozitiv. Când lucrătorul umanitar se întoarce la biroul central, dispozitivul este din nou sincronizat cu baza de date centrală.
+
+Acest proiect a fost demarat ca parte a activității T2 Panic.  Citiți mai multe despre el aici:
+https://guardianproject.info/tag/panic
+
+Nu vedeți limba dumneavoastră? Alăturați-vă nouă și ajutați la traducerea aplicației:
+https://hosted.weblate.org/projects/guardianproject/ripple/
+https://hosted.weblate.org/projects/guardianproject/ripple-metadata/
+
+
+***Învățați mai multe***
+
+★ DESPRE NOI: Guardian Project este un grup de dezvoltatori care realizează aplicații mobile sigure și coduri open-source pentru un viitor mai bun.
+★ SITE-UL NOSTRU: https://GuardianProject.info
+★ PE TWITTER: https://twitter.com/guardianproject
+★ SOFTWARE GRATUIT: Ripple este un software gratuit. Puteți să aruncați o privire la codul nostru sursă sau să contribuiți pentru a ajuta la a face Ripple și mai bun:
+https://github.com/guardianproject/ripple
+★ TRIMITEȚI-NE UN MESAJ: Ne lipsește caracteristica ta preferată? Ați găsit un bug enervant? Vă rugăm să ne spuneți! Ne-ar face plăcere să avem vești de la dumneavoastră. Trimiteți-ne un e-mail: support@guardianproject.info sau găsiți-ne în camera noastră de chat https://guardianproject.info/contact
