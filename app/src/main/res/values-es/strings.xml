@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Ripple</string>
-    <string name="action_trigger">¡Accionar!</string>
+    <string name="app_name">Onda</string>
+    <string name="action_trigger">¡Disparador!</string>
     <string name="action_test_run">Ejecución de prueba</string>
     <string name="test_dialog_title">Ejecución de prueba de Ripple</string>
     <string name="responders">Replicadores de Ripple</string>
