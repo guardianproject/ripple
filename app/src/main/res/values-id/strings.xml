@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="responders">Pembalas Ripple</string>
+    <string name="got_it">Mengerti</string>
+    <string name="edit">Sunting</string>
+    <string name="done">Selesai</string>
+    <string name="only_a_test">Ini hanya sebuah tes</string>
+    <string name="tap_anywhere_to_cancel">Ketuk di mana saja untuk membatalkan</string>
+    <string name="release_to_confirm">Lepaskan untuk mengkonfirmasi</string>
+    <string name="app_name">Ripple</string>
+</resources>
