@@ -8,4 +8,12 @@
     <string name="swipe_down_to_trigger">יש למשוך כלפי מטה כדי להקפיץ</string>
     <string name="release_to_confirm">יש לשחרר כדי לאשר</string>
     <string name="tap_anywhere_to_cancel">יש לגעת היכנשהו כדי לבטל</string>
+    <string name="app_hides">היישומון יוסתר עם הפעלה</string>
+    <string name="got_it">הבנתי</string>
+    <string name="edit">עריכה</string>
+    <string name="done">הסתיים</string>
+    <string name="only_a_test">זאת רק בדיקה</string>
+    <string name="tap_to_trigger">יש לגעת כדי להפעיל גל</string>
+    <string name="intro_instructions">בעת הפעלת גל היישומונים שבחרת יגיבו. יש לגעת בעריכה כדי לצפות ולשנות את התנהגות היישומונים האלו.</string>
+    <string name="panic_test_successful">כל הכבוד! במקרה אמת, ההפעלה הייתה מתפשטת לכל היישומונים המגיבים, ואלו היו נועלים עצמם או מבצעים כל התנהגות אחרת שהגדרת.</string>
 </resources>
