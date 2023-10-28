@@ -14,6 +14,6 @@
     <string name="only_a_test">Ovo je samo test</string>
     <string name="done">Gotovo</string>
     <string name="edit">Uredi</string>
-    <string name="got_it">Shvaćam</string>
+    <string name="got_it">Razumijem</string>
     <string name="app_hides">Aplikacija se skriva kad se aktivira</string>
 </resources>
