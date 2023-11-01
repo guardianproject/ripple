@@ -1,14 +1,14 @@
-Ripple ist ein "Panikknopf", der seine Triggernachricht an jede App senden kann, die ein "Panik-Responder" ist.  Solche Apps können Dinge tun wie sich sperren, sich verbergen, private Daten löschen, eine Notfallnachricht senden und mehr.  Es ist für Situationen gedacht, in denen Zeit zu reagieren bleibt, Benutzer aber sicher sein müssen, es nicht versehentlich auszulösen.
+Ripple ist ein „Panikknopf“, der seine Triggernachricht an jede App senden kann, die ein „Panik-Responder“ ist. Solche Apps können Dinge tun wie sich sperren, sich verbergen, private Daten löschen, eine Notfallnachricht senden und mehr. Es ist für Situationen gedacht, in denen Zeit zu reagieren bleibt, Benutzer aber sicher sein müssen, es nicht versehentlich auszulösen.
 
-Dies ist eine BETA-Version dieser App!  Wir arbeiten jetzt gerade daran, die Unterstützung möglichst vieler weiterer Apps zu ergänzen.  ChatSecure, Orweb, Umbrella und Zom werden bereits unterstützt, diese Apps kommen in Kürze hinzu: Courier, PanicButton, OpenKeychain, Orfox, SMSSecure, StoryMaker.
+Dies ist eine BETA-Version dieser App! Wir arbeiten jetzt gerade daran, die Unterstützung möglichst vieler weiterer Apps zu ergänzen. ChatSecure, Orweb, Umbrella und Zom werden bereits unterstützt, diese Apps kommen in Kürze hinzu: Courier, PanicButton, OpenKeychain, Orfox, SMSSecure, StoryMaker.
 
 Hier sind zwei Beispielszenarien:
 
 * Bei einer Organisation werden regelmäßig Razzien durch Sicherheitskräfte durchgeführt, die alle Computer und mobilen Geräte auf dem Gelände durchsuchen. Die Organisation hat in der Regel mindestens ein oder zwei Minuten Vorwarnzeit, bevor eine Razzia beginnt. Sie benötigen eine sehr zuverlässige Methode, um das Löschen aller Daten aus den sensiblen Anwendungen auszulösen.
 
-* Eine Entwicklungshelferin hat viele sensible Daten über Personen auf seinem Gerät.  Sie synchronisieren diese Daten regelmäßig mit einer sicheren, zentralen Datenbank.  Gelegentlich muss die Helferin das Land sehr kurzfristig verlassen.  Die Grenzschutzbeamten laden regelmäßig den gesamten Inhalt mobiler Geräte von Durchreisenden herunter.  Während sie an der Grenze in der Schlange steht, sieht die Entwicklungshelferin, wie die Grenzschutzbeamten die Geräte der Menschen beschlagnahmen und erinnert sich dann an alle Daten auf dem Gerät, also entsperrt sie das Telefon und drückt den Auslöser, der alle empfindlichen Anwendungen von dem Gerät löscht. Wenn die Helferin in die Zentrale zurückkehrt, wird das Gerät wieder mit der zentralen Datenbank synchronisiert.
+* Eine Entwicklungshelferin hat viele sensible Daten über Personen auf seinem Gerät. Sie synchronisieren diese Daten regelmäßig mit einer sicheren, zentralen Datenbank. Gelegentlich muss die Helferin das Land sehr kurzfristig verlassen. Die Grenzschutzbeamten laden regelmäßig den gesamten Inhalt mobiler Geräte von Durchreisenden herunter. Während sie an der Grenze in der Schlange steht, sieht die Entwicklungshelferin, wie die Grenzschutzbeamten die Geräte der Menschen beschlagnahmen und erinnert sich dann an alle Daten auf dem Gerät, also entsperrt sie das Telefon und drückt den Auslöser, der alle empfindlichen Anwendungen von dem Gerät löscht. Wenn die Helferin in die Zentrale zurückkehrt, wird das Gerät wieder mit der zentralen Datenbank synchronisiert.
 
-Dieses Projekt wurde im Rahmen der T2 Panic Arbeit gestartet.  Mehr darüber erfahren Sie hier:
+Dieses Projekt wurde im Rahmen der T2-Panic-Arbeit gestartet. Mehr darüber erfahren Sie hier:
 https://guardianproject.info/tag/panic
 
 Sie finden Ihre Sprache nicht? Schließen Sie sich uns an und helfen Sie bei der Übersetzung der App:
@@ -18,7 +18,7 @@ https://hosted.weblate.org/projects/guardianproject/ripple-metadata/
 
 ***Mehr erfahren***
 
-★ ÜBER UNS: Guardian Project ist eine Gruppe von Entwicklern, die sichere mobile Anwendungen und Open-Source-Code für eine bessere Zukunft entwickeln.
+★ ÜBER UNS: Das Guardian Project ist eine Gruppe von Entwicklern, die sichere mobile Anwendungen und Open-Source-Code für eine bessere Zukunft entwickeln.
 ★ UNSERE WEBSITE: https://GuardianProject.info
 ★ AUF TWITTER: https://twitter.com/guardianproject
 ★ FREIE SOFTWARE: Ripple ist freie Software. Sie können einen Blick auf unseren Quellcode werfen oder dazu beitragen, Ripple noch besser zu machen:

@@ -20,5 +20,5 @@
     <string name="done">Готово</string>
     <string name="edit">Редактировать</string>
     <string name="got_it">Понятно</string>
-    <string name="app_hides">Приложение скрывает при срабатывании</string>
+    <string name="app_hides">Приложение скрывается при срабатывании</string>
 </resources>

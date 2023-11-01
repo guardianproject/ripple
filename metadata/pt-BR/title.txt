@@ -1,1 +1,1 @@
-Ripple: responder ao pânico
+Ripple: responda ao entrar em pânico
