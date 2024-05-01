@@ -1,0 +1,1 @@
+Ripple: respon en cas de pànic
