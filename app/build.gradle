@@ -26,8 +26,8 @@ def getVersionName = { ->
 }
 
 android {
-    compileSdkVersion 27
-    buildToolsVersion "27.0.1"
+    compileSdkVersion 34
+    buildToolsVersion "31.0.0"
 
     aaptOptions {
         cruncherEnabled = false
@@ -65,9 +65,9 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:27.1.1'
-    compile 'com.android.support:recyclerview-v7:27.1.1'
-    compile 'com.android.support:design:27.1.1'
-    compile 'com.android.support.constraint:constraint-layout:1.1.3'
-    compile 'info.guardianproject.panic:panic:0.5'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:2.0.4'
+    implementation 'info.guardianproject.panic:panic:1.0'
 }
