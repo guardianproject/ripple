@@ -26,17 +26,18 @@ def getVersionName = { ->
 }
 
 android {
-    compileSdkVersion 34
-    buildToolsVersion "31.0.0"
+    compileSdk 34
+    buildToolsVersion "34.0.0"
 
     aaptOptions {
         cruncherEnabled = false
     }
 
     defaultConfig {
+        namespace "info.guardianproject.ripple"
         applicationId "info.guardianproject.ripple"
         minSdkVersion 14
-        targetSdkVersion 27
+        targetSdkVersion 34
         versionCode getVersionCode()
         versionName getVersionName()
         archivesBaseName = "Ripple-$versionName"
