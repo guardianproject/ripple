@@ -24,6 +24,7 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
@@ -199,14 +200,15 @@ public class MainActivity extends AppCompatActivity {
             appLabelView = (TextView) row.findViewById(R.id.appLabel);
             editableLabel = (TextView) row.findViewById(R.id.editableLabel);
             onSwitch = (SwitchCompat) row.findViewById(R.id.on_switch);
-            onClickListener = new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    requestPackageName = rowPackageName;
-                    Intent intent = new Intent(Panic.ACTION_CONNECT);
-                    intent.setPackage(requestPackageName);
-                    // TODO add TrustedIntents here
+            onClickListener = view -> {
+                requestPackageName = rowPackageName;
+                Intent intent = new Intent(Panic.ACTION_CONNECT);
+                intent.setPackage(requestPackageName);
+                // TODO add TrustedIntents here
+                try {
                     startActivityForResult(intent, CONNECT_RESULT);
+                } catch (Exception e) {
+                    Toast.makeText(MainActivity.this, R.string.error_config, Toast.LENGTH_SHORT).show();
                 }
             };
 
