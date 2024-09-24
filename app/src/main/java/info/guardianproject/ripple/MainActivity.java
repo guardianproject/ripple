@@ -166,15 +166,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
-        switch (item.getItemId()) {
-            case R.id.action_test_run:
-                Intent intent = new Intent(this, TestActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-                startActivity(intent);
-                return true;
+        if (item.getItemId() == R.id.action_test_run) {
+            Intent intent = new Intent(this, TestActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+            startActivity(intent);
+            return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
