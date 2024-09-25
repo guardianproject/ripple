@@ -1,21 +1,22 @@
-Ripple es un "botón de pánico" que puede enviar su mensaje de activación a cualquier aplicación que sea un "respondedor de pánico".  Tales aplicaciones pueden hacer cosas como bloquear, disfrazarse, eliminar datos privados, enviar un mensaje de emergencia, y más.  Está pensado para situaciones en las que hay tiempo para reaccionar, pero donde los usuarios necesitan estar seguros de que no se activa por error.
+Ripple es un "botón de pánico" que puede enviar su mensaje de activación a cualquier aplicación que sea un "contestador de pánico". Tales aplicaciones pueden hacer cosas como bloquear, disfrazarse, eliminar datos privados, enviar un mensaje de emergencia, y más. Está pensado para situaciones en las que hay tiempo para reaccionar, pero donde los usuarios necesitan estar seguros de que no se activa por error.
 
-Esta es una versión BETA de esta aplicación!  Estamos trabajando ahora para agregar soporte a tantas otras aplicaciones como sea posible.  ChatSecure, Orweb, Umbrella y Zom ya tienen soporte, estas aplicaciones están próximamente: Courier, PanicButton, OpenKeychain, Orfox, SMSSecure, StoryMaker.
+Esta es una versión BETA de esta aplicación! Estamos trabajando ahora para agregar soporte a tantas otras aplicaciones como sea posible. ChatSecure, Orweb, Umbrella y Zom ya tienen soporte, estas aplicaciones están próximamente: Courier, PanicButton, OpenKeychain, Orfox, SMSSecure, StoryMaker.
 
 Aquí hay dos escenarios de ejemplo:
 
 * Una organización es asaltada regularmente por las fuerzas de seguridad, que buscan en todos los ordenadores y dispositivos móviles en las instalaciones. La organización suele tener al menos un minuto o dos de advertencia antes de que comience una incursión. Necesitan una forma muy confiable de activar la limpieza de todos los datos de las aplicaciones confidenciales.
 
-* Un trabajador de ayuda tiene una gran cantidad de datos sensibles sobre las personas en su dispositivo.  Sincronizan regularmente esos datos con una base de datos central y segura.  Ocasionalmente, el trabajador humanitario tiene que abandonar el país con muy poca antelación.  Los guardias fronterizos descargan regularmente todo el contenido de los dispositivos móviles de las personas que cruzan.  Mientras espera en la fila en la frontera, el trabajador de ayuda ve a los guardias fronterizos apoderarse de los dispositivos de las personas, y luego recuerda todos los datos en el dispositivo, por lo que desbloquea el teléfono y golpea el disparador de borrado, que borra todas las aplicaciones sensibles del dispositivo. Cuando el trabajador de ayuda vuelve a la oficina central, el dispositivo se sincroniza de nuevo con la base de datos central.
+* Un trabajador de ayuda tiene una gran cantidad de datos sensibles sobre las personas en su dispositivo. Sincronizan regularmente esos datos con una base de datos central y segura. Ocasionalmente, el trabajador humanitario tiene que abandonar el país con muy poca antelación. Los guardias fronterizos descargan regularmente todo el contenido de los dispositivos móviles de las personas que cruzan. Mientras espera en la fila en la frontera, el trabajador de ayuda ve a los guardias fronterizos apoderarse de los dispositivos de las personas, y luego recuerda todos los datos en el dispositivo, por lo que desbloquea el teléfono y golpea el disparador de borrado, que borra todas las aplicaciones sensibles del dispositivo. Cuando el trabajador de ayuda vuelve a la oficina central, el dispositivo se sincroniza de nuevo con la base de datos central.
 
-Este proyecto se inició como parte del trabajo T2 Panic.  Lea más sobre esto aquí:
+Este proyecto se inició como parte del trabajo T2 Panic. Lea más sobre esto aquí:
 https://guardianproject.info/tag/panic
 
 ¿No ves tu idioma? Acompáñanos y ayuda a traducir la aplicación:
 https://hosted.weblate.org/projects/guardianproject/ripple/
 https://hosted.weblate.org/projects/guardianproject/ripple-metadata/
 
-Más información***
+
+***Más información***
 
 ★ ACERCA DE NOSOTROS: Guardian Project es un grupo de desarrolladores que hacen aplicaciones móviles seguras y código abierto para un mejor mañana
 ★ NUESTRO SITIO WEB: https://GuardianProject.info

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Onde</string>
-    <string name="action_trigger">Déclencher !</string>
-    <string name="action_test_run">Essai</string>
+    <string name="action_trigger">Déclencher !</string>
+    <string name="action_test_run">Essai de fonctionnement</string>
     <string name="test_dialog_title">Essai d’onde</string>
     <string name="responders">Répondants à l’onde</string>
     <string name="swipe_down_to_trigger">Faire glisser vers le bas pour déclencher</string>
@@ -11,8 +11,8 @@
     <string name="intro_instructions">Quand vous déclenchez une onde, les applis que vous avez choisies réagissent. Touchez MODIFIER pour voir et changer le comportement de l’appli.</string>
     <string name="tap_anywhere_to_cancel">Toucher n’importe où pour annuler</string>
     <string name="tap_to_trigger">Toucher pour déclencher une onde</string>
-    <string name="only_a_test">Ceci est seulement un test</string>
-    <string name="done">Fait</string>
+    <string name="only_a_test">Ceci n’est qu’un essai</string>
+    <string name="done">Terminé</string>
     <string name="edit">Modifier</string>
     <string name="got_it">Compris</string>
     <string name="app_hides">L’appli se cache si elle est déclenchée</string>

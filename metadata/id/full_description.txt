@@ -1,0 +1,26 @@
+Ripple adalah sebuah "tombol panik" yang dapat mengirim pesan pemicunya ke aplikasi apa pun yang merupakan "responden panik". Aplikasi semacam itu dapat melakukan hal-hal seperti mengunci, menyamarkan diri, menghapus data pribadi, mengirim pesan darurat, dan banyak lagi. Ini dimaksudkan untuk situasi di mana ada waktu untuk bereaksi, tetapi di mana pengguna perlu memastikan itu tidak keliru di nonaktifkan.
+
+Ini adalah sebuah versi BETA dari aplikasi ini! Kami bekerja sekarang untuk menambahkan dukungan sebanyak mungkin untuk aplikasi lain. ChatSecure, Orweb, Umbrella, dan Zom sudah memiliki dukungan, dan aplikasi-aplikasi ini akan segera hadir: ourier, PanicButton, OpenKeychain, Orfox, SMSSecure, StoryMaker.
+
+Berikut adalah dua contoh skenario:
+
+* Suatu organisasi secara teratur disidak oleh tim keamanan, yang mencari semua komputer dan perangkat seluler di tempat tersebut. Organisasi biasanya memiliki setidaknya satu atau dua menit peringatan sebelum sidak dimulai. Mereka membutuhkan sebuah cara yang sangat diandalkan untuk memicu menghapus semua data dari aplikasi sensitif tersebut.
+
+* Seorang sukarelawan memiliki banyak data sensitif tentang orang-orang di perangkat mereka. Mereka secara teratur menyinkronkan data itu ke sebuah database pusat yang aman. Kadang-kadang, seorang sukarelawan harus meninggalkan negara dengan pemberitahuan yang sangat singkat. Penjaga perbatasan secara teratur mengunduh seluruh isi perangkat seluler yang dilalui orang. Sambil menunggu dalam antrean di perbatasan, pekerja bantuan melihat penjaga perbatasan yang merebut perangkat orang, dan kemudian mengingat semua data pada perangkat, jadi dia membuka kunci telepon dan mengaktifkan pemicu penghapusan, yang menghapus semua aplikasi sensitif dari perangkat. Ketika sukarelawan tersebut kembali ke kantor pusat, perangkat kembali disinkronkan dengan database pusat.
+
+Proyek ini dimulai sebagai bagian dari pekerjaan T2 Panic. Baca lebih lanjut tentang itu di sini:
+https://guardianproject.info/tag/panic.
+
+Tidak melihat bahasa Anda? Bergabunglah dengan kami dan bantu terjemahkan aplikasi ini:
+https://hosted.weblate.org/projects/guardianproject/ripple/
+https://hosted.weblate.org/projects/guardianproject/ripple-metadata/
+
+
+***Pelajari lebih lanjut***
+
+★ TENTANG KAMI: Guardian Project adalah sekelompok pengembang yang membuat aplikasi seluler aman dan kode sumber terbuka untuk hari esok yang lebih baik
+★ SITUS WEB KAMI: https://GuardianProject.info
+★ DI TWITTER: https://twitter.com/guardianproject
+★ PERANGKAT LUNAK BEBAS: Ripple adalah perangkat lunak bebas/gratis. Anda dapat melihat kode sumber kami, atau berkontribusi untuk membantu membuat Ripple lebih baik:
+https://github.com/guardianproject/ripple.
+★ KIRIM PESAN KEPADA KAMI: Apakah kami kehilangan fitur favorit Anda? Menemukan sebuah bug yang menjengkelkan? Tolong beritahu kami! Kami akan senang mendengar dari Anda. Kirimi kami email: support@guardianproject.info atau temukan kami di ruang obrolan kami https://guardianproject.info/contact

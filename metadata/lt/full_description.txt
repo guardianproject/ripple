@@ -1,0 +1,26 @@
+„Ripple“ yra „pavojaus mygtukas“, kuris gali siųsti pranešimą bet kuriai programėlei, kuri yra „pavojaus atsakiklis“.  Tokios programėlės gali atlikti tokius veiksmus kaip užrakinti, persirengti, ištrinti privačius duomenis, išsiųsti avarinį pranešimą ir kt.  Jis skirtas situacijoms, kai yra laiko reaguoti, bet kai naudotojai turi būti tikri, kad jis nebus per klaidą įjungtas.
+
+Tai yra šios programos BETA versija!  Dabar dirbame, kad pridėtume palaikymą kuo daugiau kitų programėlių.  Programos „ChatSecure“, „Orweb“, „Umbrella“ ir „Zom“ jau turi palaikymą, šios programėlės pasirodys netrukus: „Courier“, „PanicButton“, „OpenKeychain“, „Orfox“, „SMSSecure“, „StoryMaker“.
+
+Pateikiame du pavyzdinius scenarijus:
+
+* Organizacijoje reguliariai vyksta saugumo pajėgų reidai, kurių metu apieškomi visi patalpose esantys kompiuteriai ir mobilieji įrenginiai. Organizacija paprastai įspėjama bent prieš minutę ar dvi iki reido pradžios. Jai reikia labai patikimo būdo, kaip ištrinti visus neskelbtinų programų duomenis.
+
+* Pagalbos darbuotojas savo įrenginyje turi daug jautrių duomenų apie žmones.  Jis reguliariai sinchronizuoja šiuos duomenis su saugia centrine duomenų baze.  Kartais pagalbos darbuotojas turi labai greitai išvykti iš šalies.  Pasienio apsaugos pareigūnai reguliariai parsisiunčia visą kertančių žmonių mobiliųjų įrenginių turinį.  Laukdamas eilėje pasienyje pagalbos darbuotojas mato, kaip pasieniečiai konfiskuoja žmonių įrenginius, ir tada prisimena visus įrenginyje esančius duomenis, todėl atrakina telefoną ir paspaudžia „išvalyti“ mygtuką, kuris ištrina iš įrenginio visas jautrias programėles. Kai pagalbos darbuotojas grįžta į centrinį biurą, prietaisas vėl sinchronizuojamas su centrine duomenų baze.
+
+Šis projektas buvo pradėtas kaip „T2 Panic“ darbo dalis.  Daugiau apie jį skaitykite čia:
+https://guardianproject.info/tag/panic
+
+Nematote savo kalbos? Prisijunkite prie mūsų ir padėkite išversti programėlę:
+https://hosted.weblate.org/projects/guardianproject/ripple/
+https://hosted.weblate.org/projects/guardianproject/ripple-metadata/
+
+
+***Sužinokite daugiau***
+
+★ APIE MUS: „Guardian Project“ yra kūrėjų grupė, kuri kuria saugias mobiliąsias programėles ir atvirojo kodo kodą geresniam rytojui.
+★ MŪSŲ SVETAINĖ: https://GuardianProject.info
+★ TWITTER: https://twitter.com/guardianproject
+★ NEMOKAMA PROGRAMINĖ ĮRANGA: „Ripple“ yra nemokama programinė įranga. Galite peržiūrėti mūsų pirminį kodą arba prisidėti prie „Ripple“ tobulinimo:
+https://github.com/guardianproject/ripple
+★ PARAŠYKITE MUMS ŽINUTĘ: Ar trūksta jūsų mėgstamiausios funkcijos? Radote erzinančią klaidą? Praneškite mums! Mums būtų malonu išgirsti jūsų nuomonę. Siųskite mums el. laišką: support@guardianproject.info arba raskite mus mūsų pokalbių kambaryje https://guardianproject.info/contact

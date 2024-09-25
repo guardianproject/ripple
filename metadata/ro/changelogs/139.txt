@@ -1,0 +1,3 @@
+* A fost corectată suprapunerea textului pe ecranul de numărătoare inversă
+
+* Limbi noi: Portugheză, suedeză

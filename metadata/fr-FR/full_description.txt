@@ -1,0 +1,26 @@
+Onde est un « bouton de panique » qui peut envoyer son message de déclenchement à n'importe quelle application qui est un « répondeur de panique ». Ces applications peuvent faire des choses comme se verrouiller, se déguiser, supprimer des données privées, envoyer un message d'urgence, etc. Il est destiné aux situations où il est temps de réagir, mais où les utilisateurs doivent être sûrs qu'il n'est pas déclenché par erreur.
+
+Ceci est une version BÊTA de cette application ! Nous travaillons maintenant pour ajouter le support à autant d'autres applications que possible. ChatSecure, Orweb, Umbrella et Zom ont déjà un support, ces applications arrivent bientôt: Courier, PanicButton, OpenKeychain, Orfox, SMSSecure, StoryMaker.
+
+Voici deux exemples de scénarios :
+
+* Une organisation est régulièrement attaquée par les forces de sécurité, qui fouillent tous les ordinateurs et appareils mobiles sur les lieux. L'organisation dispose généralement d'au moins une minute ou deux d'avertissement avant le début d'un raid. Ils ont besoin d'un moyen très fiable pour déclencher l'effacement de toutes les données des applications sensibles.
+
+* Un travailleur humanitaire a beaucoup de données sensibles sur les personnes sur son appareil. Il synchronise régulièrement ces données dans une base de données centrale sécurisée. Parfois, le travailleur humanitaire doit quitter le pays très vite. Les gardes-frontières téléchargent régulièrement l'intégralité du contenu des appareils mobiles des personnes qui les traversent. En faisant la queue à la frontière, le travailleur humanitaire voit les gardes-frontières saisir les appareils des personnes, puis se souvient de toutes les données de l'appareil. Il déverrouille donc le téléphone et appuie sur la gâchette d'effacement, qui efface toutes les applications sensibles de l'appareil. Lorsque le travailleur humanitaire revient au bureau central, l'appareil est à nouveau synchronisé avec la base de données centrale.
+
+Ce projet a été lancé dans le cadre des travaux T2 Panic. En savoir plus ici :
+https://guardianproject.info/tag/panic
+
+Vous ne voyez pas votre langue ? Rejoignez-nous et aidez à traduire l'application :
+https://hosted.weblate.org/projects/guardianproject/ripple/
+https://hosted.weblate.org/projects/guardianproject/ripple-metadata/
+
+***En apprendre encore plus***
+
+★ À PROPOS DE NOUS : Guardian Project est un groupe de développeurs qui créent des applications mobiles sécurisées et du code source ouvert pour un avenir meilleur
+★ NOTRE SITE WEB : https://GuardianProject.info
+★ SUR TWITTER : https://twitter.com/guardianproject
+★ LOGICIEL LIBRE : Onde est un logiciel libre. Vous pouvez consulter notre code source ou contribuer à rendre Onde encore meilleur :
+https://github.com/guardianproject/ripple
+★ ENVOYEZ-NOUS UN MESSAGE : Avons-nous oublié votre fonctionnalité préférée ? Vous avez trouvé une erreur agaçante ? S'il vous plaît, dites-le-nous ! Nous aimerions recevoir de vos nouvelles. Envoyez-nous un courriel : support@guardianproject.info ou retrouvez-nous dans notre salon de discussion
+https://guardianproject.info/contact
