@@ -6,6 +6,6 @@
     <string name="test_dialog_title">Ripple Provo</string>
     <string name="responders">Përgjigje Ripple</string>
     <string name="swipe_down_to_trigger">Rrëshqit poshtë për të filluar</string>
-    <string name="release_to_confirm">Për ta ripohuar, lëshojeni</string>
+    <string name="release_to_confirm">Lëshojë për të confirmuar</string>
     <string name="panic_test_successful">Punë e shkëlqyer! Ne një skenar të vërtet, ndezja do të kishte plluqurit të gjitha aplikacionet që e pranojnë. Edhe këto aplikacione do të përgjigjen duke u kyçur ose një lëvizje tjetër që ti ke vendosur.</string>
 </resources>
