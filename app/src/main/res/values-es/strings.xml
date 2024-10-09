@@ -7,13 +7,14 @@
     <string name="responders">Replicadores de Ripple</string>
     <string name="swipe_down_to_trigger">Deslizar hacia abajo para accionar</string>
     <string name="release_to_confirm">Suelte para confirmar</string>
-    <string name="panic_test_successful">"¡Buen trabajo!  En un escenario real, su acción se habría propagado a todas las aplicaciones de respuesta.  Y esas aplicaciones luego responderían bloqueando o cualquier otro comportamiento que haya configurado."</string>
-    <string name="intro_instructions">"Por cada acción,  sus aplicaciones elegidas reaccionan como un efecto dominó .  Toque EDITAR para ‐ver y cambiar los comportamientos de esa aplicación."</string>
+    <string name="panic_test_successful">¡Buen trabajo! En un escenario real, su activación se habría extendido a todas las aplicaciones de respuesta. Y esas aplicaciones responderían bloqueándose o con cualquier otro comportamiento que hayas configurado.</string>
+    <string name="intro_instructions">Cuando activas una acción, las aplicaciones elegidas reaccionan. Pulsa EDITAR para ver y cambiar el comportamiento de esa aplicación.</string>
     <string name="tap_anywhere_to_cancel">Pulse en cualquier lugar para cancelar</string>
-    <string name="tap_to_trigger">Pulse para accionar una reacción.</string>
+    <string name="tap_to_trigger">Pulse para accionar una reacción</string>
     <string name="only_a_test">Esto es sólo una prueba</string>
     <string name="done">Hecho</string>
     <string name="edit">Editar</string>
     <string name="got_it">Lo entiendo</string>
     <string name="app_hides">La aplicación se oculta cuando se activa</string>
+    <string name="error_config">No se pudo iniciar la aplicación</string>
 </resources>

@@ -1,0 +1,26 @@
+Ripple 是一个“紧急按钮”，可以向任何具有“紧急响应”功能的应用发送触发消息。这些应用程序可以进行锁定、伪装、删除私密数据、发送紧急信息等操作。它适用于有时间做出反应，但需要确保不误触发的情况。
+
+这是此应用的“测试”版本！我们正努力为尽可能多的其他应用添加支持。ChatSecure、Orweb、Umbrella 和 Zom 已受支持。即将支持的应用：Courier、PanicButton、OpenKeychain、Orfox、SMSSecure 和 StoryMaker。
+
+下面是两个示例情境：
+
+* 某组织经常遭到安全部队的搜查，安全部队会搜查组织内的所有电脑和移动设备。在搜查开始前，该组织通常有至少一两分钟的预警时间。他们需要一种非常可靠的方法来触发抹除敏感应用所有数据的操作。
+
+* 一名援助人员的设备上有大量人员相关的敏感数据。他们定期将这些数据与安全的中央数据库同步。有时，该援助人员必须在很短的时间内离开该国。边防人员会定期下载过境人员移动设备中的全部内容。在边境排队等候时，援助人员看到边防人员扣押了人们的设备，然后想到设备上的所有数据。于是她解锁了手机并点击了擦除触发器，删除了设备上的所有敏感应用。当援助人员回到中央办公室时，设备将再次与中央数据库同步到位。
+
+该项目是作为 T2 Panic 工作的一部分启动的。点击此处了解更多信息：
+https://guardianproject.info/tag/panic
+
+没有看到你的语言？加入我们，帮助翻译此应用：https://hosted.weblate.org/projects/guardianproject/ripple/
+
+https://hosted.weblate.org/projects/guardianproject/ripple-metadata/
+
+
+***了解更多***
+
+★ 关于我们：Guardian Project 是一个由开发人员组成的团队，致力于开发安全的移动应用和开源代码，创造更美好的明天
+★ 我们的网站：https://GuardianProject.info
+★ Twitter：https://twitter.com/guardianproject
+★ 自由软件：Ripple 是自由软件。你可以看看我们的源代码，也可以贡献自己的力量，让 Ripple 变得更好：
+https://github.com/guardianproject/ripple
+★ 给我们留言：我们缺少你最喜欢的功能吗？发现了恼人的缺陷？请告诉我们！我们很乐意接受你的意见。给我们发送电子邮件：support@guardianproject.info 或在聊天室 https://guardianproject.info/contact 找到我们

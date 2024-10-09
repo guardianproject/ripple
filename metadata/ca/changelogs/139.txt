@@ -1,0 +1,3 @@
+* S'ha corregit el text que se superposa en la finestra del compte enrere
+
+* Noves llengües: portuguès, suec
