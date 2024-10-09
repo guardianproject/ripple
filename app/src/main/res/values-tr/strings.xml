@@ -16,4 +16,5 @@
     <string name="action_test_run">Test Sürüşü</string>
     <string name="action_trigger">Tetikle!</string>
     <string name="app_name">Ripple</string>
+    <string name="error_config">Uygulama başlatılamadı</string>
 </resources>
