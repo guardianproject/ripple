@@ -16,4 +16,5 @@
     <string name="intro_instructions">Quando você aciona um ripple, seus aplicativos configurados reagem. Toque em EDITAR para ver e alterar os comportamentos do app.</string>
     <string name="tap_anywhere_to_cancel">Toque em qualquer lugar para cancelar</string>
     <string name="tap_to_trigger">Toque para acionar</string>
+    <string name="error_config">Não foi possível iniciar o aplicativo</string>
 </resources>
