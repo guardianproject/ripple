@@ -1,0 +1,3 @@
+* Corrección de fallos en versiones recientes de Android
+
+* Añadidas traducciones: Vasco, Farsi, Indonesio, Portugués de Portugal, Ucraniano
