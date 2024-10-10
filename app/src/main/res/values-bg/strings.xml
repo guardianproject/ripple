@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ripple</string>
+    <string name="action_trigger">Задействане!</string>
+    <string name="action_test_run">Проба</string>
+    <string name="test_dialog_title">Проба на Ripple</string>
+    <string name="responders">Отговарящи на Ripple</string>
+    <string name="swipe_down_to_trigger">Дръпнете натолу, за да задействате</string>
+    <string name="release_to_confirm">Пуснете, за да потвърдите</string>
+    <string name="panic_test_successful">Добра работа! При реална ситуация спусъкът щеше да се разпространи до всички реагиращи приложения. Те щяха да отговорят чрез заключване или друго поведение, което сте настроили.</string>
+    <string name="done">Готово</string>
+    <string name="edit">Променяне</string>
+    <string name="got_it">Разбрах</string>
+    <string name="only_a_test">Това е само проба</string>
+    <string name="tap_to_trigger">Докоснете, за да задействате</string>
+    <string name="tap_anywhere_to_cancel">Докоснете някъде, за да откажете</string>
+    <string name="intro_instructions">Когато задействате, избраните приложения реагират. Докоснете „Променяне“, за да видите и промените поведението на дадено приложение.</string>
+    <string name="app_hides">Приложението се скрива при задействане</string>
+    <string name="error_config">Приложението не може да бъде отворено</string>
+</resources>
