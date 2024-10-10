@@ -1,0 +1,3 @@
+* Correzione crash sulle versioni recenti di Android
+
+* Traduzioni aggiunte: Basco, Farsi, Indonesiano, Portoghese del Portogallo, Ucraino
