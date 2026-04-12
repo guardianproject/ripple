@@ -16,4 +16,5 @@
     <string name="edit">Змінити</string>
     <string name="got_it">Зрозуміло</string>
     <string name="app_hides">Застосунок приховується при спрацюванні</string>
+    <string name="error_config">Не вдалося запустити додаток</string>
 </resources>
