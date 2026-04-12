@@ -16,4 +16,5 @@
     <string name="edit">Editar</string>
     <string name="got_it">Entendi</string>
     <string name="app_hides">App oculta-se quando acionada</string>
+    <string name="error_config">Não foi possível iniciar a app</string>
 </resources>
