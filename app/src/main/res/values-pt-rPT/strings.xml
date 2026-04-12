@@ -16,4 +16,5 @@
     <string name="action_test_run">Execução de teste</string>
     <string name="action_trigger">Ativar!</string>
     <string name="app_name">Ripple</string>
+    <string name="error_config">app</string>
 </resources>
