@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="test_dialog_title">Рипл пролазни тест</string>
+    <string name="action_test_run">Тестирај трку</string>
+    <string name="only_a_test">Ово је само тест</string>
+    <string name="error_config">Нисам могао да покренем апликацију</string>
+    <string name="app_name">Рипл</string>
+    <string name="action_trigger">Окидач!</string>
+    <string name="tap_anywhere_to_cancel">Додирните било где да откажете</string>
+    <string name="app_hides">Апликација се скрива када је окинута</string>
+    <string name="tap_to_trigger">Додирните да покренете Рипл талас</string>
+    <string name="release_to_confirm">Пустите за потврду</string>
+    <string name="responders">Рипл одговарачи</string>
+    <string name="intro_instructions">Када окинете Рипл, ваше одабране апликације реагују. Додирните УРЕДИТИ да видите и промените понашање те апликације.</string>
+    <string name="swipe_down_to_trigger">Превуците доле да покренете</string>
+    <string name="done">Завршено</string>
+    <string name="panic_test_successful">Добар посао! У стварном сценарију, ваш окидач би се проширио на све апликације одговора. Те апликације би затим реаговале закључавањем или било којим другим понашањем које сте конфигурисали.</string>
+</resources>
