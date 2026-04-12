@@ -1,0 +1,3 @@
+* Parandasime kokkujooksmise hiljutistes Androidi versioonides
+
+* Lisasime tõlkeid: baski keel, pärsia keel, indoneesia keel, portugali keel (Portugalis), ukraina keel
