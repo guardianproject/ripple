@@ -1,0 +1,26 @@
+Ripple on "paniikkipainike", joka voi lähettää laukaisuviestinsä mille tahansa sovellukselle, joka on "paniikkivastaaja". Tällaiset sovellukset voivat esimerkiksi lukita, naamioida itsensä, poistaa yksityisiä tietoja, lähettää hätäviestin ja paljon muuta. Se on tarkoitettu tilanteisiin, joissa on aikaa reagoida, mutta joissa käyttäjien on varmistettava, ettei sitä vahingossa lähdetä pois.
+
+Tämä on tämän sovelluksen betaversio! Pyrimme nyt lisäämään tukea mahdollisimman monille muille sovelluksille. ChatSecurella, Orwebillä, Umbrellalla ja Zomilla on jo tuki, nämä sovellukset ovat tulossa pian: Courier, PanicButton, OpenKeychain, Orfox, SMSSecure, StoryMaker.
+
+Tässä on kaksi esimerkkiskenaariota:
+
+* Järjestö joutuu säännöllisesti turvallisuusjoukkojen ratsian kohteeksi, joka tutkii kaikki tiloissa olevat tietokoneet ja mobiililaitteet. Organisaatiolla on yleensä vähintään minuutti tai kaksi varoitusta ennen raidin alkamista. He tarvitsevat erittäin luotettavan tavan poistaa kaikki tiedot arkaluonteisista sovelluksista.
+
+* Avustustyöntekijällä on laitteellaan paljon arkaluontoisia tietoja ihmisistä. He synkronoivat tiedot säännöllisesti suojattuun keskustietokantaan. Joskus avustustyöntekijä joutuu poistumaan maasta hyvin lyhyellä varoitusajalla. Rajavartijat lataavat säännöllisesti läpi ylittävien ihmisten mobiililaitteiden koko sisällön. Jonossa rajalla avustustyöntekijä näkee rajavartijat takavarikoivan ihmisten laitteita ja muistaa sitten kaikki laitteessa olevat tiedot, joten hän avaa puhelimen lukituksen ja painaa pyyhkimisliipaisinta, joka pyyhkii kaikki arkaluonteiset sovellukset laitteesta. Kun avustustyöntekijä palaa keskustoimistoon, laite synkronoidaan jälleen keskustietokannan kanssa.
+
+Tämä projekti aloitettiin osana T2 Panic -työtä. Lue aiheesta lisää täältä:
+https://guardianproject.info/tag/panic
+
+Etkö näe kieltäsi? Liity joukkoomme ja auta kääntämään sovellus:
+https://hosted.weblate.org/projects/guardianproject/ripple/
+https://hosted.weblate.org/projects/guardianproject/ripple-metadata/
+
+
+***Lisätietoja***
+
+★ MEISTÄ: Guardian Project on ryhmä kehittäjiä, jotka tekevät turvallisia mobiilisovelluksia ja avoimen lähdekoodin parempaa huomista
+★ VERKKOSIVUSTOMME: https://GuardianProject.info
+★ TWITTERISSÄ: https://twitter.com/guardianproject
+★ ILMAINEN OHJELMISTO: Ripple on ilmainen ohjelmisto. Voit katsoa lähdekoodiamme tai auttaa tekemään Ripplestä entistä paremman:
+https://github.com/guardianproject/ripple
+★ VIESTI MEILLE: Puuttuuko meiltä suosikkiominaisuutesi? Löysitkö ärsyttävän vian? Kerro meille! Haluaisimme kuulla sinusta. Lähetä meille sähköpostia: support@guardianproject.info tai löydä meidät chat-huoneestamme https://guardianproject.info/contact
