@@ -16,4 +16,5 @@
     <string name="only_a_test">Kjo është vetëm një provë</string>
     <string name="got_it">E mora vesh</string>
     <string name="intro_instructions">Kur shkaktoni një valëzim, aplikacionet tuaja të zgjedhura reagojnë. Prekni mbi PËRPUNONI, që të shihni dhe ndryshoni sjelljet e atij aplikacioni.</string>
+    <string name="error_config">S’u nis dot aplikacioni</string>
 </resources>
