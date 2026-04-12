@@ -1,0 +1,3 @@
+*  Correction d'un crash sur les versions récentes d'Android
+
+* Ajout de traductions : Basque, Farsi, Indonésien, Portugais (Portugal), Ukrainien
