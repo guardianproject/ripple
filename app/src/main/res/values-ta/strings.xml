@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="test_dialog_title">சிற்றலை சோதனை ரன்</string>
+    <string name="got_it">கிடைத்தது</string>
+    <string name="app_name">குறுவலை</string>
+    <string name="action_trigger">தூண்டுதல்!</string>
+    <string name="action_test_run">சோதனை ரன்</string>
+    <string name="responders">சிற்றலை பதிலளிப்பவர்கள்</string>
+    <string name="swipe_down_to_trigger">தூண்டுவதற்கு கீழே ச்வைப் செய்யவும்</string>
+    <string name="release_to_confirm">உறுதிப்படுத்த வெளியீடு</string>
+    <string name="panic_test_successful">நல்ல வேலை! ஒரு உண்மையான சூழ்நிலையில், உங்கள் தூண்டுதல் பதிலளிக்கும் அனைத்து பயன்பாடுகளுக்கும் சிதைந்திருக்கும். அந்த பயன்பாடுகள் பூட்டுவதன் மூலம் அல்லது நீங்கள் கட்டமைத்த வேறு எந்த நடத்தைகளையும் பதிலளிக்கும்.</string>
+    <string name="intro_instructions">நீங்கள் ஒரு சிற்றலைத் தூண்டும்போது, நீங்கள் தேர்ந்தெடுத்த பயன்பாடுகள் எதிர்வினையாற்றுகின்றன. பயன்பாட்டின் நடத்தைகளைப் பார்க்கவும் மாற்றவும் திருத்து தட்டவும்.</string>
+    <string name="tap_anywhere_to_cancel">ரத்து செய்ய எங்கும் தட்டவும்</string>
+    <string name="tap_to_trigger">ஒரு சிற்றலைத் தூண்ட தட்டவும்</string>
+    <string name="only_a_test">இது ஒரு சோதனை மட்டுமே</string>
+    <string name="done">முடிந்தது</string>
+    <string name="edit">தொகு</string>
+    <string name="app_hides">தூண்டப்படும்போது பயன்பாடு மறைக்கிறது</string>
+    <string name="error_config">பயன்பாட்டைத் தொடங்க முடியவில்லை</string>
+</resources>
