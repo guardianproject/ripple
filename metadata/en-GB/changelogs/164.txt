@@ -1,0 +1,3 @@
+* Fix crash on recent Android versions
+
+* Added translations: Basque, Farsi, Indonesian, Portuguese of Portugal, Ukrainian

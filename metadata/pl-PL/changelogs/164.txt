@@ -1,0 +1,3 @@
+* Naprawiono błąd powodujący awarię w najnowszych wersjach Androida
+
+* Dodano tłumaczenia: baskijski, perski, indonezyjski, portugalski (Portugalia), ukraiński

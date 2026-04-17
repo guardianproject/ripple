@@ -1,0 +1,3 @@
+* Fixed overlapping text on countdown screen
+
+* New languages: Portuguese, Swedish

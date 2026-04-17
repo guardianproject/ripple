@@ -1,0 +1,3 @@
+* Son Android sürümlerinde yaşanan çökme sorunu düzeltildi
+
+* Çeviriler eklendi: Baskça, Farsça, Endonezce, Portekiz Portekizcesi, Ukraynaca

@@ -1,0 +1,3 @@
+* Korjaa kaatumisen uusimmissa Android-versioissa
+
+* Lisätyt käännökset: baski, farsi, indonesia, portugali, ukraina

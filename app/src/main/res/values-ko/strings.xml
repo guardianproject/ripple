@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ripple</string>
+    <string name="action_trigger">트리거 작동!</string>
+    <string name="action_test_run">테스트 실행</string>
+    <string name="test_dialog_title">Ripple 테스트 실행</string>
+    <string name="responders">Ripple 응답</string>
+    <string name="swipe_down_to_trigger">아래로 스와이프하여 트리거 작동</string>
+    <string name="release_to_confirm">손을 떼어 확인</string>
+    <string name="panic_test_successful">잘 하셨습니다! 실제 상황에서는 트리거 작동이 모든 응답 앱에 파급되었을 것입니다. 그 이후 해당 앱은 잠금 또는 설정한 다른 동작에 따라 응답합니다.</string>
+    <string name="intro_instructions">Ripple 트리거를 작동하면 선택한 앱이 반응합니다. 편집 버튼을 탭하여 해당 앱의 동작을 확인하고 변경할 수 있습니다.</string>
+    <string name="tap_anywhere_to_cancel">아무 곳에나 탭하여 취소</string>
+    <string name="tap_to_trigger">탭하여 Ripple 트리거 작동</string>
+    <string name="only_a_test">테스트입니다</string>
+    <string name="done">완료</string>
+    <string name="edit">편집</string>
+    <string name="got_it">알겠습니다</string>
+    <string name="app_hides">트리거 작동시 앱 숨기기</string>
+    <string name="error_config">앱을 실행할 수 없습니다</string>
+</resources>

@@ -1,0 +1,26 @@
+Ripple은 모든 "패닉 응답자" 앱에 트리거 메시지를 보낼 수 있는 "패닉 버튼"입니다.  이 앱을 통해 잠금, 위장, 개인정보 삭제, 긴급 메시지 전송 등의 작업을 수행할 수 있습니다.  패닉 상황에서 반응할 시간이 있지만 사용자가 실수로 설정을 빼먹지 않아야 하는 상황을 위한 것입니다.
+
+이 앱은 현재 베타 버전입니다!  현재 가능한 많은 다른 앱을 지원하기 위한 작업을 계속하고 있습니다.  ChatSecure, Orweb, Umbrella, 그리고 Zom은 이미 지원하고 있으며, 다음과 같은 앱들이 지원 예정입니다: Courier, PanicButton, OpenKeychain, Orfox, SMSSecure, StoryMaker.
+
+앱 사용 상황에 대한 두 개의 예시 시나리오를 제시하겠습니다:
+
+* 조직이 치안 부대에 의해 정기적으로 급습당하여 설치된 모든 컴퓨터와 모바일 기기를 수색합니다. 통상적으로 급습이 시작되기 1~2분 전에 경보를 받습니다. 민감한 앱에서 트리거를 통해 모든 데이터를 삭제할 수 있는 매우 신뢰할 수 있는 방법을 필요로 합니다.
+
+* 활동가는 기기에 사람들에 대한 민감 데이터를 많이 가지고 있습니다.  정기적으로 해당 데이터를 안전한 중앙 데이터베이스에 동기화합니다.  때때로 활동가는 매우 짧은 시간 내에 국가를 떠나야 하는 경우가 있습니다.  국경 경비대는 정기적으로 지나가는 사람들의 모바일 기기 컨텐츠 전체를 다운로드합니다.  국경에서 줄을 서고 기다리는 동안, 활동가는 국경 경비대가 사람들의 기기를 압수하여 기기의 모든 데이터를 가져가는 것을 보고 휴대폰 잠금을 해제하여 기기에서 모든 민감한 앱을 삭제하는 트리거를 작동시킵니다. 활동가가 중앙 사무실로 복귀하면, 기기는 다시 중앙 데이터베이스와 동기화됩니다.
+
+이 프로젝트는 T2 패닉 작업의 일환으로 시작되었습니다. 자세한 내용은 여기서 확인할 수 있습니다:
+https://guardianproject.info/tag/panic
+
+당신이 사용하는 언어가 보이지 않으십니까? 저희와 합류하여 앱 번역을 도와주십시오:
+https://hosted.weblate.org/projects/guardianproject/ripple/
+https://hosted.weblate.org/projects/guardianproject/ripple-metadata/
+
+
+***더 알아보기***
+
+★ 우리에 대해: Guardian Project는 더 나은 내일을 위해 안전한 모바일 앱과 오픈 소스 코드를 만드는 개발자 집단입니다
+★ 웹사이트: https://GuardianProject.info
+★ 트위터: https://twitter.com/guardianproject
+★ 자유 소프트웨어: Ripple은 자유 소프트웨어입니다. 소스 코드를 살펴보거나, Ripple을 개선하는 데 기여하실 수 있습니다:
+https://github.com/guardianproject/ripple
+★ 연락: 원하는 기능이 없으십니까? 짜증나는 버그를 발견하셨습니까? 저희에게 알려주세요! 기쁘게 의견을 듣겠습니다. 이메일을 보내주시거나: support@guardianproject.info 또는 chat room에서 저희를 찾아주세요. https://guardianproject.info/contact

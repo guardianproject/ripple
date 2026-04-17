@@ -1,0 +1,26 @@
+Ripple on „paanikanupp“, mis suudab saata oma käivitussignaali igale rakendusele, mis toimib „paanikareageerijana“. Sellised rakendused võivad näiteks lukustuda, end maskeerida, kustutada privaatseid andmeid, saata hädaabiteateid ja teha palju muud. See on mõeldud olukordadeks, kus on küll aega reageerida, kuid kasutajad peavad olema kindlad, et nuppu ei aktiveerita kogemata.
+
+See on rakenduse BEETA-versioon! Töötame praegu selle nimel, et lisada tugi võimalikult paljudele teistele rakendustele. ChatSecure, Orweb, Umbrella ja Zom toetavad seda juba; peagi lisanduvad ka järgmised rakendused: Courier, PanicButton, OpenKeychain, Orfox, SMSSecure, StoryMaker.
+
+Kaks näidisolukorda:
+
+* Organisatsiooni ruumides korraldavad julgeolekujõud regulaarselt läbiotsimisi, mille käigus kontrollitakse kõiki arvuteid ja mobiilseadmeid. Tavaliselt on organisatsioonil enne reidi algust vähemalt minut või kaks etteteatamist. Neil on vaja väga usaldusväärset viisi, et käivitada kõigi tundlike rakenduste andmete täielik kustutamine.
+
+* Abitöötajal on oma seadmes palju tundlikke andmeid inimeste kohta. Ta sünkroonib neid andmeid regulaarselt turvalisse keskandmebaasi. Aeg-ajalt peab ta riigist väga lühikese etteteatamisega lahkuma. Piirivalvurid laadivad sageli alla kogu piiriületajate mobiilseadmete sisu. Piiril järjekorras seistes näeb abitöötaja, kuidas seadmeid konfiskeeritakse, ning meenutab kõiki seadmes olevaid andmeid. Ta avab telefoni ja vajutab kustutamise käivitusnuppu, mis eemaldab seadmest kõik tundlikud rakendused. Kui abitöötaja naaseb keskusesse, sünkroonitakse seade uuesti keskandmebaasiga.
+
+See projekt sai alguse „T2 Panic“ ettevõtmise raames. Lisateavet leiad siit:
+[https://guardianproject.info/tag/panic](https://guardianproject.info/tag/panic)
+
+Kas sinu keelt ei ole veel? Liitu meiega ja aita rakendust tõlkida:
+[https://hosted.weblate.org/projects/guardianproject/ripple/](https://hosted.weblate.org/projects/guardianproject/ripple/)
+[https://hosted.weblate.org/projects/guardianproject/ripple-metadata/](https://hosted.weblate.org/projects/guardianproject/ripple-metadata/)
+
+
+***Lisateave***
+
+★ TEAVE MEIE KOHTA: Guardian Project on arendajate rühm, kes loob turvalisi mobiilirakendusi ja avatud lähtekoodiga tarkvara parema homse nimel
+★ MEIE VEEBISAIT: https://GuardianProject.info
+★ TWITTERIS: https://twitter.com/guardianproject
+★ VABA TARKVARA: Ripple on vaba JA AVATUD LÄHTEKOODIGA tarkvara. Võid tutvuda meie lähtekoodiga või ise kaasa aidata ja muuta Ripple'it veel paremaks:
+https://github.com/guardianproject/ripple
+★ VÕTA MEIEGA ÜHENDUST: Kas tunned, et mõni oluline funktsionaalsus on puudu? Leidsid tüütu vea? Anna meile teada - meil on väga hea meel sinu tagasiside üle. Saada meile e-kiri aadressile support@guardianproject.info või leia meid meie jututoast: https://guardianproject.info/contact

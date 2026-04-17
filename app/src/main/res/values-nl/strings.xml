@@ -20,4 +20,5 @@
     <string name="edit">Wijzigen</string>
     <string name="got_it">Oké</string>
     <string name="app_hides">App verbergt wanneer geactiveerd</string>
+    <string name="error_config">De app kon niet gestart worden</string>
 </resources>

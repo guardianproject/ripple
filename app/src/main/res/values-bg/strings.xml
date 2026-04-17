@@ -7,7 +7,7 @@
     <string name="responders">Отговарящи на Ripple</string>
     <string name="swipe_down_to_trigger">Дръпнете натолу, за да задействате</string>
     <string name="release_to_confirm">Пуснете, за да потвърдите</string>
-    <string name="panic_test_successful">Добра работа! При реална ситуация спусъкът щеше да се разпространи до всички реагиращи приложения. Те щяха да отговорят чрез заключване или друго поведение, което сте настроили.</string>
+    <string name="panic_test_successful">Добра работа! В истинска ситуация спусъкът щеше да се разпространи до всички реагиращи приложения. Те щяха да отговорят чрез заключване или поведението, което сте настроили.</string>
     <string name="done">Готово</string>
     <string name="edit">Променяне</string>
     <string name="got_it">Разбрах</string>

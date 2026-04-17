@@ -1,0 +1,3 @@
+* Korjattu päällekkäinen teksti lähtölaskentanäytössä
+
+* Uusia kieliä: portugali, ruotsi

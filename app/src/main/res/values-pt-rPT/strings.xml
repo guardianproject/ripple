@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_hides">App oculta-se quando acionada</string>
-    <string name="got_it">Entendi</string>
+    <string name="got_it">Vá para</string>
     <string name="edit">Editar</string>
     <string name="done">Feito</string>
     <string name="only_a_test">Isto é apenas um teste</string>
@@ -16,4 +16,5 @@
     <string name="action_test_run">Execução de teste</string>
     <string name="action_trigger">Ativar!</string>
     <string name="app_name">Ripple</string>
+    <string name="error_config">app</string>
 </resources>

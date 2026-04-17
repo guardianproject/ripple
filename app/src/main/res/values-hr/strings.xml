@@ -16,4 +16,5 @@
     <string name="edit">Uredi</string>
     <string name="got_it">Razumijem</string>
     <string name="app_hides">Aplikacija se skriva kad se aktivira</string>
+    <string name="error_config">Nije bilo moguće pokrenuti aplikaciju</string>
 </resources>

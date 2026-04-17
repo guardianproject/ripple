@@ -16,4 +16,5 @@
     <string name="panic_test_successful">干得好！ 在真实情境下，您的触发器将波及到所有响应者应用。这些应用随之将通过锁定或您配置的任何其他行为来响应。</string>
     <string name="intro_instructions">当你触发 Ripple 时，所选的应用程序会做出反应。 点按“编辑”以查看和更改该应用程序的行为。</string>
     <string name="app_hides">触发时隐藏应用</string>
+    <string name="error_config">无法启动应用</string>
 </resources>
