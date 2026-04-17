@@ -1,12 +1,17 @@
+---
 
-.hugo-template: &hugo-template
-  image: debian:buster-slim
-  before_script:
-    - apt-get update
-    - apt-get -qy install --no-install-recommends hugo
-    - sed -i "s,^baseURL\x3a.*,baseURL\x3a https://${CI_PROJECT_NAMESPACE}.gitlab.io/${CI_PROJECT_NAME}/," config.yaml
-  variables:
-    GIT_SUBMODULE_STRATEGY: recursive
+image: debian:bookworm-slim
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+# Pin hugo version from buster for guardianproject.info
+.hugo-template: &hugo-template |
+  printf 'Package: hugo\nPin: version 0.5*\nPin-Priority: 1000\n' > /etc/apt/preferences.d/hugo
+  echo 'deb https://snapshot.debian.org/archive/debian/20240630T000000Z/ buster main' > /etc/apt/sources.list.d/buster.list
+  apt-get update
+  apt-get -qy install --no-install-recommends hugo
+  sed -i "s,^baseURL\x3a.*,baseURL\x3a https://${CI_PROJECT_NAMESPACE}.gitlab.io/${CI_PROJECT_NAME}/," config.yaml
 
 release:
   image: registry.gitlab.com/fdroid/ci-images-client:latest
@@ -17,18 +22,18 @@ release:
     - app/build/outputs/apk/*.apk
 
 test:
-  <<: *hugo-template
   script:
-  - hugo
+    - *hugo-template
+    - hugo
   except:
-  - master
+    - master
 
 pages:
-  <<: *hugo-template
   script:
-  - hugo
+    - *hugo-template
+    - hugo
   artifacts:
     paths:
-    - public
+      - public
   only:
-  - master
+    - master
