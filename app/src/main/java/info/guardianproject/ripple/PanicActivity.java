@@ -151,7 +151,7 @@ public class PanicActivity extends Activity implements OnTouchListener {
 
                     int rippleSize = yMaxTranslation / 2;
                     if (yCurrentTranslation > rippleSize) {
-                        float k = rippleSize / (yMaxTranslation - rippleSize);
+                        float k = (float) rippleSize / (yMaxTranslation - rippleSize);
                         mRipples.setSize((yCurrentTranslation - rippleSize) * k);
                         mRipples.invalidate();
                     }
