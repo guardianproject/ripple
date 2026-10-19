@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String TAG = "MainActivity";
 
     static final String FIRST_RUN_PREF = "firstRun";
+    static final String INSTANT_TRIGGER_PREF = "instantTrigger";
 
     private static final String GOT_IT_PREF = "gotItPref";
     private static final int CONNECT_RESULT = 0x01;
@@ -166,11 +167,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        MenuItem instantItem = menu.findItem(R.id.action_instant_trigger);
+        if (instantItem != null) {
+            instantItem.setChecked(prefs.getBoolean(INSTANT_TRIGGER_PREF, false));
+        }
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_test_run) {
             Intent intent = new Intent(this, TestActivity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
             startActivity(intent);
+            return true;
+        }
+        if (item.getItemId() == R.id.action_instant_trigger) {
+            boolean instant = !item.isChecked();
+            item.setChecked(instant);
+            prefs.edit().putBoolean(INSTANT_TRIGGER_PREF, instant).apply();
             return true;
         }
         return super.onOptionsItemSelected(item);

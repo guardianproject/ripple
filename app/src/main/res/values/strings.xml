@@ -3,6 +3,7 @@
 
     <string name="action_trigger">Trigger!</string>
     <string name="action_test_run">Test Run</string>
+    <string name="instant_trigger">Instant trigger (no countdown)</string>
     <string name="test_dialog_title">Ripple Test Run</string>
 
     <string name="responders">Ripple Responders</string>

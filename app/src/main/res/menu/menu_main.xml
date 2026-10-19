@@ -8,4 +8,10 @@
             android:title="@string/action_test_run"
             app:showAsAction="never"/>
 
+    <item
+            android:id="@+id/action_instant_trigger"
+            android:title="@string/instant_trigger"
+            android:checkable="true"
+            app:showAsAction="never"/>
+
 </menu>
