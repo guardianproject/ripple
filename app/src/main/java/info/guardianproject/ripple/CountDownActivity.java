@@ -8,6 +8,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.constraint.ConstraintLayout;
 import android.os.Handler;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AlertDialog;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
@@ -32,6 +33,7 @@ public class CountDownActivity extends Activity {
     private ImageView mCancelButton;
     private int mCountDown = 0xff;
     private boolean mTestRun;
+    private boolean mInstantTrigger;
 
     // lint is failing to see that setOnSystemUiVisibilityChangeListener is wrapped in
     // if (Build.VERSION.SDK_INT >= 11).
@@ -41,6 +43,8 @@ public class CountDownActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         mTestRun = getIntent().getBooleanExtra(PanicActivity.EXTRA_TEST_RUN, false);
+        mInstantTrigger = PreferenceManager.getDefaultSharedPreferences(this)
+                .getBoolean(MainActivity.INSTANT_TRIGGER_PREF, false);
 
         Window window = getWindow();
         window.setBackgroundDrawable(null);
@@ -136,7 +140,8 @@ public class CountDownActivity extends Activity {
         @Override
         protected Void doInBackground(Void... voids) {
             try {
-                int countdown = 5;
+                // instant trigger: start below zero so the countdown loop is skipped
+                int countdown = mInstantTrigger ? -1 : 5;
                 while (countdown >= 0) {
                     publishProgress(countdown);
                     countdown--;
